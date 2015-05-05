@@ -9,10 +9,41 @@ i.fa-circle {
 }
 i.fa-inverse {
 	color:#333}
+a i {transition: ease-in-out  0.1s;top:0}
+a:hover i {
+		top:-8pt;
+
+}
 a:hover i.fa-circle {
 	color: #ff5050;
-	transition: ease-in 0.2s;
 }
+
+a:hover i.fa-inverse::after {
+	color:#fff;
+	font-size:8pt;
+	text-transform: uppercase;
+	display:block;
+	font-family: 'Lato', sans-serif;
+	margin-top:-1em;
+	opacity:1;
+	}
+
+a:hover i.fa-envelope.fa-inverse::after {
+	content:"Email Me";
+	}
+a:hover i.fa-home.fa-inverse::after {
+	content:"Website"
+}
+a:hover i.fa-linkedin.fa-inverse::after {
+	content:"LinkedIn"
+}
+a:hover i.fa-behance.fa-inverse::after {
+	content:"Portfolio"
+}
+a:hover i.fa-print.fa-inverse::after {
+	content:"Print PDF"
+}
+
 .place {
 	color: #777
 }
