@@ -80,6 +80,12 @@ a:hover i.fa-print.fa-inverse::after {
 .title, .org, ul.list {
 	margin-left: 1em;
 }
+#header.fixed {
+	margin:0em;
+}
+#header.fixed #social {
+    display:none;
+}
 }
 
 #education {
