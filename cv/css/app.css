@@ -109,6 +109,12 @@ a:hover i.fa-print.fa-inverse::after {
 #header.fixed .toggle {
 	margin-top:0;
 }
+
+#footer {
+	margin-top:2em;
+	background: #333333;
+	padding: 1em 0em;
+}
 	
 ul.list, ul.list2 {
 	margin-top: 0.4em
