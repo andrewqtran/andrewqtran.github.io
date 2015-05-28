@@ -64,30 +64,6 @@ a:hover i.fa-print.fa-inverse::after {
 	display: block;
 }
 
-@media only screen and (min-width: 40.063em) {
-.time, .place {
-	display: block;
-}
-#community .org, #community .title {
-	display: inline
-}
-}
-
-@media only screen and (max-width: 40.063em) {
-.time, .place {
-	display: inline;
-}
-.title, .org, ul.list {
-	margin-left: 1em;
-}
-#header.fixed {
-	margin:0em;
-}
-#header.fixed #social {
-    display:none;
-}
-}
-
 #education {
 	margin-top: 2em
 }
@@ -105,7 +81,7 @@ a:hover i.fa-print.fa-inverse::after {
 	text-align:center;
 }
 #header.fixed {
-	padding: 0em;
+	padding: 0em 2em;
 	text-align:left;
 	}
 	
@@ -114,19 +90,38 @@ a:hover i.fa-print.fa-inverse::after {
 }
 
 #header.fixed h1 {
-	margin-bottom:-0.5em;
+	margin-bottom:0em;
 	transition: ease-in-out 0.2s;
 	letter-spacing:-1px;
-	font-size:2em;
+	font-size:2.5em;
 }
 
 #header.fixed h1 .aqt {
 	display:none;
+	transition: ease-in-out 0.2s;
 
 }
 
 #tagline {
-	transition: all 0.2s linear;
+	transition: all 0.1s linear;
+}
+
+#tagline {
+	margin:0 auto;
+	text-align: center;
+	display:block;
+
+	}
+	
+#tagline a {
+	padding: 0.2em 0.5em;
+	margin: 0 2em;
+	color:#777;
+}
+
+#tagline a:hover {
+	color: #333;
+	border-bottom:#ff5050 solid 0.5em;
 }
 
 #header.fixed #tagline {
@@ -135,9 +130,10 @@ a:hover i.fa-print.fa-inverse::after {
 	height:0;
 	padding:0;
 	top: -5em;
-    transition: linear 0.2s;
-
+    transition: linear 0.1s;
 }
+
+
 
 #footer {
 	margin-top:2em;
@@ -278,5 +274,29 @@ ul.list2, ul.pub-list
 }
  @page :first {
 margin-top: 0.7cm;
+}
+}
+
+@media only screen and (min-width: 40.063em) {
+.time, .place {
+	display: block;
+}
+#community .org, #community .title {
+	display: inline
+}
+}
+
+@media only screen and (max-width: 40.063em) {
+.time, .place {
+	display: inline;
+}
+.title, .org, ul.list {
+	margin-left: 1em;
+}
+#header.fixed {
+	margin:0em;
+}
+#header.fixed #social {
+    display:none;
 }
 }
