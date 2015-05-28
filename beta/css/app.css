@@ -83,6 +83,7 @@ a:hover i.fa-print.fa-inverse::after {
 #header.fixed {
 	padding: 0em 2em;
 	text-align:left;
+	box-shadow: #ccc 0px 0px 5px;
 	}
 	
 #header.fixed .toggle {
@@ -110,7 +111,6 @@ a:hover i.fa-print.fa-inverse::after {
 	margin:0 auto;
 	text-align: center;
 	display:block;
-
 	}
 	
 #tagline a {
@@ -125,14 +125,14 @@ a:hover i.fa-print.fa-inverse::after {
 }
 
 #header.fixed #tagline {
-	opacity:0;
-	visibility: hidden;
-	height:0;
-	padding:0;
-	top: -5em;
-    transition: linear 0.1s;
+	position:absolute;
+	right:1em;
+	top:1em;
 }
 
+#header.fixed #tagline a {
+	margin: 0 1em;
+}
 
 
 #footer {
