@@ -41,7 +41,7 @@ a:hover i.fa-behance.fa-inverse::after {
 	content:"Portfolio"
 }
 a:hover i.fa-print.fa-inverse::after {
-	content:"Print PDF"
+	content:"Print Resume"
 }
 
 .place {
@@ -70,7 +70,7 @@ a:hover i.fa-print.fa-inverse::after {
 #awards {
 }
 #social {
-	margin: 1.5em 0;
+	margin: 1.5em auto;
 }
 #header {
 	background: #ffffff;
@@ -138,7 +138,7 @@ a:hover i.fa-print.fa-inverse::after {
 #footer {
 	margin-top:2em;
 	background: #333333;
-	padding: 1em 0em;
+	padding: 0.1em 0 1.5em 0;
 }
 	
 ul.list, ul.list2 {
