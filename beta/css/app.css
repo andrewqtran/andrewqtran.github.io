@@ -3,6 +3,7 @@
 
 body {
 	font-family: 'Lato', sans-serif;
+	background: #f6f6f6 none repeat scroll 0% 0%
 }
 i.fa-circle {
 	color: #ccc
@@ -12,14 +13,14 @@ i.fa-inverse {
 a i {transition: ease-in-out  0.1s;top:0;}
 a:hover i {
 		top:-8pt;
-
 }
+a:hover i.fa-inverse {color:#ccc;}
 a:hover i.fa-circle {
-	color: #ff5050;
+	color: #333;
 }
 
 a:hover i.fa-inverse::after {
-	color:#fff;
+	color:#333;
 	font-size:8pt;
 	text-transform: uppercase;
 	display:block;
@@ -134,37 +135,65 @@ a:hover i.fa-print.fa-inverse::after {
 	margin: 0 1em;
 }
 
+#hello{
+	margin-bottom:1em;
+}
+
+
+.project {
+	background:#fff;
+	border-bottom: solid 0.1em #ff5050;
+	padding: 1em;
+	border-radius:2px;
+	box-shadow: #ccc 0 0 3px;
+	transition:all ease 0.1s;
+	}
+
+.project:hover {
+	margin-top:-5px;
+	transition:all ease 0.1s;
+	box-shadow: #999 0 5px 5px;
+	border-bottom: solid #ff5050 5px;
+}
+
+#portfolio .project:hover .inline-list li, .project:hover .summary {
+	opacity:1;
+		transition:all ease 0.2s;
+}
+
+.title {
+	font-weight: 700;
+	font-family:"Roboto Slab", serif;
+}
+
+.summary {
+	margin:0;
+	padding:0;
+	opacity:0.1;
+}
+
+
+#portfolio .inline-list {
+	margin: 0.1em auto auto -0.5em;
+}
+
+#portfolio .inline-list li {
+	font-family: "Roboto Condensed", sans-serif;
+	font-size:0.7rem;
+	text-transform: uppercase;
+	color:#666;
+	margin: 0.5rem 0.5rem 0 0.5rem;
+	opacity:0.1
+}
 
 #footer {
 	margin-top:2em;
-	background: #333333;
+	background: #ccc;
 	padding: 0.1em 0 1.5em 0;
+	border-top:#555 solid thin;
 }
 	
-ul.list, ul.list2 {
-	margin-top: 0.4em
-}
-ul.list li, ul.list2 li, ul.pub-list li {
-	margin-bottom: 0.6em;
-	color: #777;
-	line-height: 1.2em;
-	font-size: 0.9em;
-}
-ul li:last-child {
-	margin-bottom: -0.6em;
-}
-ul.pub-list li {
-	text-indent: -2em;
-	margin-left: 2em
-}
 
-h4 {
-	text-transform: uppercase;
-	color: #ff5050;
-	font-family: 'Roboto Slab', serif;
-	border-bottom: 1px solid;
-	padding-top: 0.3em;
-}
 h1 {
 	padding: 0;
 	font-family: 'Slabo 27px', serif;
@@ -189,6 +218,30 @@ h1 a:hover {
 
 h1 a:hover #q {
 	color: #ff5050;
+}
+
+h2 {
+	text-transform: capitalize;
+	color: #ff5050;
+	font-family: 'Roboto Slab', serif;
+	margin:0.8em 0 0.7em 0;
+}
+
+p {
+	font-size:1.1rem;
+	color:#555;
+}
+
+p a {
+	color:#555;
+	border-bottom:#ff5050 solid 0.1em;
+	transition: all linear 0.1s;
+}
+
+p a:hover {
+	color:#333;
+	border-bottom:#ff5050 solid 0.3em;
+	transition: all linear 0.1s;
 }
 
 .toggle {
