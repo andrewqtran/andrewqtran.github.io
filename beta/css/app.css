@@ -41,8 +41,8 @@ a:hover i.fa-linkedin.fa-inverse::after {
 a:hover i.fa-behance.fa-inverse::after {
 	content:"Portfolio"
 }
-a:hover i.fa-print.fa-inverse::after {
-	content:"Print Resume"
+a:hover i.fa-file-pdf-o.fa-inverse::after {
+	content:"Resume PDF"
 }
 
 .place {
@@ -125,16 +125,20 @@ opacity:1;
 #tagline a {
 	padding: 0.2em 0.5em;
 	margin: 0 2em;
-	color:#777;
+	color:#888;
 	transition: all 0.1s linear;
 	border-bottom:#ff5050 solid 0px;
 	padding-bottom:0.6em;
 }
 
-#tagline a:hover {
+#tagline a:hover  {
 	color: #333;
 	border-bottom:#ff5050 solid 0.4em;
 	padding-bottom:0.2em;
+}
+
+#tagline a.active {
+	color: #333;
 }
 
 #header.fixed #tagline {
@@ -155,7 +159,7 @@ opacity:1;
 .project {
 	background:#fff;
 	border-bottom: solid 0.1em #ff5050;
-	padding: 1em;
+	padding: 1em 1em 0.8em 1em;
 	border-radius:2px;
 	box-shadow: #ccc 0 0 3px;
 	transition:all ease 0.1s;
@@ -166,31 +170,35 @@ opacity:1;
 	transition:all ease 0.1s;
 	box-shadow: #999 0 5px 5px;
 	border-bottom: solid #ff5050 5px;
+
 }
 
-#portfolio .project:hover .inline-list li, .project:hover .summary {
+#portfolio .project:hover .inline-list, .project:hover .summary {
 	opacity:1;
-		transition:all ease 0.2s;
+	transition:all ease 0.5s;
 }
 
 .project img {
 	margin:-1em -1em 0em -1em;
 	min-width: calc(100% + 2em);
 	}
+
 .title {
 	font-weight: 700;
 	font-family:"Roboto Slab", serif;
+	margin-bottom:0;
 }
 
 .summary {
 	margin:0;
 	padding:0;
-	opacity:0.1;
+	opacity:0;
 }
 
 
 #portfolio .inline-list {
 	margin: 0.1em auto auto -0.5em;
+	opacity:0
 }
 
 #portfolio .inline-list li {
@@ -199,7 +207,7 @@ opacity:1;
 	text-transform: uppercase;
 	color:#666;
 	margin: 0.5rem 0.5rem 0 0.5rem;
-	opacity:0.1
+	
 }
 
 #footer {
@@ -278,94 +286,43 @@ p a:hover {
 
 
 
- @-webkit-keyframes slideUp {
-from {
-opacity:0;
-margin-top:1em;
-}
-to {
-opacity:1;
-margin-top:0;
-}
-}
 .hidden {
 	display: none
 }
 
 
-/* PRINT QUERY - Pardon the !important; */
-@media print {
-h4 {font-size:1.2em;}
-.time, .place {
-	display: block;
-}
-.large-2 {
-	float: left!important;
-	padding-left: 0.9375em!important;
-	padding-right: 0.9375em!important;
- width:calc(8.3333333333% * 2.3)!important;
-	text-align: right;
-}
-.large-10 {
-	float: left!important;
-	padding-left: 0.9375em!important;
-	padding-right: 0.9375em!important;
-	margin-left: -1em;
- width:calc(8.3333333333% * 9.7)!important;
-}
-#community .title, #community .org {
-	display:inline !important;}
-	
-body {
-	font-size: 0.8em;
-	line-height:120%;
-}
-ul.list li, ul.list2 li, ul.pub-list li {
-	color: #666!important;
-	line-height: 1.2em;
-	font-size: 0.8em!important;
-	margin-bottom:0!important;
-}
-ul.list {
-	list-style-type:disc;
-margin-top:0 !important;
-margin-bottom:0.25em;}
-
-ul.list2, ul.pub-list
-{margin-bottom:0!important}
-
-#print-header {
-	padding: 0;
-	margin: 0;
-}
-@page {
-	margin: 1.5cm 1cm
-}
- @page :first {
-margin-top: 0.7cm;
-}
-}
-
 @media only screen and (min-width: 40.063em) {
-.time, .place {
-	display: block;
-}
-#community .org, #community .title {
-	display: inline
-}
+#tagline i {display:none}
 }
 
 @media only screen and (max-width: 40.063em) {
-.time, .place {
-	display: inline;
-}
-.title, .org, ul.list {
-	margin-left: 1em;
-}
+.summary, #portfolio .inline-list {opacity:1}
 #header.fixed {
 	margin:0em;
 }
-#header.fixed #social {
-    display:none;
+#header {
+	padding: 1em 0em;
 }
+#header.fixed {
+	height:3em;
 }
+#logo .aqt {
+	display:none;
+}
+#logo {
+	font-size:2.5rem;
+	letter-spacing:0;
+}
+#header.fixed #tagline {
+	right:1em;
+	top:0.6em;
+
+}
+#header.fixed  #tagline a {
+	margin: 0 2em;
+}
+#header.fixed h1 {
+	display:none;
+}
+#tagline i {display:inline-block; font-size:larger}
+#tagline .link {display: none}}
