@@ -126,11 +126,15 @@ opacity:1;
 	padding: 0.2em 0.5em;
 	margin: 0 2em;
 	color:#777;
+	transition: all 0.1s linear;
+	border-bottom:#ff5050 solid 0px;
+	padding-bottom:0.6em;
 }
 
 #tagline a:hover {
 	color: #333;
-	border-bottom:#ff5050 solid 0.5em;
+	border-bottom:#ff5050 solid 0.4em;
+	padding-bottom:0.2em;
 }
 
 #header.fixed #tagline {
