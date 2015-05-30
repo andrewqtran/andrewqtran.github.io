@@ -93,13 +93,24 @@ a:hover i.fa-print.fa-inverse::after {
 	/*transition: ease-in-out 0.2s;*/
 	letter-spacing:-1px;
 	font-size:2.5em;
+	
 }
 
 #header.fixed h1 .aqt {
 	display:none;
+	animation: fade-in-out 0.5s 1s 1 ease-in backwards;
 	/*transition: ease-in-out 0.2s;*/
-
 }
+
+ @keyframes fade-in-out {
+0% {
+opacity:0;
+}
+100% {
+opacity:1;
+}
+}
+
 
 #tagline {
 	/*transition: all 0.1s linear;*/
@@ -158,6 +169,10 @@ a:hover i.fa-print.fa-inverse::after {
 		transition:all ease 0.2s;
 }
 
+.project img {
+	margin:-1em -1em 0em -1em;
+	min-width: calc(100% + 2em);
+	}
 .title {
 	font-weight: 700;
 	font-family:"Roboto Slab", serif;
