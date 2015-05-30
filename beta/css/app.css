@@ -296,6 +296,9 @@ p a:hover {
 }
 
 @media only screen and (max-width: 40.063em) {
+	body {
+		overflow-x: hidden;
+	}
 .summary, #portfolio .inline-list {opacity:1}
 #header.fixed {
 	margin:0em;
@@ -314,8 +317,7 @@ p a:hover {
 	letter-spacing:0;
 }
 #header.fixed #tagline {
-	right:1em;
-	top:0.6em;
+	top:0.8em;
 
 }
 #header.fixed  #tagline a {
