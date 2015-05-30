@@ -32,8 +32,8 @@ a:hover i.fa-inverse::after {
 a:hover i.fa-envelope.fa-inverse::after {
 	content:"Email Me";
 	}
-a:hover i.fa-home.fa-inverse::after {
-	content:"Website"
+a:hover i.fa-twitter.fa-inverse::after {
+	content:"Twitter"
 }
 a:hover i.fa-linkedin.fa-inverse::after {
 	content:"LinkedIn"
@@ -206,7 +206,7 @@ opacity:1;
 	margin-top:2em;
 	background: #ccc;
 	padding: 0.1em 0 1.5em 0;
-	border-top:#555 solid thin;
+	border-top:#999 solid thin;
 }
 	
 
