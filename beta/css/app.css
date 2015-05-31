@@ -102,6 +102,11 @@ a:hover i.fa-file-pdf-o.fa-inverse::after {
 	/*transition: ease-in-out 0.2s;*/
 }
 
+#header.fixed h1 #q {
+	color:#333;
+	transition: ease-in-out 0.2s;
+}
+
  @keyframes fade-in-out {
 0% {
 opacity:0;
@@ -210,6 +215,17 @@ opacity:1;
 	
 }
 
+#about ul {
+	color:#555;
+	font-size:1.1rem;
+	transition: all ease-in-out 0.2s;
+	opacity: 0.5;
+}
+
+#about ul:hover {
+	opacity:1;
+}
+
 #footer {
 	margin-top:2em;
 	background: #ccc;
@@ -256,13 +272,13 @@ p {
 	color:#555;
 }
 
-p a {
+p a, li a {
 	color:#555;
 	border-bottom:#ff5050 solid 0.1em;
 	transition: all linear 0.1s;
 }
 
-p a:hover {
+p a:hover, li a:hover {
 	color:#333;
 	border-bottom:#ff5050 solid 0.3em;
 	transition: all linear 0.1s;
