@@ -215,7 +215,7 @@ opacity:1;
 	
 }
 
-#about ul {
+/*#about ul {
 	color:#555;
 	font-size:1.1rem;
 	transition: all ease-in-out 0.2s;
@@ -224,7 +224,7 @@ opacity:1;
 
 #about ul:hover {
 	opacity:1;
-}
+}*/
 
 #footer {
 	margin-top:2em;
