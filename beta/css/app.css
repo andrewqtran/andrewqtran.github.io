@@ -5,29 +5,10 @@ body {
 	font-family: 'Lato', sans-serif;
 	background: #f6f6f6 none repeat scroll 0% 0%
 }
-i.fa-circle {
-	color: #ccc
-}
-i.fa-inverse {
-	color:#333}
-a i {transition: ease-in-out  0.1s;top:0;}
-a:hover i {
-		top:-8pt;
-}
-a:hover i.fa-inverse {color:#ccc;}
-a:hover i.fa-circle {
-	color: #333;
-}
 
-a:hover i.fa-inverse::after {
-	color:#333;
-	font-size:8pt;
-	text-transform: uppercase;
-	display:block;
-	font-family: 'Roboto Condensed', sans-serif;
-	margin-top:-1em;
-	opacity:1;
-	}
+.white-background {
+	background: #fff;
+}
 
 a:hover i.fa-envelope.fa-inverse::after {
 	content:"Email Me";
@@ -125,6 +106,7 @@ opacity:1;
 	margin:0 auto;
 	text-align: center;
 	display:block;
+	z-index: 100;
 	}
 	
 #tagline a {
@@ -136,15 +118,12 @@ opacity:1;
 	padding-bottom:0.6em;
 }
 
-#tagline a:hover  {
+#tagline a:hover, #tagline a.active  {
 	color: #333;
 	border-bottom:#ff5050 solid 0.4em;
 	padding-bottom:0.2em;
 }
 
-#tagline a.active {
-	color: #333;
-}
 
 #header.fixed #tagline {
 	position:absolute;
@@ -154,6 +133,61 @@ opacity:1;
 
 #header.fixed #tagline a {
 	margin: 0 1em;
+}
+
+#header .project-title {
+background:none;
+margin:0;
+margin-left:-1.735rem;
+opacity:0;	position:absolute;
+
+transition:all ease-in-out 0.5s;
+}
+
+#header.fixed .project-title {
+opacity:1;
+top:0.4rem;
+	display:block;	
+}
+
+
+#portfolio-nav a {
+color:#333;
+opacity:0.2;
+transition: all ease-in-out 0.2s;
+}
+
+#portfolio-nav a:hover{
+	opacity:1;
+}
+
+.previous {
+	float:left;
+	left:-0.5em;
+	clear:both;
+	display:block;
+	position:fixed;
+	top:25%;
+	transition: all ease-in-out 0.2s;
+	z-index: 100;
+}
+
+.previous:hover {
+	left: 0.5em;
+}
+
+.next {
+	float:right;
+	right:-0.5em;
+	clear:both;display:block;
+	position:fixed;
+	top:25%;
+	transition: all ease-in-out 0.2s;
+		z-index: 100;
+}
+
+.next:hover {
+	right: 0.5em;
 }
 
 #hello{
@@ -188,7 +222,7 @@ opacity:1;
 	min-width: calc(100% + 2em);
 	}
 
-.title {
+.title, h3 {
 	font-weight: 700;
 	font-family:"Roboto Slab", serif;
 	margin-bottom:0;
@@ -224,6 +258,12 @@ opacity:1;
 
 #about ul:hover {
 	opacity:1;
+}
+
+#rebl {
+	background: url("../img/rebl/hero.jpg") no-repeat fixed center center / contain;
+    min-height: 500px;
+	
 }*/
 
 #footer {
@@ -232,7 +272,31 @@ opacity:1;
 	padding: 0.1em 0 1.5em 0;
 	border-top:#999 solid thin;
 }
-	
+
+#footer i.fa-circle {
+	color: #ccc
+}
+#footer i.fa-inverse {
+	color:#333}
+#footer a i {transition: ease-in-out  0.1s;top:0;}
+#footer a:hover i {
+		top:-8pt;
+}
+#footer a:hover i.fa-inverse {color:#ccc;}
+#footer a:hover i.fa-circle {
+	color: #333;
+}
+
+#footer a:hover i.fa-inverse::after {
+	color:#333;
+	font-size:8pt;
+	text-transform: uppercase;
+	display:block;
+	font-family: 'Roboto Condensed', sans-serif;
+	margin-top:-1em;
+	opacity:1;
+	}
+
 
 h1 {
 	padding: 0;
