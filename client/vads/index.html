@@ -795,8 +795,8 @@ input[type='text'], input:not([type]), textarea {
   $(document).ready(function() {
     $(".nextButton").click(function()
     {
-      $(this).next('.section').show('fade',500); 
-      $(this).prev('.section').hide('fade',500);     
+      $(this).parent().next('.section').show('fade',500); 
+      $(this).parent().prev('.section').hide('fade',500);     
     })
   })
 </script>            
