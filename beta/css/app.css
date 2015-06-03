@@ -178,13 +178,13 @@ opacity:0.5;
 	opacity:1;
 }
 
-#portfolio-nav a h4 {
+#portfolio-nav a h5 {
 	display:none;
 	margin: 0 1em;
 
 }
 
-#portfolio-nav a:hover h4 {
+#portfolio-nav a:hover h5 {
 	display:inline-block;
 	transition-delay: 0.4s;
 }
@@ -342,7 +342,7 @@ h2 {
 	margin:0.8em 0 0.7em 0;
 }
 
-h4 {
+h5 {
 	font-family: "Roboto Condensed", sans-serif;
 	font-size:0.9rem;
 	text-transform: uppercase;
@@ -420,13 +420,13 @@ opacity:1;
 	opacity:1;
 }
 
-#portfolio-nav a h4 {
+#portfolio-nav a h5 {
 	display:inline-block;
 	margin: 0 1em;
 
 }
 
-#portfolio-nav a:hover h4 {
+#portfolio-nav a:hover h5 {
 	display:inline-block;
 	transition-delay: 0.4s;
 }
@@ -504,13 +504,13 @@ opacity:1;
 	opacity:1;
 }
 
-#portfolio-nav a h4 {
+#portfolio-nav a h5 {
 	display:none;
 	margin: 0 1em;
 
 }
 
-#portfolio-nav a:hover h4 {
+#portfolio-nav a:hover h5 {
 	display:none;
 	transition-delay: 0.4s;
 }
