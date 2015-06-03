@@ -13,13 +13,11 @@
 <script src="js/vendor/jquery.js"></script> 
 </head>
 <body>
-<div id="portfolio-nav">
-  <div class="previous fa-stack fa-lg">
-  <a href="#"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-chevron-left fa-stack-1x fa-inverse"></i></a>
-  </div>
-  <div class="next fa-stack fa-lg">
-    <a href="#"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-chevron-right fa-stack-1x fa-inverse"></i></a>
-  </div>
+<div id="portfolio-nav" class="show-for-large-up">
+
+  <a href="#" class="previous"><i class="fa fa-chevron-left fa-large"></i><h4>Previous Project</h4></a>
+  <a href="#" class="next"><h4>Next Project</h4><i class="fa fa-chevron-right fa-large"></i></a>
+  
 </div>
 <div class="contain-to-grid fixed" id="header">
   <nav data-topbar role="navigation">
@@ -40,7 +38,7 @@
 
       
 <div class="row">
-  <img src="img/rebl/hero.jpg" />
+    <img class="hero" src="img/rebl/hero.jpg" />
       <div class="small-12 columns"><h2>We R DNA n Art</h2>
      <p>That's my full name, spelled backwards. Aptly, my passions lie in healthcare, science, tech, and design. Coming from a psychology background
        and preclinical oncology research, I took a big leap into medical illustration the moment I discovered it. 
