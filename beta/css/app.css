@@ -194,18 +194,12 @@ opacity:0.5;
 
 }
 
-.previous i {
-
-}
-
 .next {
 	float:right;
 	right:-1px;
 }
 
-.next i {
 
-}
 
 #hello{
 	margin-bottom:1em;
@@ -399,6 +393,56 @@ p a:hover, li a:hover {
 	img.hero {margin-top:3em}
 }
 
+@media only screen and (max-width: 64.063em){
+	
+#portfolio-nav a {
+color:#333;
+
+transition: all ease 0.2s;
+
+clear:both;
+	display:block;
+	position:fixed;
+	top:0;
+	z-index: 100;
+padding: 1.2em;
+border: none;
+overflow: hidden;
+white-space: nowrap;
+opacity:1;
+}
+
+#portfolio-nav a:hover{
+	opacity:1;
+	max-width: 100%;
+	box-shadow: none;
+	background:none;
+	opacity:1;
+}
+
+#portfolio-nav a h4 {
+	display:inline-block;
+	margin: 0 1em;
+
+}
+
+#portfolio-nav a:hover h4 {
+	display:inline-block;
+	transition-delay: 0.4s;
+}
+.previous {
+	float:left;
+	left:20%;
+
+}
+
+.next {
+	float:right;
+	right:20%;
+}
+
+}
+
 @media only screen and (min-width: 40.063em) {
 #tagline i {display:none}
 }
@@ -426,13 +470,58 @@ p a:hover, li a:hover {
 }
 #header.fixed #tagline {
 	top:0.8em;
-
 }
 #header.fixed  #tagline a {
-	margin: 0 2em;
+	margin: 0 auto;
 }
 #header.fixed h1 {
 	display:none;
 }
 #tagline i {display:inline-block; font-size:larger}
-#tagline .link {display: none}}
+#tagline .link {display: none}
+#portfolio-nav a {
+color:#333;
+
+transition: all ease 0.2s;
+
+clear:both;
+	display:block;
+	position:fixed;
+	top:-0.5em;
+	z-index: 100;
+padding: 1.2em;
+border: none;
+overflow: hidden;
+white-space: nowrap;
+opacity:1;
+}
+
+#portfolio-nav a:hover{
+	opacity:1;
+	max-width: 100%;
+	box-shadow: none;
+	background:none;
+	opacity:1;
+}
+
+#portfolio-nav a h4 {
+	display:none;
+	margin: 0 1em;
+
+}
+
+#portfolio-nav a:hover h4 {
+	display:none;
+	transition-delay: 0.4s;
+}
+.previous {
+	float:left;
+	left:20%;
+
+}
+
+.next {
+	float:right;
+	right:20%;
+}
+}
