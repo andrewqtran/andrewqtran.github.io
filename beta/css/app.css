@@ -2,95 +2,42 @@
 /* CSS Document */
 
 body {
-	font-family: 'Lato', sans-serif;
-	font-weight: 300;
+	font-family: 'Source Sans Pro', sans-serif;
 	background: #f6f6f6 none repeat scroll 0% 0%
 }
-
 .white-background {
 	background: #fff;
-}
-
-a:hover i.fa-envelope.fa-inverse::after {
-	content:"Email Me";
-	}
-a:hover i.fa-twitter.fa-inverse::after {
-	content:"Twitter"
-}
-a:hover i.fa-linkedin.fa-inverse::after {
-	content:"LinkedIn"
-}
-a:hover i.fa-behance.fa-inverse::after {
-	content:"Portfolio"
-}
-a:hover i.fa-file-pdf-o.fa-inverse::after {
-	content:"Resume PDF"
-}
-
-
-
-.place {
-	color: #777
-}
-.time {
-	font-weight: 700;
-	color: #777;
-}
-.org {
-}
-.title {
-	font-weight: 700;
-}
-.time, .place {
-	font-family: 'Roboto Condensed', sans-serif;
-	text-transform: uppercase;
-}
-.org, .title {
-	display: block;
-}
-
-#education {
-	margin-top: 2em
-}
-#awards {
-}
-#social {
-	margin: 1.5em auto;
+	box-shadow: #ccc 0px 0px 5px;
+	margin-bottom: -2em;
+	padding-bottom: 1em;
 }
 #header {
 	background: #ffffff;
 	padding: 2em 0em;
-	color:#666;
+	color: #666;
 	/*transition: ease-in-out 0.2s;*/
 	border-bottom: solid thin #ccc;
-	text-align:center;
+	text-align: center;
 }
 #header.fixed {
 	padding: 0em 2em;
-	text-align:left;
-	box-shadow: #ccc 0px 0px 5px;
-	/*transition: ease-in-out 0.2s;*/
-	}
-	
+	text-align: left;
+	box-shadow: #ccc 0px 0px 5px;/*transition: ease-in-out 0.2s;*/
+}
 #header.fixed h1 {
-	margin-bottom:0em;
+	margin-bottom: 0em;
 	/*transition: ease-in-out 0.2s;*/
-	letter-spacing:-1px;
-	font-size:2.5em;
-	
+	letter-spacing: -1px;
+	font-size: 2.5em;
 }
-
 #header.fixed h1 .aqt {
-	display:none;
-	animation: fade-in-out 0.5s 1s 1 ease-in backwards;
-	/*transition: ease-in-out 0.2s;*/
+	display: none;
+	animation: fade-in-out 0.5s 1s 1 ease-in backwards;/*transition: ease-in-out 0.2s;*/
 }
-
 #header.fixed h1 #q {
-	color:#333;
+	color: #333;
 	transition: ease-in-out 0.2s;
 }
-
  @keyframes fade-in-out {
 0% {
 opacity:0;
@@ -99,217 +46,189 @@ opacity:0;
 opacity:1;
 }
 }
-
-
 #tagline {
-	/*transition: all 0.1s linear;*/
-}
-
-#tagline {
-	margin:0 auto;
+	margin: 0 auto;
 	text-align: center;
-	display:block;
+	display: block;
 	z-index: 100;
-	}
-	
+}
 #tagline a {
 	padding: 0.2em 0.5em;
 	margin: 0 2em;
-	color:#888;
+	color: #888;
 	transition: all 0.1s linear;
-	border-bottom:#ff5050 solid 0px;
-	padding-bottom:0.6em;
+	border-bottom: #ff5050 solid 0px;
+	padding-bottom: 0.6em;
 }
-
-#tagline a:hover, #tagline a.active  {
+#tagline a:hover, #tagline a.active {
 	color: #333;
-	border-bottom:#ff5050 solid 0.4em;
-	padding-bottom:0.2em;
+	border-bottom: #ff5050 solid 0.4em;
+	padding-bottom: 0.2em;
 }
-
-
 #header.fixed #tagline {
-	position:absolute;
-	right:1em;
-	top:1em;
+	position: absolute;
+	right: 1em;
+	top: 1em;
 }
-
 #header.fixed #tagline a {
 	margin: 0 1em;
 }
-
 #header .project-title {
-background:none;
-margin:0;
-margin-left:-1.735rem;
-opacity:0;	position:absolute;
-
-transition:all ease-in-out 0.5s;
+	background: none;
+	margin: 0;
+	margin-left: -1.735rem;
+	opacity: 0;
+	position: absolute;
+	transition: all ease-in-out 0.5s;
 }
-
 #header.fixed .project-title {
-opacity:1;
-top:0.4rem;
-	display:block;	
+	opacity: 1;
+	top: 0.4rem;
+	display: block;
 }
-
-
 #portfolio-nav a {
-color:#333;
-
-transition: all ease 0.2s;
-
-clear:both;
-	display:block;
-	position:fixed;
-	top:45%;
+	color: #333;
+	transition: all ease 0.2s;
+	clear: both;
+	display: block;
+	position: fixed;
+	top: 45%;
 	z-index: 100;
-padding: 1.2em;
-border: solid #ccc thin;
-overflow: hidden;
-white-space: nowrap;
-opacity:0.5;
+	padding: 1.2em;
+	border: solid #ccc thin;
+	overflow: hidden;
+	white-space: nowrap;
+	opacity: 0.5;
 }
-
-#portfolio-nav a:hover{
-	opacity:1;
+#portfolio-nav a:hover {
+	opacity: 1;
 	max-width: 100%;
 	box-shadow: #ccc 0 0 3px;
-	background:#fff;
-	opacity:1;
+	background: #fff;
+	opacity: 1;
 }
-
 #portfolio-nav a h5 {
-	display:none;
+	display: none;
 	margin: 0 1em;
-
 }
-
 #portfolio-nav a:hover h5 {
-	display:inline-block;
+	display: inline-block;
 	transition-delay: 0.4s;
 }
 .previous {
-	float:left;
-	left:-1px;
-
+	float: left;
+	left: -1px;
 }
-
 .next {
-	float:right;
-	right:-1px;
+	float: right;
+	right: -1px;
 }
-
-
-
-#hello{
-	margin-bottom:1em;
+#hello {
+	margin-bottom: 1em;
 }
-
-
 .project {
-	background:#fff;
+	background: #fff;
 	border-bottom: solid 0.1em #ff5050;
 	padding: 1em 1em 0.8em 1em;
-	border-radius:2px;
+	border-radius: 2px;
 	box-shadow: #ccc 0 0 3px;
-	transition:all ease 0.1s;
-	}
-
+	transition: all ease 0.1s;
+}
 .project:hover {
-	margin-top:-5px;
-	transition:all ease 0.1s;
+	margin-top: -5px;
+	transition: all ease 0.1s;
 	box-shadow: #999 0 5px 5px;
 	border-bottom: solid #ff5050 5px;
-
 }
-
 #portfolio .project:hover .inline-list, .project:hover .summary {
-	opacity:1;
-	transition:all ease 0.5s;
+	opacity: 1;
+	transition: all ease 0.5s;
 }
-
 .project img {
-	margin:-1em -1em 0em -1em;
+	margin: -1em -1em 0em -1em;
 	min-width: calc(100% + 2em);
-	}
-
+}
 .title, h3 {
 	font-weight: 700;
-	font-family:"Roboto Slab", serif;
-	margin-bottom:0;
+	font-family: "Roboto Slab", serif;
+	margin-bottom: 0;
 }
-
 .summary {
-	margin:0;
-	padding:0;
-	opacity:0;
+	margin: 0;
+	padding: 0;
+	opacity: 0;
 }
-
-
 #portfolio .inline-list {
 	margin: 0.1em auto auto -0.5em;
-	opacity:0;
+	opacity: 0;
 }
-
 #portfolio .inline-list li {
 	font-family: "Roboto Condensed", sans-serif;
-	font-size:0.7rem;
+	font-size: 0.7rem;
 	text-transform: uppercase;
-	color:#666;
+	color: #666;
 	margin: 0.5rem 0.5rem 0 0.5rem;
-	
 }
-
-/*#about ul {
-	color:#555;
-	font-size:1.1rem;
-	transition: all ease-in-out 0.2s;
-	opacity: 0.5;
-}
-
-#about ul:hover {
-	opacity:1;
-}
-
-#rebl {
-	background: url("../img/rebl/hero.jpg") no-repeat fixed center center / contain;
-    min-height: 500px;
-	
-}*/
-
 #footer {
-	margin-top:2em;
+	margin-top: 2em;
 	background: #ccc;
 	padding: 0.1em 0 1.5em 0;
-	border-top:#999 solid thin;
+	border-top: #999 solid thin;
 }
-
 #footer i.fa-circle {
 	color: #ccc
 }
 #footer i.fa-inverse {
-	color:#333}
-#footer a i {transition: ease-in-out  0.1s;top:0;}
-#footer a:hover i {
-		top:-8pt;
+	color: #333
 }
-#footer a:hover i.fa-inverse {color:#ccc;}
+#footer a i {
+	transition: ease-in-out 0.1s;
+	top: 0;
+}
+#footer a:hover i {
+	top: -8pt;
+}
+#footer a:hover i.fa-inverse {
+	color: #ccc;
+}
 #footer a:hover i.fa-circle {
 	color: #333;
 }
-
 #footer a:hover i.fa-inverse::after {
-	color:#333;
-	font-size:8pt;
+	color: #333;
+	font-size: 8pt;
 	text-transform: uppercase;
-	display:block;
+	display: block;
 	font-family: 'Roboto Condensed', sans-serif;
-	margin-top:-1em;
-	opacity:1;
-	}
-
-
+	margin-top: -1em;
+	opacity: 1;
+}
+#social {
+	margin: 1.5em auto;
+	box-shadow: #ccc 0px 0px 5px;
+	margin-bottom: -2em;
+	padding-bottom: 1em;
+}
+a:hover i.fa-envelope.fa-inverse::after {
+	content: "Email Me";
+}
+a:hover i.fa-twitter.fa-inverse::after {
+	content: "Twitter"
+}
+a:hover i.fa-linkedin.fa-inverse::after {
+	content: "LinkedIn"
+}
+a:hover i.fa-behance.fa-inverse::after {
+	content: "Portfolio"
+}
+a:hover i.fa-file-pdf-o.fa-inverse::after {
+	content: "Resume PDF"
+}
+.copyright {
+	margin-top: 3em;
+	color:#666;
+	font-size:small;
+}
 h1 {
 	padding: 0;
 	font-family: 'Slabo 27px', serif;
@@ -317,212 +236,180 @@ h1 {
 	text-transform: uppercase;
 	letter-spacing: 0.5em;
 	transition: ease-in-out 0.2s;
-	font-size:3em;
+	font-size: 3em;
 }
-
 h1 a {
 	color: #333;
 }
-
 h1 #q {
-	color:#ff5050;
+	color: #ff5050;
 }
-
 h1 a:hover {
 	color: #333;
 }
-
 h1 a:hover #q {
 	color: #ff5050;
 }
-
 h2 {
 	text-transform: capitalize;
 	color: #ff5050;
 	font-family: 'Roboto Slab', serif;
-	margin:0.8em 0 0.7em 0;
+	margin: 0.8em 0 0.7em 0;
 }
-
 h5 {
 	font-family: "Roboto Condensed", sans-serif;
-	font-size:0.9rem;
+	font-size: 0.9rem;
 	text-transform: uppercase;
-	color:#666;
-	display:inline-block;
+	color: #666;
+	display: inline-block;
 }
-
 p {
-	font-size:1.1rem;
-	color:#555;
+	font-size: 1.1rem;
+	color: #555;
 }
-
 p a, li a {
-	color:#555;
-	border-bottom:#ff5050 solid 0.1em;
+	color: #555;
+	border-bottom: #ff5050 solid 0.1em;
 	transition: all linear 0.1s;
 }
-
 p a:hover, li a:hover {
-	color:#333;
-	border-bottom:#ff5050 solid 0.3em;
+	color: #333;
+	border-bottom: #ff5050 solid 0.3em;
 	transition: all linear 0.1s;
 }
-
-.toggle {
-	display: block;
-	color: #777;
-	font-family: 'Roboto Condensed', sans-serif;
-	font-size: smaller;
-	text-transform: uppercase;
-	padding: 0.5em 1em;
-	font-weight: 700;
-	position: absolute;
-	right: 1em;
-	background: #fff;
-	border-radius: 10px 10px 0 0;
-	-webkit-animation: slideUp 0.5s 1s 1 ease-in backwards;
-	animation: slideUp 0.5s 1s 1 ease-in backwards;
-}
-
-
-
 .hidden {
 	display: none
 }
 
-@media only screen and (min-width: 64.063em){
-	img.hero {margin-top:3em}
+/*large-only*/
+@media only screen and (min-width: 64.063em) {
+img.hero {
+}
 }
 
-@media only screen and (max-width: 64.063em){
-	
+/*medium*/
+@media only screen and (max-width: 64.063em) {
 #portfolio-nav a {
-color:#333;
-
-transition: all ease 0.2s;
-
-clear:both;
-	display:block;
-	position:fixed;
-	top:0;
+	color: #333;
+	transition: all ease 0.2s;
+	clear: both;
+	display: block;
+	position: fixed;
+	top: 0;
 	z-index: 100;
-padding: 1.2em;
-border: none;
-overflow: hidden;
-white-space: nowrap;
-opacity:1;
+	padding: 1.2em;
+	border: none;
+	overflow: hidden;
+	white-space: nowrap;
+	opacity: 1;
 }
-
-#portfolio-nav a:hover{
-	opacity:1;
+#portfolio-nav a:hover {
+	opacity: 1;
 	max-width: 100%;
 	box-shadow: none;
-	background:none;
-	opacity:1;
+	background: none;
+	opacity: 1;
 }
-
 #portfolio-nav a h5 {
-	display:inline-block;
+	display: inline-block;
 	margin: 0 1em;
-
 }
-
 #portfolio-nav a:hover h5 {
-	display:inline-block;
+	display: inline-block;
 	transition-delay: 0.4s;
 }
 .previous {
-	float:left;
-	left:20%;
-
+	float: left;
+	left: 20%;
 }
-
 .next {
-	float:right;
-	right:20%;
+	float: right;
+	right: 20%;
+}
 }
 
-}
-
+/*medium-up*/
 @media only screen and (min-width: 40.063em) {
-#tagline i {display:none}
+#tagline i {
+	display: none
+}
 }
 
+/*small-only*/
 @media only screen and (max-width: 40.063em) {
-	body {
-		overflow-x: hidden;
-	}
-.summary, #portfolio .inline-list {opacity:1}
+body {
+	overflow-x: hidden;
+}
+.summary, #portfolio .inline-list {
+	opacity: 1
+}
 #header.fixed {
-	margin:0em;
+	margin: 0em;
 }
 #header {
 	padding: 1em 0em;
 }
 #header.fixed {
-	height:3em;
+	height: 3em;
 }
 #logo .aqt {
-	display:none;
+	display: none;
 }
 #logo {
-	font-size:2.5rem;
-	letter-spacing:0;
+	font-size: 2.5rem;
+	letter-spacing: 0;
 }
 #header.fixed #tagline {
-	top:0.8em;
+	top: 0.8em;
 }
-#header.fixed  #tagline a {
+#header.fixed #tagline a {
 	margin: 0 auto;
 }
 #header.fixed h1 {
-	display:none;
+	display: none;
 }
-#tagline i {display:inline-block; font-size:larger}
-#tagline .link {display: none}
+#tagline i {
+	display: inline-block;
+	font-size: larger
+}
+#tagline .link {
+	display: none
+}
 #portfolio-nav a {
-color:#333;
-
-transition: all ease 0.2s;
-
-clear:both;
-	display:block;
-	position:fixed;
-	top:-0.5em;
+	color: #333;
+	transition: all ease 0.2s;
+	clear: both;
+	display: block;
+	position: fixed;
+	top: -0.5em;
 	z-index: 100;
-padding: 1.2em;
-border: none;
-overflow: hidden;
-white-space: nowrap;
-opacity:1;
+	padding: 1.2em;
+	border: none;
+	overflow: hidden;
+	white-space: nowrap;
+	opacity: 1;
 }
-
-#portfolio-nav a:hover{
-	opacity:1;
+#portfolio-nav a:hover {
+	opacity: 1;
 	max-width: 100%;
 	box-shadow: none;
-	background:none;
-	opacity:1;
+	background: none;
+	opacity: 1;
 }
-
 #portfolio-nav a h5 {
-	display:none;
+	display: none;
 	margin: 0 1em;
-
 }
-
 #portfolio-nav a:hover h5 {
-	display:none;
+	display: none;
 	transition-delay: 0.4s;
 }
 .previous {
-	float:left;
-	left:20%;
-
+	float: left;
+	left: 20%;
 }
-
 .next {
-	float:right;
-	right:20%;
+	float: right;
+	right: 20%;
 }
 }
