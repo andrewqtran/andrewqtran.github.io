@@ -92,7 +92,7 @@ img.hero  {
 	border: solid #999 thin;
 	overflow: hidden;
 	white-space: nowrap;
-	opacity: 0.8;
+	opacity: 0.5;
 }
 #portfolio-nav a:hover {
 	opacity: 1;
