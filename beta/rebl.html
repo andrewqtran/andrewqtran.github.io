@@ -11,6 +11,7 @@
 <link href='http://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
 <script src="js/vendor/modernizr.js"></script>
 <script src="js/vendor/jquery.js"></script>
+<style>h3 {color: #31b2d2}</style>
 </head>
 <body>
 <div id="portfolio-nav"> <a href="#" class="previous"><i class="fa fa-chevron-left fa-large"></i>
@@ -19,28 +20,85 @@
   <h5>Next Project</h5>
   <i class="fa fa-chevron-right fa-large"></i></a> </div>
 <div class="contain-to-grid fixed" id="header">
-  <nav data-topbar role="navigation"> <a href="index.html">
-    <h1 id="logo">A<span class="aqt">ndrew</span><span id="q">Q</span>T<span class="aqt">ran</span></h1>
-    </a>
-    <div id="tagline"> <a href="index.html"><i class="fa fa-th-large"></i><span class="link">Portfolio</span></a> </div>
+  <nav data-topbar role="navigation">
+    <h1 id="logo"><a href="index.html">A<span class="aqt">ndrew</span><span id="q">Q</span>T<span class="aqt">ran</span> </a></h1>
+    <div id="nav"> <a href="index.html"><i class="fa fa-th-large"></i><span class="link">Portfolio</span></a> </div>
   </nav>
   <div class="contain-to-grid project-title text-center show-for-large-up">
     <h3>REBL - Revenue Expense Balance Ledger</h3>
   </div>
 </div>
-<div id="rebl" class="row white-background"> <img class="hero" src="img/rebl/hero.jpg" /><br><br>
-  <div class="small-12 medium-10 medium-centered columns">
-    <h3>Summary</h3>
-    <p>REBL is a financial dashboard web application, designed to generate dynamic reports for a wide range of users and groups. The application will be implemented within the Institute of Neuroimaging and Informatics, and licensed to other departments within the School of Medicine in a later phase.</p>
-  </div>
-  <div class="small-12 medium-10 medium-centered columns">
-    <h3>The problem</h3>
-    <p>Principal investigators, project managers, and fund managers require a unified financial system that can generate customized reports. 
-      For example, principal investigators might be interested in planning personnel allocation or reviewing account portfolio,
-      while fund managers might need to be alerted with budget errors. Traditional spreadsheet documents can be heavy, static, and difficult to use. </p>
-    <p>Working with a project manager and a developer, I was tasked with designing the dashboard interface and data visualization. </p>
-  </div>
+<article>
+<div id="rebl" class="row white-background">
+<img class="hero" src="img/rebl/hero.jpg" /><br>
+<br>
+<div class="small-12 large-10 large-centered columns">
+<h3>Summary</h3>
+<p>REBL is a financial dashboard web application, designed to generate dynamic reports for a wide range of users and groups. The application will be implemented both in and outside of the Institute of Neuroimaging and Informatics.</p>
+<br>
+<h3>The problem</h3>
+<p>Principal investigators, project managers, and fund managers require a unified financial system that can generate customized reports. 
+  Traditional spreadsheet documents can be heavy, static, and difficult to use. </p>
+<p>Working with a project manager and a developer, I was tasked with designing the dashboard interface and data visualization. </p>
+<br>
+<h3>User research</h3>
+<p>I met with several stakeholders and was able to identify requirements unique to each user type. Examples:</p>
+<div class="row">
+<div class="small-12 medium-6 columns">
+<h4>Principal investigators</h4>
+<ul>
+<li>View budget, cost, and balance for
+  <ul>
+    <li>Complete portfolio</li>
+    <li>Individual accounts</li>
+  </ul>
+</li>
+<li>Filter data by time
+  <ul>
+    <li>year-to-date</li>
+    <li>all years</li>
+    <li>fiscal year</li>
+    <li>custom date range</li>
+  </ul>
+<li>Review and allocate accounts for personnel payroll</li>
+<li>View and edit user profile and settings</li>
 </div>
+<div class="small-12 medium-6 columns end">
+  <h4>Administrators</h4>
+  <ul>
+    <li>Enter data in back-end</li>
+    <li>Receive alerts for errors</li>
+    <li>Budget planning</li>
+    <li>Expense reconcile</li>
+    <li>Generate detailed reports for auditing</li>
+    <li>Create project, account, user</li>
+  </ul>
+</div>
+</div>
+<br>
+<h3>Wireframes</h3>
+<p>Not only different essential components had to be present, they also had to be in a clean and functional layout. I started by blocking out labeled areas to represent each important component (left screen). This low-fidelity wireframe allowed me to move things around rapidly for pure layout purpose. I then added pertinent content to reach a more detailed wireframe (right screen) for dicussion with stakeholders.</p>
+</div>
+<img class="fade" src="img/rebl/wireframe1.png">
+<div class="small-12 large-10 large-centered columns"><br>
+  <p>Preliminary meetings led to additional iterations for different usage patterns, such as choosing time or viewing personnel data. When I created the personnel wireframe, I realized I could (and should) utilize the same layout I used for the portfolio view, specifically for the timeline and account list. This made for a smoother experience switching between different views (portfolio vs. personnel).</p>
+  <h4>Personnel View</h4>
+  <img class="fade" src="img/rebl/wireframe2.png" alt=""/>
+  <h4>Timeline patterns and data visualization concepts</h4>
+  <img class="fade" src="img/rebl/wireframe3.png" alt=""/> 
+  <h3>Style tile</h3>
+  <p>Aiming for a simple and clean UI, I decided to limit the color pallete to just 1 primary accent color, and 2 secondary colors to denote positive and negative information. Texture was applied as necesssary to provide accessibility for color-blindness. All other content would be in different levels of grey.<img src="img/rebl/styletile.png"></p>
+  <br>
+<h3>Color mockups and iterations</h3>
+  <p>During this stage, several iterative changes occured as I met with users. New content was provided (and required), so the design changed adaptively. For example, the personnel dashboard evolved to be more complex over time, as users essentially asked for it to look like "an Excel table". To keep this simple, I faded out repeated elements ($ sign, same number each row, 0 values).
+  </div><img src="img/rebl/colormockups.png" alt=""/>
+  <div class="small-12 large-10 large-centered columns"><br>
+  <p>Version 4 above got closer to what we needed. However, it looked busy. A closer analysis showed that there were 8 distinct blocks (in red, bottom), and there was not enough contrast overall. This led to version 5, where the vertical blocks were reduced to just 3, and contrast was subtly increased:</p> <img class="border" src="img/rebl/colormockup5.png" alt=""/> 
+  <p><br> Some more mockup screens for the portfolio view:</p><img class="border" src="img/rebl/portfolio_chart_customdate.png" alt=""/><br><br><img src="img/rebl/portfolio_table_ncire_more.png" class="border" alt=""/>
+  <p><br></p><h3>Interactive prototype</h3>
+<p>  I created an interactive prototype with InvisionApp to present at a faculty meeting. The demo received many positive stakeholders feedback that would help solidify the design and facilitate backend development.</p><div class="text-center">  <a href="http://invis.io/4H37448YF" target="_blank" class="button round">Launch Interactive Prototype</a></div> </div>
+
+</div></article>
 <div class="contain-to-grid text-center" id="footer">
   <div class="row" id="social">
     <ul class="small-block-grid-4 medium-block-grid-5">
