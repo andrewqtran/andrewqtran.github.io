@@ -296,6 +296,8 @@ img.hero {
 .fade:hover {
 	opacity:1;
 }
+}
+
 /*medium*/
 @media only screen and (max-width: 64.063em) {
 #portfolio-nav a {
