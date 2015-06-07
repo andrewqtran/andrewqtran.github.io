@@ -30,22 +30,26 @@
 </div>
 <article>
 <div id="rebl" class="row white-background">
-<img class="hero" src="img/rebl/hero.jpg" /><br>
+<img class="hero" src="img/rebl/hero.jpg"/><br>
 <br>
 <div class="small-12 large-10 large-centered columns">
 <h3>Summary</h3>
-<p>REBL is a financial dashboard web application, designed to generate dynamic reports for a wide range of users and groups. The application will be implemented both in and outside of the Institute of Neuroimaging and Informatics. <p>Working with a project manager and a developer, I was tasked with designing the user experience, dashboard interface, and data visualization. </p>
-</p>
+<div class="row">
+<div class="small-12 medium-6 columns">
+<p>REBL is a financial dashboard web application, designed to generate dynamic and visual reports for a wide range of users and groups. The application will be implemented both in and outside of the Institute of Neuroimaging and Informatics.
+  <p>Working with a project manager and a developer, as a sole designer, I was tasked with designing the user experience, dashboard interface, and data visualization. </p>
+</div>
+<div class="small-12 medium-6 columns text-center end"><img class="border" src="img/rebl/timeline.gif"><p><a href="#bottom">Jump to the interactive prototype</a></p></div></div>
 <br>
 <h3>The problem</h3>
 <p>Principal investigators, project managers, and fund managers require a unified financial system that can generate customized reports. 
-  Traditional spreadsheet documents can be heavy, static, and difficult to use. </p>
+  Traditional spreadsheet documents can be cubersome and static. The busy user wants the ability to both view an "at-a-glance" summary and access detailed numerical data. Administrative users also need to be alerted for accounting errors as they occur.</p>
 <br>
 <h3>User research</h3>
 <p>I met with several stakeholders and was able to identify requirements unique to each user type. Examples:</p>
 <div class="row">
 <div class="small-12 medium-6 columns">
-<h4>Principal investigators</h4>
+<h4><img src="img/rebl/user-science.svg" width="35px" style="float:left">&nbsp;Principal investigators</h4>
 <ul>
 <li>View budget, cost, and balance for
   <ul>
@@ -64,7 +68,7 @@
 <li>View and edit user profile and settings</li>
 </div>
 <div class="small-12 medium-6 columns end">
-  <h4>Administrators</h4>
+  <h4><img src="img/rebl/user-tie.svg" width="35px" style="float:left">&nbsp;Administrators</h4>
   <ul>
     <li>Enter data in back-end</li>
     <li>Receive alerts for errors</li>
@@ -77,26 +81,30 @@
 </div>
 <br>
 <h3>Wireframes</h3>
-<p>Not only did different essential components have to be present, they also had to be in a clean and functional layout. I started by blocking out labeled areas to represent each important component (left screen). This low-fidelity wireframe allowed me to move things around rapidly for pure layout purpose. I then added pertinent content to reach a more detailed wireframe (right screen) for dicussion with stakeholders.</p>
+<div class="row"><div class="small-12 medium-9 columns">
+<p>Not only did different essential components have to be present, they also had to be in a clean and functional layout. I started by blocking out labeled areas to represent each important component. 
+This low-fidelity wireframe allowed me to move things around rapidly for pure layout purpose.  </p> <p>I then added pertinent content to reach a more detailed wireframe for dicussion with stakeholders.</p>
+  </div><div class="small-12 medium-3 columns"><img class="fade" src="img/rebl/wireframe0.png">
 
-<img class="fade" src="img/rebl/wireframe1.png">
-
-  <p><br>Preliminary meetings led to additional iterations for different usage patterns, such as choosing time or viewing personnel data. When I created the personnel wireframe, I realized I could (and should) utilize the same layout I used for the portfolio view, specifically for the timeline and account list. This made for a smoother experience switching between different views (portfolio vs. personnel).</p>
+</div></div>
+  <h4>Portfolio Dashboard View</h4>
+<img class="fade" src="img/rebl/wireframe1.png" alt=""/>
+  <p><br>Preliminary meetings led to additional iterations for different usage patterns, such as choosing time or viewing personnel data. When I created the personnel wireframe, 
+    I realized I could (and should) utilize the same layout I used for the portfolio view, specifically for the timeline and account list. This made for a smoother experience switching between different views (portfolio vs. personnel).</p>
   <h4>Personnel Dashboard View</h4>
   <img class="fade" src="img/rebl/wireframe2.png" alt=""/><p><br></p>
-  <!--<h4>Timeline patterns and data visualization concepts</h4>
-  <img class="fade" src="img/rebl/wireframe3.png" alt=""/> 
+  
   <h3>Style tile</h3>
-  <p>Aiming for a simple and clean UI, I decided to limit the color pallete to just 1 primary accent color, and 2 secondary colors to denote positive and negative information. Texture was applied as necesssary to provide accessibility for color-blindness. All other content would be in different levels of grey.<img src="img/rebl/styletile.png"></p>-->
+  <p>Aiming for a simple and clean UI, I decided to limit the color pallete to just 1 primary accent color, and 2 secondary colors to denote positive and negative information. Texture was applied as necesssary to provide accessibility for color-blindness. All other content would be in different levels of grey.<img src="img/rebl/styletile.png"></p>
   
 <h3>Color mockups and iterations</h3>
   <p>During this stage, several iterative changes occured as I met with users. New content was provided (and required), so the design changed adaptively. For example, the personnel dashboard evolved to be more complex over time, as users essentially asked for it to look like "an Excel table". To keep this simple, I faded out repeated elements ($ sign, same number each row, 0 values).
   </div><img src="img/rebl/colormockups.png" alt=""/>
   <div class="small-12 large-10 large-centered columns"><br>
   <p>Version 4 above got closer to what we needed. However, it looked busy. A closer analysis showed that there were 7 distinct blocks (in red, bottom), and there was not enough contrast overall. This led to version 5, where the vertical blocks were reduced to just 3, and contrast was subtly increased:</p> <h4>Personnel Dashboard View</h4><img class="border" src="img/rebl/colormockup5.png" alt=""/> 
-  <h4><br>Portfolio Dashboard - Chart View + Custom Date</h4><img class="border" src="img/rebl/portfolio_chart_customdate.png" alt=""/><h4><br>Portfolio Dashboard - Table View + Selected Accounts</h4><img src="img/rebl/portfolio_table_ncire_more.png" class="border" alt=""/>
+  <h4><br>Portfolio: Chart View + Custom Date</h4><img class="border" src="img/rebl/portfolio_chart_customdate.png" alt=""/><h4><br>Portfolio: Table View + Selected Accounts</h4><img src="img/rebl/portfolio_table_ncire_more.png" class="border" alt=""/>
   <p><br></p><h3>Interactive prototype</h3>
-<p>  I created an interactive prototype with InvisionApp to test for usability, and to present at a faculty meeting. The demo received many positive stakeholders feedback that would help solidify the design and facilitate backend development.</p><div class="text-center">  <a href="http://invis.io/4H37448YF" target="_blank" class="button round">Launch Interactive Prototype</a></div> </div>
+<p>  I created an interactive prototype with InvisionApp to test for usability, and to present at a faculty meeting. The demo received many positive stakeholders feedback that would help solidify the design and facilitate backend development.</p><div class="text-center">  <a href="http://invis.io/4H37448YF" target="_blank" class="button round" id="bottom">Launch Interactive Prototype</a></div> </div>
 
 </div></article>
 <div class="contain-to-grid text-center" id="footer">
@@ -129,9 +137,12 @@ document.links[i].href=document.links[i].href.split(maildivider)[0]+"@"+document
 }
 
  </script> 
+ <script src="js/vendor/jquery.js"></script>
 <script src="js/foundation.min.js"></script> 
+  <script src="js/vendor/jquery.smooth-scroll.min.js"></script>
 <script>
       $(document).foundation();
+      $('a').smoothScroll();
     </script>
 </body>
 </html>
