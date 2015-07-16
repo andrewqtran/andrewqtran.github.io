@@ -13,10 +13,11 @@ body {
 }
 #header {
 	background: #ffffff;
+	background: rgba(255,255,255,0.98);
 	padding: 2em 0em;
 	color: #666;
-	/*transition: ease-in-out 0.2s;*/
-	border-bottom: solid thin #ccc;
+	/*transition: ease-in-out 0.2s;
+	border-bottom: solid thin #ccc;*/
 	text-align: center;
 }
 #header.fixed {
@@ -80,7 +81,7 @@ body {
 img.hero  {
 	border-bottom: #E7E7E7 solid thin
 }
-#portfolio-nav a {
+#portfolio-nav a{
 	color: #333;
 	transition: all ease 0.2s;
 	clear: both;
@@ -120,7 +121,7 @@ img.hero  {
 #hello {
 	margin-bottom: 1em;
 }
-.project {
+.project{
 	background: #fff;
 	border-bottom: solid 0.1em #ff5050;
 	padding: 1em 1em 0.8em 1em;
