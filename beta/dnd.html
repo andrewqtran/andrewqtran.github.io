@@ -36,41 +36,47 @@
 <h3>Summary</h3>
 
 <p>D&amp;D is a mobile application with some gamification elements, designed to help diabetic patients with comorbid depression manage their conditions better. The project was a winner of the Validic/iHealth track at Health 2.0 SF Code-a-thon 2014.</p>
-<p>I was the design lead for the team. My responsibilities included user research and personas, wireframing, UX design, and final UI mockups. Another designer worked on choosing a color palette and some iconography. Other team members worked on market research, API implementation, back-end programming, and product pitching. (This was my first hackathon and I documented the learning experience in a <a href="https://medium.com/@aqt/my-experience-as-a-first-time-hackathon-designer-911035ec2aa9" title="My experience as a first-time hackathon designer" target="_blank">Medium blog post</a>.)
-</p>
-<p><img src="img/dnd/team.jpg" alt=""/><br>
-</p>
-<h3><br>
-The problem</h3>
-<p>Depression frequently occurs with diabetes, yet it usually remains unrecognized and untreated in patients with both these conditions. It is important to detect early signs of comorbid depression, so that caregivers and care providers can provide treatments early. Patients also need to stay motivated and compliant.</p>
+<div class="row">
+<div class="small-12 medium-6 columns"><p>
+I was the design lead for the team. My responsibilities included user research and personas, wireframing, UX design, and final UI mockups. Another designer worked on choosing a color palette and some iconography. Other team members worked on market research, API implementation, back-end programming, and product pitching.
+</p><br></div><div class="small-12 medium-6 columns text-center end">
+<img src="img/dnd/team.jpg" alt=""/>
+</div></div>
+<h3>The problem</h3>
+<p>Depression frequently occurs with diabetes, yet it usually remains unrecognized and untreated in patients with both these conditions. It is important to detect early signs of comorbid depression, so that caregivers and care providers can provide treatments early. Patients also need to stay motivated and compliant.
+</p><br>
 <h3>General concept</h3>
 <p>Our app rewards XP points for each health data point recorded, whether manually by the user via task (or quest) completion, or by automatic input from wearables. Besides data tracking, D&D also motivates the user to improve his mood as needed through certain social tasks. </p>
-<p>D&D can pull in medication and doctor’s appointment data (via Allscript API), vitals such as blood glucose or weight (via Validic API and iHealth devices), or, when the threshold for depression is triggered, offer to look for a doctor with appropriate rankings (via BetterDoctor API).</p>
+<p>D&D can pull in medication and doctor’s appointment data (via Allscript API), vitals such as blood glucose or weight (via Validic API and iHealth devices), or, when the threshold for depression is triggered, offer to look for a doctor with appropriate rankings (via BetterDoctor API).</p><br>
+<h3>User Research &amp; Personas</h3>
+<p>We started with identifying our consumer users. From our research, we found that low income minorities made up the most of diabetic patients who also had depression. To stay focused, we specified income range, age range, and ethnicity to create 3 user personas.</p><p><img src="img/dnd/personas.png" alt=""/></p>
+<p>It was very helpful to put a face on each persona, along with detailed stories pertaining to their medical, social conditions and familiarity with technology. By the end of the day, we all knew exactly who “Marqus” was, and he would always be there as we designed our user experience.</p><br>
 <h3>Wireframes</h3>
-<div class="row"><div class="small-12 medium-9 columns">
-<p>Not only did different essential components have to be present, they also had to be in a clean and functional layout. I started by blocking out labeled areas to represent each important component. 
-This low-fidelity wireframe allowed me to move things around rapidly for pure layout purpose.  </p> <p>I then added pertinent content to reach a more detailed wireframe for discussion with stakeholders.</p>
-  </div><div class="small-12 medium-3 columns"><img class="fade" src="img/rebl/wireframe0.png">
+<div class="row"><div class="small-12 medium-7 columns">
+<p>For the first 12 hours, using moqups.com, I was able to generate many wireframe prototypes rapidly.
+This low-fidelity wireframe allowed me to move things around rapidly for pure layout purpose. </p><p>After that, I went through several iterations, presented to the team, and revised some more. Due to time constraint, we had to put a stop at one point to move onto the next step.</p>
+  </div><div class="small-12 medium-5 columns"><img src="img/dnd/wireframes.png" />
 
 </div></div>
-  <h4>Portfolio Dashboard View</h4>
-<img class="fade" src="img/rebl/wireframe1.png" alt=""/>
-  <p><br>Preliminary meetings led to additional iterations for different usage patterns, such as choosing time or viewing personnel data. When I created the personnel wireframe, 
-    I realized I could (and should) utilize the same layout I used for the portfolio view, specifically for the timeline and account list. This made for a smoother experience switching between different views (portfolio vs. personnel).</p>
-  <h4>Personnel Dashboard View</h4>
-  <img class="fade" src="img/rebl/wireframe2.png" alt=""/><p><br></p>
-  
-  <h3>Style tile</h3>
-  <p>Aiming for a simple and clean UI, I decided to limit the color palette to just 1 primary accent color, and 2 secondary colors to denote positive and negative information. Texture was applied as necessary to provide accessibility for color-blindness. All other content would be in different levels of gray.<img src="img/rebl/styletile.png"></p>
-  
+
 <h3>Color mockups and iterations</h3>
-  <p>During this stage, several iterative changes occurred as I met with users. New content was provided (and required), so the design changed adaptively. For example, the personnel dashboard evolved to be more complex over time, as users essentially asked for it to look like "an Excel table". To keep this simple, I faded out repeated elements ($ sign, same number each row, 0 values).
-  </div><img src="img/rebl/colormockups.png" alt=""/>
-  <div class="small-12 large-10 large-centered columns"><br>
-  <p>Version 4 above got closer to what we needed. However, it looked busy. A closer analysis showed that there were 7 distinct blocks (in red, bottom), and there was not enough contrast overall. This led to version 5, where the vertical blocks were reduced to just 3, and contrast was subtly increased:</p> <h4>Personnel Dashboard View</h4><img class="border" src="img/rebl/colormockup5.png" alt=""/> 
-  <h4><br>Portfolio: Chart View + Custom Date</h4><img class="border" src="img/rebl/portfolio_chart_customdate.png" alt=""/><h4><br>Portfolio: Table View + Selected Accounts</h4><img src="img/rebl/portfolio_table_ncire_more.png" class="border" alt=""/>
-  <p><br></p><h3>Interactive prototype</h3>
-<p>  I created an interactive prototype with InvisionApp to test for usability, and to present at a faculty meeting. The demo received many positive stakeholders feedback that would help solidify the design and facilitate back-end development.</p><div class="text-center">  <a href="http://invis.io/4H37448YF" target="_blank" class="button round" id="bottom">Launch Interactive Prototype</a></div> </div>
+  <p>We didn’t have time to come up with a proper style guide, so we just went straight to recreating the wireframes in Adobe Illustrator to fine tune elements and utilize color swatches. We also replaced all <em>lorem ipsum</em> text and place holder images with meaningful content.</p><p><img src="img/dnd/colormockup0.png" alt=""/>
+</p>  
+<p>
+The bulk of the work was split among the team as the end drew near. I focused on the master Illustrator file, while others worked on creating art assets (logo, colored icons, avatars, etc.) or exporting completed art boards to hand off to our front-end developers and the pitch team. Thanks to this workflow, we were able to put together a presentation and squeezed in a small demo in time for our pitch session.</p><p><img src="img/dnd/colormockup1.png" alt=""/>
+</p>  
+<br>
+  <h3>User experience for the diabetic patient</h3>
+  <div class="row">
+
+<div class="small-12 medium-9 columns">
+  <p>Not a single element of the user interface was designed without careful consideration of the experience. Most notably was the decision to bring tasks to the home screen, instead of leaving them accessible on a task list residing on the 2nd or 3rd screen.
+</p><p>
+Diabetic patients need to take their blood sugar multiple times a day before each meal, so it was essential that this specific task appeared at app launch. Whenever possible, input screens for frequent tasks like this appeared immediately on top of the main screen to reduce navigational steps and maintain context for the older patients. Additionally, to minimize tedium, only 3 tasks would show up on the main screen at one time, chosen by importance and at random.</p></div><div class="hide-for-small medium-3 columns"><img src="img/dnd/homescreen.png" class="border" alt=""/></div></div><br>
+<h3>Results</h3>
+
+<p>We won several iHealth devices from Validic. The API makes it simple to extract data from various wearable devices on the market, including blood glucose readers to weight and sleep monitors. The latter can provide clues to potential mood problems.</p><hr>
+<p>This was my first hackathon. I elaborated on the experience some more in a <a href="https://medium.com/@aqt/my-experience-as-a-first-time-hackathon-designer-911035ec2aa9" title="My experience as a first-time hackathon designer" target="_blank">Medium post</a>.</p></div>
 
 </div></article>
 <div class="contain-to-grid text-center hide-for-small" id="footer">

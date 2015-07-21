@@ -90,10 +90,11 @@ img.hero  {
 	top: 45%;
 	z-index: 100;
 	padding: 1.2em;
-	border: solid #999 thin;
+	border: solid #ccc thin;
 	overflow: hidden;
 	white-space: nowrap;
 	opacity: 0.5;
+	background:#fff;
 }
 #portfolio-nav a:hover {
 	opacity: 1;
