@@ -351,6 +351,7 @@ img.hero {
 	overflow: hidden;
 	white-space: nowrap;
 	opacity: 1;
+	background:none;
 }
 #portfolio-nav a:hover {
 	opacity: 1;
@@ -437,6 +438,7 @@ body {
 	overflow: hidden;
 	white-space: nowrap;
 	opacity: 1;
+	background:none;
 }
 #portfolio-nav a:hover {
 	opacity: 1;
