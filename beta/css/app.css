@@ -340,7 +340,6 @@ img.hero {
 @media only screen and (max-width: 64.063em) {
 #portfolio-nav a {
 	color: #333;
-	transition: all ease 0.2s;
 	clear: both;
 	display: block;
 	position: fixed;
@@ -348,7 +347,6 @@ img.hero {
 	z-index: 100;
 	padding: 1.2em;
 	border: none;
-	overflow: hidden;
 	white-space: nowrap;
 	opacity: 1;
 	background:none;
@@ -366,7 +364,6 @@ img.hero {
 }
 #portfolio-nav a:hover h5 {
 	display: inline-block;
-	transition-delay: 0.4s;
 }
 .previous {
 	float: left;
