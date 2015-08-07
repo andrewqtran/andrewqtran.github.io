@@ -11,7 +11,11 @@
 <link href="http://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet" type="text/css">
 <script src="js/vendor/modernizr.js"></script>
 <script src="js/vendor/jquery.js"></script>
-<style>h3 {color: #9f73c0}</style>
+<style>
+h3 {
+	color: #9f73c0
+}
+</style>
 </head>
 <body>
 <div id="portfolio-nav"> <a href="bdb.html" class="previous"><i class="fa fa-chevron-left fa-large"></i>
@@ -29,53 +33,67 @@
   </div>
 </div>
 <article>
-<div id="bdb" class="row white-background">
-<img class="hero" src="img/ui/hero.jpg" alt=""/><br>
-<br>
-<div class="small-12 large-10 large-centered columns">
-<h3>Summary</h3>
-<p>At the Laboratory of Neuro Imaging (LONI), I had the opportunity to work on the UI of various research applications along programmers and researchers. These applications included the Global Alzheimer's Association Interactive Network (GAAIN) Data Visualizer and LONI Pipeline, both are used globally at numerous research organizations. Both of these projects had their own unique requirements and constrains. Below are some examples.</p>
-<br>
-<h3>GAAIN Data Visualizer</h3>
-<p>This global web application allows Alzheimer's researchers to visualize big data, provided by number of data partners. The primary objective was to offer a user-friendly process with a low learning curve. A secondary objective was to showcase the different data partners.</p>
-<div class="row">
-  <div class="small-12 medium-6 columns">
-    <p>Besides offering a cleaner interface using basic principles of design, the new design places more emphasis on usability, such as subtle guidance for work flow order, grouping of similar tasks and elements, and heading clarity.</p><p>Some requirements and constraints:
-    <ul>
-      <li>Alzheimer's Association purple color</li>
-      <li>All data partners need to be visible</li>
-      <li>All graphs need to be visible at the same time</li>
-    </ul>
-  </p>
-  
+  <div id="bdb" class="row white-background"> <img class="hero" src="img/ui/hero.jpg" alt=""/><br>
+    <br>
+    <div class="small-12 large-10 large-centered columns">
+      <h3>Summary</h3>
+      <p>At the Laboratory of Neuro Imaging (LONI), I had the opportunity to work on the UI of various research applications along programmers and researchers. These applications included the Global Alzheimer's Association Interactive Network (GAAIN) Data Visualizer and LONI Pipeline, both are used globally at numerous research organizations. Both of these projects had their own unique requirements and constrains. Below are some examples.</p>
+      <br>
+      <h3>GAAIN Data Visualizer</h3>
+      <p>This global web application allows Alzheimer's researchers to visualize big data, provided by number of data partners. The primary objective was to offer a user-friendly process with a low learning curve. A secondary objective was to showcase the different data partners.</p>
+      <div class="row">
+        <div class="small-12 medium-6 columns">
+          <p>Besides offering a cleaner interface using basic principles of design, the new design places more emphasis on usability, such as subtle guidance for work flow order, grouping of similar tasks and elements, and heading clarity.</p>
+          <p>Some requirements and constraints:
+          
+          <ul>
+            <li>Alzheimer's Association purple color</li>
+            <li>All data partners need to be visible</li>
+            <li>All graphs need to be visible at the same time</li>
+          </ul>
+          </p>
+        </div>
+        <div class="small-12 medium-6 columns end"><img src="img/ui/gaain0.jpg" alt="" class="border">
+          <p>The original UI before redesign has harsh contrast, making it difficult to read. More importantly, there is no apparent work flow for the user to follow.</p>
+        </div>
+      </div>
+      <h3>Preliminary design</h3>
+      <div class="row">
+        <div class="small-12 medium-6 columns">
+          <p>Version 1 retains the purple color and introduces new ways to make selection on the graph.</p>
+          <p><img src="img/ui/gaain1.png" alt="" class="border"></p>
+        </div>
+        <div class="small-12 medium-6 columns end">
+          <p>Version 2 lowers contrast, adds data partners, and starts dividing the screen into two main groups.</p>
+          <p><img src="img/ui/gaain2.png" alt="" class="border"></p>
+        </div>
+      </div>
+      <br>
+      <h3>Final design</h3>
+      <p>Version 3 further distinguishes the two different task groups. Hiding the attribute box allows a better work flow as the user starts from the top left of the screen.</p>
+      <p><img src="img/ui/gaain3.png" alt="" class="border"></p>
+      <br>
+      <p><img src="img/ui/gaain4.png" alt="" class="border"></p>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div class="small-12 large-10 large-centered columns">
+      <h3>LONI Pipeline</h3>
+      <p>This application is a distributed system for constructing, validating, executing and disseminating scientific work flows on grid computing architectures. </p>
+      <p>My objectives were to design a comprehensive UI for the web application to be used with smartGWT skinning. The UI needed to be modern, usable, and clean, as not to detract researchers from the work flow. At the same time, the design should fit well with current framework restraints.</p>
+      <p><img src="img/ui/pipeline0.png" alt="" class="border">Sign-in from the home screen: The sign-in card is minimal and unintrusive (as opposed to a pop-up window in the original design), yet offers the required functionality of the log-in process and account set up.</p>
+      <br>
+      <p><img src="img/ui/pipeline1.png" alt=""  class="border">The connections screen is an example of a modal window in the application.</p>
+      <br>
+      <p>Here are some sample style tiles that were not implemented.</p>
+      <p><img src="img/ui/pipeline2.png" alt="" class="border"></p>
+      <p><img src="img/ui/pipeline3.png" alt="" class="border"></p>
+      <p class="text-center"><img src="img/ui/pipeline4.png" alt=""></p>
+    </div>
   </div>
-  <div class="small-12 medium-6 columns end"><img src="img/ui/gaain0.jpg" alt="" class="border"><p>The original UI before redesign has harsh contrast, making it difficult to read. More importantly, there is no apparent work flow for the user to follow.</p></div>
-  
-</div>
-<h3>Preliminary design</h3>
-  <div class="row">
-    <div class="small-12 medium-6 columns"><p>Version 1 retains the purple color and introduces new ways to make selection on the graph.</p><p><img src="img/ui/gaain1.png" alt="" class="border"></p></div>
-    <div class="small-12 medium-6 columns end"><p>Version 2 lowers contrast, adds data partners, and starts dividing the screen into two main groups.</p><p><img src="img/ui/gaain2.png" alt="" class="border"></p></div>
-  </div><br>
-<h3>Final design</h3><p>Version 3 further distinguishes the two different task groups. Hiding the attribute box allows a better work flow as the user starts from the top left of the screen.</p>
-<p><img src="img/ui/gaain3.png" alt="" class="border"></p><br>
-<p><img src="img/ui/gaain4.png" alt="" class="border"></p>
-</div>
-<br>
-<hr>
-<br>
-<div class="small-12 large-10 large-centered columns">
-<h3>LONI Pipeline</h3>
-<p>This application is a distributed system for constructing, validating, executing and disseminating scientific work flows on grid computing architectures. </p>
-<p>My objectives were to design a comprehensive UI for the web application to be used with smartGWT skinning. The UI needed to be modern, usable, and clean, as not to detract researchers from the work flow. At the same time, the design should fit well with current framework restraints.</p>
-<p><img src="img/ui/pipeline0.png" alt="" class="border">Sign-in from the home screen: The sign-in card is minimal and unintrusive (as opposed to a pop-up window in the original design), yet offers the required functionality of the log-in process and account set up.</p><br>
-<p><img src="img/ui/pipeline1.png" alt=""  class="border">The connections screen is an example of a modal window in the application.</p><br>
-<p>Here are some sample style tiles that were not implemented.</p>
-<p><img src="img/ui/pipeline2.png" alt="" class="border"></p>
-<p><img src="img/ui/pipeline3.png" alt="" class="border"></p>
-<p class="text-center"><img src="img/ui/pipeline4.png" alt=""></p>
-</div> </div>
-</div></article>
+  </div>
+</article>
 <div class="contain-to-grid text-center hide-for-small" id="footer">
   <div class="row" id="social">
     <ul class="small-block-grid-4 medium-block-grid-5">
@@ -105,10 +123,16 @@ if (document.links[i].href.indexOf(maildivider)!=-1)
 document.links[i].href=document.links[i].href.split(maildivider)[0]+"@"+document.links[i].href.split(maildivider)[1]
 }
 
- </script> 
- <script src="js/vendor/jquery.js"></script>
-<script src="js/foundation.min.js"></script> 
-  <script src="js/vendor/jquery.smooth-scroll.min.js"></script>
+ </script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-26548637-2', 'auto');
+  ga('send', 'pageview');
+
+</script><script src="js/foundation.min.js"></script> <script src="js/vendor/jquery.smooth-scroll.min.js"></script> 
 <script>
       $(document).foundation();
       $('a').smoothScroll();

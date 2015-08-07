@@ -14,8 +14,8 @@
 </head>
 <body>
 <div class="contain-to-grid sticky" id="header">
-  <nav data-topbar role="navigation"> <h1 id="logo"><a href="index.html">A<span class="aqt">ndrew</span><span id="q">Q</span>T<span class="aqt">ran</span> </a></h1>
-   
+  <nav data-topbar role="navigation">
+    <h1 id="logo"><a href="index.html">A<span class="aqt">ndrew</span><span id="q">Q</span>T<span class="aqt">ran</span> </a></h1>
     <div class="text-center" id="nav"> <a href="index.html" class="active"><i class="fa fa-th-large"></i><span class="link">Portfolio</span></a> <a href="about.html"><i class="fa fa-user"></i><span class="link">About</span></a> <a href="contact.html"><i class="fa fa-paper-plane"></i><span class="link">Contact</span></a> </div>
   </nav>
 </div>
@@ -57,13 +57,12 @@
             <li>Research</li>
             <li>Storyboard</li>
             <li>3D Model & Animation</li>
-
           </ul>
           <h4 class="title">Beyond the Diffraction Barrier</h4>
           <p class="summary">A 3D scientific animation</p>
         </div>
         </a></li>
-        <li><a href="ui.html">
+      <li><a href="ui.html">
         <div class="project"> <img src="img/ui/thumb.jpg" />
           <ul class="inline-list">
             <li>UI/UX</li>
@@ -95,7 +94,6 @@
           <p class="summary">Brain, heart, and ... courage?</p>
         </div>
         </a></li>
-      
     </ul>
   </div>
 </div>
@@ -129,7 +127,16 @@ document.links[i].href=document.links[i].href.split(maildivider)[0]+"@"+document
 }
 
  </script> 
-<script src="js/foundation.min.js"></script> 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-26548637-2', 'auto');
+  ga('send', 'pageview');
+
+</script><script src="js/foundation.min.js"></script> 
 <script>
       $(document).foundation();
     </script>
