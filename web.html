@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="description" content="I translate complex problems in health care and science into effective visual solutions and human-centered products." />
-<meta name="keywords" content="product designer, design thinking, human-centered design, health care, heath tech, mhealth, scientific illustration, UI designer, graphic designer, 3D Animation, biological animation, biological art, biological artist, biological graphic, biological illustrator, medical illustration, medical artist, biomedical communication, biomedical visualization"/><title>Andrew Q. Tran - Product Designer + Biomedical Communicator</title>
+<meta name="keywords" content="product designer, design thinking, human-centered design, health care, heath tech, mhealth, scientific illustration, UI designer, graphic designer, 3D Animation, biological animation, biological art, biological artist, biological graphic, biological illustrator, medical illustration, medical artist, biomedical communication, biomedical visualization"/><title>Website Design & Development</title>
 <link rel="stylesheet" href="css/foundation.css" />
 <link href="css/font-awesome.min.css" rel="stylesheet">
 <link href="css/app.css" rel="stylesheet">
@@ -27,7 +27,15 @@ h3 {
 <div class="contain-to-grid fixed" id="header">
   <nav data-topbar role="navigation">
     <h1 id="logo"><a href="index.html">A<span class="aqt">ndrew</span><span id="q">Q</span>T<span class="aqt">ran</span> </a></h1>
-    <div id="nav"> <a href="index.html"><i class="fa fa-th-large"></i><span class="link">Portfolio</span></a> </div>
+    <div id="nav"> <a href="index.html"><i class="fa fa-th-large"></i></a><a class="drawer" href="#"><span class="link">Portfolio</span></a> </div>
+    <ul id="portfolio-menu" class="small-block-grid-6 hidden">
+      <li><a href="rebl.html" title="REBL - Revenue Expense Balance Ledger"><img src="img/rebl/thumb.jpg" alt=""/></a></li>
+      <li><a href="dnd.html" title="D&D - Diabetes & Depression"><img src="img/dnd/thumb.jpg" alt=""/></a></li>
+      <li><a href="bdb.html" title="Beyond the Diffraction Barrier"><img src="img/bdb/thumb.jpg" alt=""/></a></li>
+      <li><a href="ui.html" title="Visual User Interface Design"><img src="img/ui/thumb.jpg" alt=""/></a></li>
+      <li><a href="web.html" title="Web Design and Development" class="active"><img src="img/web/thumb.jpg" alt=""/></a></li>
+      <li><a href="illustrations.html" title="Medical and Scientific Illustrations"><img src="img/illustrations/thumb.jpg" alt=""/></a></li>
+    </ul>
   </nav>
   <div class="contain-to-grid project-title text-center show-for-large-up">
     <h3>Web Design & Development</h3>
@@ -40,7 +48,7 @@ h3 {
       <h3>Summary</h3>
       <p>My experience with HTML started in 2004, when I built websites for local collegiate student organizations (and won some awards, too). Since then, I've taken on independent projects and grown my skills progressively (HTML/CSS, jQuery, WordPress, PHP, etc.). Knowing how to code has allowed me to work on some interesting problems, including building <a href="http://andrewtran.bol.ucla.edu/100b/" target="_blank">a web-based psychology study</a> for my research course in college.</p> 
       <p>My freelance clients came from small biotech start-ups, e-commerce businesses, to academic institutions. At LONI, I worked with web developers and produced a number of web designs, ranging from an academic conference site to global research sites.</p>
-      <p>Here are some selected websites I've designed and coded over the years.</p>
+      <p>This website was coded in HTML/CSS using the <a href="http://foundation.zurb.com" target="_blank">Foundation framework</a>. Before this, I built a <a href="/legacy" target="_blank">one-page parallax website</a> in 2013. Here are some selected websites I've designed and coded over the years.</p>
       <br>
       <h3>ADNI - Alzheimer’s Disease Neuroimaging Initiative</h3>
       <p>I was tasked with redesigning the ADNI homepage for demonstration at a stakeholders meeting. The objective was to increase usability and introduce responsive mobile designs. I moved essential elements to the front, after interviewing with users and researchers, along with analytics review. Redundant and less important items were removed from the home page.</p>
@@ -127,6 +135,12 @@ document.links[i].href=document.links[i].href.split(maildivider)[0]+"@"+document
 <script>
       $(document).foundation();
       $('a').smoothScroll();
-    </script>
+	  $(".drawer").click(function() {
+		  $("#portfolio-menu").slideToggle(300);
+		  $("#portfolio-nav").fadeToggle("slow","linear");
+		  $(".project-title h3").fadeToggle("medium","linear");
+		  $(this).text($(this).text() == 'Portfolio' ? 'Close' : 'Portfolio');
+		  });
+	    </script>
 </body>
 </html>

@@ -3765,7 +3765,7 @@ blockquote p {
       margin: 0 auto; } }
   @media only screen and (min-width: 40.063em) {
     .reveal-modal, dialog {
-      top: 6.25rem; } }
+      top: 4.25rem; } }
   .reveal-modal.radius, dialog.radius {
     border-radius: 3px; }
   .reveal-modal.round, dialog.round {

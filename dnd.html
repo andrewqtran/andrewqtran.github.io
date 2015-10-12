@@ -4,7 +4,8 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="description" content="I translate complex problems in health care and science into effective visual solutions and human-centered products." />
-<meta name="keywords" content="product designer, design thinking, human-centered design, health care, heath tech, mhealth, scientific illustration, UI designer, graphic designer, 3D Animation, biological animation, biological art, biological artist, biological graphic, biological illustrator, medical illustration, medical artist, biomedical communication, biomedical visualization"/><title>Andrew Q. Tran - Product Designer + Biomedical Communicator</title>
+<meta name="keywords" content="product designer, design thinking, human-centered design, health care, heath tech, mhealth, scientific illustration, UI designer, graphic designer, 3D Animation, biological animation, biological art, biological artist, biological graphic, biological illustrator, medical illustration, medical artist, biomedical communication, biomedical visualization"/>
+<title>Diabetes & Depression, a mobile app</title>
 <link rel="stylesheet" href="css/foundation.css" />
 <link href="css/font-awesome.min.css" rel="stylesheet">
 <link href="css/app.css" rel="stylesheet">
@@ -27,7 +28,15 @@ h3 {
 <div class="contain-to-grid fixed" id="header">
   <nav data-topbar role="navigation">
     <h1 id="logo"><a href="index.html">A<span class="aqt">ndrew</span><span id="q">Q</span>T<span class="aqt">ran</span> </a></h1>
-    <div id="nav"> <a href="index.html"><i class="fa fa-th-large"></i><span class="link">Portfolio</span></a> </div>
+    <div id="nav"> <a href="index.html"><i class="fa fa-th-large"></i></a><a class="drawer" href="#"><span class="link">Portfolio</span></a> </div>
+    <ul id="portfolio-menu" class="small-block-grid-6 hidden">
+      <li><a href="rebl.html" title="REBL - Revenue Expense Balance Ledger"><img src="img/rebl/thumb.jpg" alt=""/></a></li>
+      <li><a href="dnd.html" title="D&D - Diabetes & Depression" class="active"><img src="img/dnd/thumb.jpg" alt=""/></a></li>
+      <li><a href="bdb.html" title="Beyond the Diffraction Barrier"><img src="img/bdb/thumb.jpg" alt=""/></a></li>
+      <li><a href="ui.html" title="Visual User Interface Design"><img src="img/ui/thumb.jpg" alt=""/></a></li>
+      <li><a href="web.html" title="Web Design and Development"><img src="img/web/thumb.jpg" alt=""/></a></li>
+      <li><a href="illustrations.html" title="Medical and Scientific Illustrations"><img src="img/illustrations/thumb.jpg" alt=""/></a></li>
+    </ul>
   </nav>
   <div class="contain-to-grid project-title text-center show-for-large-up">
     <h3>D&amp;D - Diabetes and Depression</h3>
@@ -65,7 +74,11 @@ h3 {
             This low-fidelity wireframe allowed me to move things around rapidly for pure layout purpose. </p>
           <p>After that, I went through several iterations, presented to the team, and revised some more. Due to time constraint, we had to put a stop at one point to move onto the next step.</p>
         </div>
-        <div class="small-12 medium-5 columns"><img src="img/dnd/wireframes.png" alt="Wireframes for the mobile app design"/> </div>
+        <div class="small-12 medium-5 columns"><a href="javascript:void()" data-reveal-id="wireframe"><img class="modal_th" src="img/dnd/wireframes.png" alt="Wireframes for the mobile app design"/></a><div id="wireframe" class="reveal-modal text-center" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+   <img src="img/dnd/wireframes.png" alt="Wireframes for the mobile app design" width="100%">
+    <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+
+  </div></div>
       </div>
       <h3>Color mockups and iterations</h3>
       <p>We didn’t have time to come up with a proper style guide, so we just went straight to recreating the wireframes in Adobe Illustrator to fine tune elements and utilize color swatches. We also replaced all <em>lorem ipsum</em> text and place holder images with meaningful content.</p>
@@ -89,15 +102,18 @@ h3 {
     </div>
   </div>
 </article>
-<div class="contain-to-grid text-center hide-for-small" id="footer">  <div class="row" id="social">
+<div class="contain-to-grid text-center hide-for-small" id="footer">
+  <div class="row" id="social">
     <ul class="small-block-grid-4 medium-block-grid-4">
       <li class="fa-stack fa-lg"><a href="mailto:andrew[at]andrewqtran.com"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-envelope fa-stack-1x fa-inverse"></i></a></li>
       <li class="fa-stack fa-lg"><a href="https://twitter.com/LastMiracle" target="_blank"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></a></li>
-      <li class="fa-stack fa-lg"><a href="http://www.linkedin.com/in/andrewqtran/" target="_blank"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-linkedin fa-stack-1x fa-inverse"></i></a></li><li class="fa-stack fa-lg"><a href="../Andrew_Q_Tran_Resume.pdf" target="_blank"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-file-pdf-o fa-stack-1x fa-inverse"></i></a></li>
+      <li class="fa-stack fa-lg"><a href="http://www.linkedin.com/in/andrewqtran/" target="_blank"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-linkedin fa-stack-1x fa-inverse"></i></a></li>
+      <li class="fa-stack fa-lg"><a href="../Andrew_Q_Tran_Resume.pdf" target="_blank"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-file-pdf-o fa-stack-1x fa-inverse"></i></a></li>
     </ul>
   </div>
   <div class="copyright"><br>
-    Copyright &copy; 2015 Andrew Q Tran. All Rights Reserved.<br></div>
+    Copyright &copy; 2015 Andrew Q Tran. All Rights Reserved.<br>
+  </div>
 </div>
 <script type="text/javascript">
 
@@ -127,6 +143,12 @@ document.links[i].href=document.links[i].href.split(maildivider)[0]+"@"+document
 <script>
       $(document).foundation();
       $('a').smoothScroll();
-    </script>
+	  $(".drawer").click(function() {
+		  $("#portfolio-menu").slideToggle(300);
+		  $("#portfolio-nav").fadeToggle("slow","linear");
+		  $(".project-title h3").fadeToggle("medium","linear");
+		  $(this).text($(this).text() == 'Portfolio' ? 'Close' : 'Portfolio');
+		  });
+	    </script>
 </body>
 </html>

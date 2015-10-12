@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="description" content="I translate complex problems in health care and science into effective visual solutions and human-centered products." />
-<meta name="keywords" content="product designer, design thinking, human-centered design, health care, heath tech, mhealth, scientific illustration, UI designer, graphic designer, 3D Animation, biological animation, biological art, biological artist, biological graphic, biological illustrator, medical illustration, medical artist, biomedical communication, biomedical visualization"/><title>Andrew Q. Tran - Product Designer + Biomedical Communicator</title>
+<meta name="keywords" content="product designer, design thinking, human-centered design, health care, heath tech, mhealth, scientific illustration, UI designer, graphic designer, 3D Animation, biological animation, biological art, biological artist, biological graphic, biological illustrator, medical illustration, medical artist, biomedical communication, biomedical visualization"/><title>Medical & Scientific Illustrations</title>
 <link rel="stylesheet" href="css/foundation.css" />
 <link href="css/font-awesome.min.css" rel="stylesheet">
 <link href="css/app.css" rel="stylesheet">
@@ -27,7 +27,15 @@ h3 {
 <div class="contain-to-grid fixed" id="header">
   <nav data-topbar role="navigation">
     <h1 id="logo"><a href="index.html">A<span class="aqt">ndrew</span><span id="q">Q</span>T<span class="aqt">ran</span> </a></h1>
-    <div id="nav"> <a href="index.html"><i class="fa fa-th-large"></i><span class="link">Portfolio</span></a> </div>
+    <div id="nav"> <a href="index.html"><i class="fa fa-th-large"></i></a><a class="drawer" href="#"><span class="link">Portfolio</span></a> </div>
+    <ul id="portfolio-menu" class="small-block-grid-6 hidden">
+      <li><a href="rebl.html" title="REBL - Revenue Expense Balance Ledger"><img src="img/rebl/thumb.jpg" alt=""/></a></li>
+      <li><a href="dnd.html" title="D&D - Diabetes & Depression"><img src="img/dnd/thumb.jpg" alt=""/></a></li>
+      <li><a href="bdb.html" title="Beyond the Diffraction Barrier"><img src="img/bdb/thumb.jpg" alt=""/></a></li>
+      <li><a href="ui.html" title="Visual User Interface Design"><img src="img/ui/thumb.jpg" alt=""/></a></li>
+      <li><a href="web.html" title="Web Design and Development"><img src="img/web/thumb.jpg" alt=""/></a></li>
+      <li><a href="illustrations.html" title="Medical and Scientific Illustrations" class="active"><img src="img/illustrations/thumb.jpg" alt=""/></a></li>
+    </ul>
   </nav>
   <div class="contain-to-grid project-title text-center show-for-large-up">
     <h3>Medical and Scientific Illustrations</h3>
@@ -94,15 +102,29 @@ h3 {
       <div class="small-12 medium-5 columns"><img src="img/illustrations/pressure_ulcers_sketch.jpg" alt="Skin tissue landscape study"></div>
       <div class="small-12 medium-7 columns end"><img src="img/illustrations/pressure_ulcers_sketch2.jpg" alt="Pressure ulcer pencil study"></div>
     </div>
-    <br>
+    <br><hr>
+    <div class="small-12 large-12 large-centered columns text-center">
+      <h3>World Cancer Data Visualization</h3>
+      <p>A visualization of worldwide cancer statistics in different regions. <br>
+<a href="img/illustrations/2012_world_cancers_infographics.pdf" target="_blank">View a high-resolution version in PDF.</a></p>
+      <p><img src="img/illustrations/2012_world_cancers_infographics.png" alt="World cancer data visualization"/>
+      </p>
+      </div>
     <hr>
+    
     <div class="small-12 large-10 large-centered columns text-center">
       <h3>Line Illustrations</h3>
       <p>Here are some of the more simple illustrations using mainly line work.</p>
-      <p><img src="img/illustrations/firstderm.jpg" alt="First Derm Online Dermatology">Illustration used for coach mark in <a href="http://firstderm.com" target="_blank">FirstDerm</a>'s mobile app.</p>
+      <p><img src="img/illustrations/firstderm.jpg" alt="First Derm Online Dermatology">Illustration used for coach mark in <a href="http://firstderm.com" target="_blank">FirstDerm</a>'s mobile app.</p><br>
+      <p><img src="img/illustrations/firsthud.png" alt="FirstHUD illustrations">Illustration series used for coach mark animation in <a href="http://www.firsthud.com" target="_blank">FirstHUD</a>'s mobile app and a sticker art for the device.</p><br>
       <p><img src="img/illustrations/dermatome.png" alt="Dermatome Chart" class="border"></p>
       <br>
-      <p><img src="img/illustrations/knee_joint.jpg" alt="Ligaments of the Knee"></p>
+      <p><img src="img/illustrations/knee_joint.jpg" alt="Ligaments of the Knee"><br>
+Pen-and-ink. Ligaments of the Knee Joint</p><br>      <p><img src="img/illustrations/dyslexia.png" alt="Illustration depicting dyslexia in children"/><br>
+Longitudinal study of dyslexia in pre-school to 11-year-old children</p><br>
+<p><img src="img/illustrations/enrollhd.png" alt="Double de-identification of patient's data"/><br>
+Double de-identification of patient's data for <a href="http://www.enroll-hd.org/" target="_blank">Enroll-HD</a>
+</p>
     </div>
   </div>
 </article>
@@ -144,6 +166,12 @@ document.links[i].href=document.links[i].href.split(maildivider)[0]+"@"+document
 <script>
       $(document).foundation();
       $('a').smoothScroll();
-    </script>
+	  $(".drawer").click(function() {
+		  $("#portfolio-menu").slideToggle(300);
+		  $("#portfolio-nav").fadeToggle("slow","linear");
+		  $(".project-title h3").fadeToggle("medium","linear");
+		  $(this).text($(this).text() == 'Portfolio' ? 'Close' : 'Portfolio');
+		  });
+	    </script>
 </body>
 </html>

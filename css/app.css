@@ -81,6 +81,24 @@ body {
 img.hero {
 	border-bottom: #E7E7E7 solid thin
 }
+#portfolio-menu li a {
+	text-decoration: none;
+	border: none;
+}
+#portfolio-menu li a img {
+	border: thin solid #ccc;
+	transition: ease-in-out 0.1s;
+	opacity: 0.8;
+	-webkit-filter: saturate(0);
+	filter: saturate(0);
+}
+#portfolio-menu li a:hover img, #portfolio-menu li a.active img {
+	box-shadow: #ccc 0 3px 5px;
+	margin-top: -5px;
+	opacity: 1;
+	-webkit-filter: saturate(1);
+	filter: saturate(0);
+}
 #portfolio-nav a {
 	color: #333;
 	transition: all ease 0.2s;
@@ -97,7 +115,6 @@ img.hero {
 	background: #fff;
 }
 #portfolio-nav a:hover {
-	opacity: 1;
 	max-width: 100%;
 	box-shadow: #ccc 0 0 3px;
 	background: #fff;
@@ -145,7 +162,7 @@ img.hero {
 	min-width: calc(100% + 2em);
 }
 .title, h3 {
-	font-weight: 700;
+	font-weight: 400;
 	font-family: "Roboto Slab", serif;
 	margin-bottom: 0;
 }
@@ -275,6 +292,16 @@ p a:hover, li a:hover {
 .hidden {
 	display: none
 }
+.modal_th {
+	cursor: -webkit-zoom-in;
+	cursor: -moz-zoom-in;
+	cursor: zoom-in;
+}
+.modal_img {
+	cursor: -webkit-zoom-out;
+	cursor: -moz-zoom-out;
+	cursor: zoom-out;
+}
 .highlight {
 	background: #FFD7D7;
 }
@@ -288,6 +315,7 @@ p a:hover, li a:hover {
 	-o-animation: fadein 1s; /* Opera < 12.1 */
 	animation: fadein 1s;
 }
+
  @keyframes fadein {
  from {
 opacity: 0;
