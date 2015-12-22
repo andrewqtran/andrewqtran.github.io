@@ -1,0 +1,151 @@
+body {
+	font-family: 'Nunito', sans-serif;
+	font-weight: 300;
+}
+
+h2 {
+	font-family: 'Arvo', sans-serif;
+}
+
+h3 {
+	font-family: 'Arvo', sans-serif;
+	color: #4389C3;
+	margin-bottom:0.5em;
+}
+
+h4 {
+	font-family: 'Nunito', sans-serif;
+}
+
+p {
+	font-family: 'Nunito', sans-serif;
+	font-weight:300;
+	color:#3A3E41;
+}
+
+p a {
+	color:#D55A40;
+}
+
+p a:hover {
+	color:#D55A40;
+	text-decoration:underline;
+}
+
+/* TOP BANNER WITH LAB NAME */
+#banner {
+	padding:1.5em;
+	background: #ffffff;
+}
+#lab-name {
+	font-family: 'Nunito', sans-serif;
+	color:#4A4A4A;
+	margin-bottom:-0.1em;
+}
+#mission {
+	font-family: 'Arvo', sans-serif;
+	font-size:0.9em;
+	color:#9B9B9B;
+}
+.contain-to-grid {
+}
+/* END TOP BANNER */
+
+/* TOP BAR NAVIGATION */
+.top-bar-section ul li > a { 
+	font-family: 'Nunito', sans-serif; 
+	font-size:1em;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button) {
+    padding: 0 1.9375rem;
+}
+
+.top-bar-section li.active:not(.has-form) a:not(.button) {
+    padding: 0 1.9375rem;
+}
+.top-bar-section li.active:not(.has-form) a:hover:not(.button) {
+    background: #6AB8A2;
+    color: #FFFFFF;
+}
+/* END TOP BAR */
+
+/* SLIDE SHOW */
+.slideshow img {
+	width: 100%
+}
+/* END OF SLIDE SHOW */
+
+
+/* RESEARCH TABS */
+.tabs.vertical {
+	max-width: 100%;
+	width: 100%;
+}
+
+.tabs .tab-title > a
+{
+	padding: 0.70rem 1rem;
+	background-color: #ffffff;
+	font-family: 'Nunito', sans-serif;
+	font-weight: 400;
+	color: #ffffff;
+	background-color: #333333;
+	transition: background-color 0.25s;
+
+}
+
+.tabs .tab-title > a:hover {
+	background-color:#222222;
+}
+
+ .tabs .tab-title.active > a {
+	background-color: #6AB8A2;
+	color: #ffffff;
+	transition: background-color 0.25s;
+
+}
+
+.tabs-content > .content {
+	padding:0;
+}
+/* END OF RESEARCH TABS */
+
+.white.columns {
+	background:#ffffff;
+}
+
+.gray.columns {
+	background:#F3F3F3;
+	margin-top: -1.85em;
+	padding-top: 1.85em;
+
+}
+
+.row.content {
+	margin-top:2em;
+}
+
+@media only screen and (max-width: 64em){
+.gray.columns {
+	margin-top: 0;
+	padding-top: 1.85em;
+}
+}
+
+/* FOOTER */
+#social {
+	padding:2em 0 0 0;
+}
+#social a{
+	color:#333333;
+}
+#footer-links p {
+	padding:1em 0;
+	color:#ffffff;
+	font-size: 0.85em;
+}
+#footer-links a {
+	color:#ffffff;
+}
+/* END FOOTER */
