@@ -1,0 +1,209 @@
+<!DOCTYPE HTML>
+<html class="no-js" lang="en">
+<head>
+    <title>Shih Microfluidics Laboratory</title>
+    <link rel="icon" href = "img/ConcordiaLogo.jpg" type=images/icon>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Shih Microfluidics Laboratory</title>
+	<link rel="stylesheet" href="css/foundation.css" />
+	<link rel="stylesheet" href="css/app.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<script src="js/vendor/modernizr.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Nunito:300,400|Arvo:400,400italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+  <script src="https://maps.googleapis.com/maps/api/js"></script>
+  <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map');
+        var mapCanvas2 = document.getElementById('map2');
+        var myLatlng = {lat: 45.495488, lng: -73.577703};
+        var myLatlng2 = {lat: 45.457075, lng: -73.640424}; 
+        var mapOptions = {
+          center: new google.maps.LatLng(45.495488, -73.577703),
+          zoom: 16,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var mapOptions2 = {
+          center: new google.maps.LatLng(45.457075, -73.640424),
+          zoom: 16,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+        
+        var marker = new google.maps.Marker({
+        position: myLatlng,
+        map: map,
+        title: 'SGW campus'
+        });
+        
+        var map2 = new google.maps.Map(mapCanvas2, mapOptions2)
+        
+        var marker2 = new google.maps.Marker({
+        position: myLatlng2,
+        map: map2,
+        title: 'Loyola campus'
+        });
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+ </script>
+</head>
+
+<body>
+    
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-58MZN9"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-58MZN9');</script>
+<!-- End Google Tag Manager -->
+    
+	<div class="off-canvas-wrap" data-offcanvas> <!-- START OFFCANVAS -->
+		<div class="inner-wrap"> <!-- START INNERWRAP -->  
+			<!-- START OFF-CANVAS MOBILE MENU -->
+			<div class="sticky" style="border-bottom: thin solid #ccc"> 
+				<nav class="tab-bar hide-for-medium-up">
+					<section class="left-small"> <a href="#" class="left-off-canvas-toggle menu-icon"><span></span></a> </section>
+					<center>
+						Shih Microfluidics Laboratory
+					</center>
+					
+				</nav>
+			</div>
+			<aside class="left-off-canvas-menu">
+				<ul class="off-canvas-list">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="research.html">Research</a></li>
+					<li><a href="publications.html">Publications</a></li>
+					<li><a href="teaching.html">Teaching</a></li>
+					<li class="active"><a href="contact.html">Contact</a></li>
+				</ul>
+			</aside>
+			<a class="exit-off-canvas"></a> 
+			<!-- END OFF-CANVAS MOBILE MENU -->
+			<!-- START OF PAGE HEADER -->
+			<div class="contain-to-grid hide-for-small"  id="banner">
+				<div class="row">
+					<div class="medium-1 small-2 columns">
+						<img src="img/logo.png" />
+					</div>
+
+					<div class="medium-11 small-10 columns end">
+						<h2 id="lab-name">Shih Microfluidics Laboratory</h2>
+						<em id="mission">Automating microfluidics for synthetic biology to advance areas in energy and health.</em>
+					</div>
+
+				</div></div>
+				<div class="sticky contain-to-grid"> 
+
+
+					<!-- START TOP-BAR NAV -->
+					<nav class="top-bar show-for-medium-up" data-topbar role="navigation">
+						<ul class="title-area">
+							<li class="name">
+
+							</li>
+							<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+							<!-- menu-icon is hamburger -->
+						</ul>
+						<section class="top-bar-section"> 
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="about.html">About</a></li>
+								<li><a href="research.html">Research</a></li>
+								<li><a href="publications.html">Publications</a></li>
+								<li><a href="teaching.html">Teaching</a></li>
+								<li class="active"><a href="contact.html">Contact</a></li>
+							</ul>
+						</section>
+					</nav>
+					<!-- END TOP-BAR NAV --> 
+				</div>
+				<!-- END OF PAGE HEADER -->
+          
+    <div id="row content">
+      <div class="full_width_contact">  
+        <h3>Open Positions</h3>
+          
+          <p style = "font-size: 180%; padding: 5px; background-colour: white; border: red 2px solid"> We are currently looking for motivated and exceptional graduate students (Master or Doctoral) and postdoctoral fellows to join our lab.  Please send an email to Professor Shih (steve.shih@concordia.ca) with your CV and a description of your interests. <br> Undergraduate students that are eager to explore topics in microfluidics, circuit design, and biology should send their CV and transcripts. </p> <br>
+                              
+          <h2><strong>Contact Us</strong></h2>
+            <h3> Shih Microfluidics Lab at Concordia</h3>
+
+            <p style = "font-size: 150%">We have two lab facilities, located in the Engineering & Visual Arts Building (EV Building - 1515 St.Catherine West) and the Center of Structural and Functional Genomics (Loyola Campus - 7141 Sherbrooke St. W).  Parking is available on the campus grounds. </p> <br>
+      </div>
+        
+    <div class="sidebar_mapleft">
+        <b> St.George Williams Campus</b><br>
+        <p>Engineering and Visual Arts Building</p>
+        <p>1515 St. Catherine West, Room EV.5.223</p>
+        <p>Montreal, Quebec, Canada</p>
+        <p>H3G 2W1</p>
+        <p>Phone: 514-848-2424 x7579</p>
+        
+        <div id = "map"> 
+        </div> <br>
+        </div>
+        
+    <div class="sidebar_mapright">
+        <b> Loyola Campus</b><br>
+        <p>Center of Structural and Functional Genomics</p>
+        <p>7141 Sherbrooke St. West</p>
+        <p>Montreal, Quebec, Canada</p>
+        <p>H4B 1R6</p>
+        <p>Phone: coming soon </p>
+     <!--   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2798.5578562368983!2d-73.6400637!3d45.458565199999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc9172e1f2873a7%3A0xdc7052006ff9bf92!2sConcordia+University+-+Loyola+Campus!5e0!3m2!1sen!2sus!4v1440280872701" width="450" height="400" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+        <div id = "map2"> 
+        </div> <br>
+        </div>
+    </div>
+ </div>
+        
+<footer>
+						<div class="contain-to-grid text-center" id="footer">
+							<div class="row">
+								<div class="large-6 medium-8 small-12 large-centered medium-centered columns">
+									<ul class="small-block-grid-4" id="social">
+										<li><a href="https://scholar.google.ca/citations?user=COZcPEAAAAAJ&hl=en" target="_blank"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x fa-inverse"></i><i class="fa fa-google fa-stack-1x"></i></span></a></li>
+										<li><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x fa-inverse"></i><i class="fa fa-facebook fa-stack-1x"></i></span></li>
+										<li><a href="https://twitter.com/shihguy" target="_blank"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x fa-inverse"></i><i class="fa fa-twitter fa-stack-1x"></i></span></a></li>
+										<li><a href="https://www.linkedin.com/pub/steve-shih/59/271/14b" target="_blank"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x fa-inverse"></i><i class="fa fa-linkedin fa-stack-1x"></i></span></a></li>
+
+									</ul>
+								</div>
+							</div>
+							<div id="footer-links">
+								<div class="row">
+									<div class="large-12 columns">
+										<p><a href="https://www.concordia.ca/" target="_blank">Concordia University</a> | <a href="https://www.concordia.ca/encs/electrical-computer.html" target="_blank">Electrical and Computer Engineering</a> | <a href="http://www.concordia.ca/research/genomics.html" target="_blank">Center of Structural and Functional Genomics</a> | <a href="http://www.concordia.ca/artsci/research/synbio.html" target="_blank">Center for Applied Synthetic Biology</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</footer> 
+				</div> <!-- END INNERWRAP -->
+			</div> <!-- END OFFCANVAS -->    
+			<script src="js/vendor/jquery.js"></script>
+			<script src="js/foundation.min.js"></script>
+			<script src="js/foundation/foundation.equalizer.js"></script>
+			<script type="text/javascript" src="slick/slick.min.js"></script>
+			<script>
+				$(document).foundation();
+			</script>
+
+			<script type="text/javascript">
+				$(document).ready(function(){
+					$('.slideshow').slick({
+
+					});
+				});
+
+			</script>
+		</body>
+		</html>
