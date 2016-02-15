@@ -1,123 +1,183 @@
 <!doctype html>
 <html class="no-js" lang="en">
+
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="I translate complex problems in health care and science into effective visual solutions and human-centered products." />
-<meta name="keywords" content="product designer, design thinking, human-centered design, health care, heath tech, mhealth, scientific illustration, UI designer, graphic designer, 3D Animation, biological animation, biological art, biological artist, biological graphic, biological illustrator, medical illustration, medical artist, biomedical communication, biomedical visualization"/>
-<title>Diabetes & Depression, a mobile app</title>
-<link rel="stylesheet" href="css/foundation.css" />
-<link href="css/font-awesome.min.css" rel="stylesheet">
-<link href="css/app.css" rel="stylesheet">
-<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700|Roboto+Condensed|Roboto+Slab" rel="stylesheet" type="text/css">
-<link href="http://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet" type="text/css">
-<script src="js/vendor/modernizr.js"></script>
-<script src="js/vendor/jquery.js"></script>
-<style>
-h3 {
-	color: #ff5050
-}
-</style>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="I translate complex problems in health care and science into effective visual solutions and human-centered products."
+    />
+    <meta name="keywords" content="product designer, design thinking, human-centered design, health care, heath tech, mhealth, scientific illustration, UI designer, graphic designer, 3D Animation, biological animation, biological art, biological artist, biological graphic, biological illustrator, medical illustration, medical artist, biomedical communication, biomedical visualization"
+    />
+    <title>Diabetes & Depression, a mobile app</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700|Roboto+Condensed|Roboto+Slab" rel="stylesheet"
+    type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet" type="text/css">
+    <script src="js/vendor/modernizr.js"></script>
+    <script src="js/vendor/jquery.js"></script>
+    <style>
+        h3 {
+            color: #ff5050
+        }
+    </style>
 </head>
+
 <body>
-<div id="portfolio-nav"> <a href="akeso.html" class="previous"><i class="fa fa-chevron-left fa-large"></i>
+    <div id="portfolio-nav"> <a href="akeso.html" class="previous"><i class="fa fa-chevron-left fa-large"></i>
   <h5>Previous Project</h5>
-  </a> <a href="bdb.html" class="next">
-  <h5>Next Project</h5>
-  <i class="fa fa-chevron-right fa-large"></i></a> </div>
-<div class="contain-to-grid fixed" id="header">
-  <nav data-topbar role="navigation">
-    <h1 id="logo"><a href="index.html">A<span class="aqt">ndrew</span><span id="q">Q</span>T<span class="aqt">ran</span> </a></h1>
-    <div id="nav"> <a href="index.html"><i class="fa fa-th-large"></i></a><a class="drawer" href="#"><span class="link">Portfolio</span></a> </div>
-    <ul id="portfolio-menu" class="small-block-grid-6 hidden">
-      <li><a href="rebl.html" title="REBL - Revenue Expense Balance Ledger"><img src="img/rebl/thumb.jpg" alt=""/></a></li>
-      <li><a href="dnd.html" title="D&D - Diabetes & Depression" class="active"><img src="img/dnd/thumb.jpg" alt=""/></a></li>
-      <li><a href="bdb.html" title="Beyond the Diffraction Barrier"><img src="img/bdb/thumb.jpg" alt=""/></a></li>
-      <li><a href="ui.html" title="Visual User Interface Design"><img src="img/ui/thumb.jpg" alt=""/></a></li>
-      <li><a href="web.html" title="Web Design and Development"><img src="img/web/thumb.jpg" alt=""/></a></li>
-      <li><a href="illustrations.html" title="Medical and Scientific Illustrations"><img src="img/illustrations/thumb.jpg" alt=""/></a></li>
-    </ul>
-  </nav>
-  <div class="contain-to-grid project-title text-center show-for-large-up">
-    <h3>D&amp;D - Diabetes and Depression</h3>
-  </div>
-</div>
-<article>
-  <div id="dnd" class="row white-background"> <img class="hero" src="img/dnd/hero.jpg" alt="Diabetes and depression mobile application"/><br>
-    <br>
-    <div class="small-12 large-10 large-centered columns">
-      <h3>Summary</h3>
-      <p>D&amp;D is a mobile application with some gamification elements, designed to help diabetic patients with comorbid depression manage their conditions better. The project was a winner of the Validic/iHealth track at Health 2.0 SF Code-a-thon 2014.</p>
-      <div class="row">
-        <div class="small-12 medium-6 columns">
-          <p> I was the design lead for the team. My responsibilities included user research and personas, wireframing, UX design, and final UI mockups. Another designer worked on choosing a color palette and some iconography. Other team members worked on market research, API implementation, back-end programming, and product pitching. </p>
-          <br>
-        </div>
-        <div class="small-12 medium-6 columns text-center end"> <img src="img/dnd/team.jpg" alt="Edge Interns team at Health 2.0 SF Code-a-thon 2014"/> </div>
-      </div>
-      <h3>The problem</h3>
-      <p>Depression frequently occurs with diabetes, yet it usually remains unrecognized and untreated in patients with both these conditions. It is important to detect early signs of comorbid depression, so that caregivers and care providers can provide treatments early. Patients also need to stay motivated and compliant. </p>
-      <br>
-      <h3>General concept</h3>
-      <p>Our app rewards XP points for each health data point recorded, whether manually by the user via task (or quest) completion, or by automatic input from wearables. Besides data tracking, D&D also motivates the user to improve his mood as needed through certain social tasks. </p>
-      <p>D&D can pull in medication and doctor’s appointment data (via Allscript API), vitals such as blood glucose or weight (via Validic API and iHealth devices), or, when the threshold for depression is triggered, offer to look for a doctor with appropriate rankings (via BetterDoctor API).</p>
-      <br>
-      <h3>User Research &amp; Personas</h3>
-      <p>We started with identifying our consumer users. From our research, we found that low income minorities made up the most of diabetic patients who also had depression. To stay focused, we specified income range, age range, and ethnicity to create 3 user personas.</p>
-      <p><img src="img/dnd/personas.png" alt="User personas for diabetic patients"/></p>
-      <p>It was very helpful to put a face on each persona, along with detailed stories pertaining to their medical, social conditions and familiarity with technology. By the end of the day, we all knew exactly who “Marqus” was, and he would always be there as we designed our user experience.</p>
-      <br>
-      <h3>Wireframes</h3>
-      <div class="row">
-        <div class="small-12 medium-7 columns">
-          <p>For the first 12 hours, using moqups.com, I was able to generate many wireframe prototypes rapidly.
-            This low-fidelity wireframe allowed me to move things around rapidly for pure layout purpose. </p>
-          <p>After that, I went through several iterations, presented to the team, and revised some more. Due to time constraint, we had to put a stop at one point to move onto the next step.</p>
-        </div>
-        <div class="small-12 medium-5 columns"><a href="javascript:void()" data-reveal-id="wireframe"><img class="modal_th" src="img/dnd/wireframes.png" alt="Wireframes for the mobile app design"/></a><div id="wireframe" class="reveal-modal text-center" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
-   <img src="img/dnd/wireframes.png" alt="Wireframes for the mobile app design" width="100%">
-    <a class="close-reveal-modal" aria-label="Close">&#215;</a>
-
-  </div></div>
-      </div>
-      <h3>Color mockups and iterations</h3>
-      <p>We didn’t have time to come up with a proper style guide, so we just went straight to recreating the wireframes in Adobe Illustrator to fine tune elements and utilize color swatches. We also replaced all <em>lorem ipsum</em> text and place holder images with meaningful content.</p>
-      <p><img src="img/dnd/colormockup0.png" alt="Color design mockup"/> </p>
-      <p> The bulk of the work was split among the team as the end drew near. I focused on the master Illustrator file, while others worked on creating art assets (logo, colored icons, avatars, etc.) or exporting completed art boards to hand off to our front-end developers and the pitch team. Thanks to this work flow, we were able to put together a presentation and squeezed in a small demo in time for our pitch session.</p>
-      <p><img src="img/dnd/colormockup1.png" alt="Color design mockup"/> </p>
-      <br>
-      <h3>User experience for the diabetic patient</h3>
-      <div class="row">
-        <div class="small-12 medium-9 columns">
-          <p>Not a single element of the user interface was designed without careful consideration of the experience. Most notably was the decision to bring tasks to the home screen, instead of leaving them accessible on a task list residing on the 2nd or 3rd screen. </p>
-          <p> Diabetic patients need to take their blood sugar multiple times a day before each meal, so it was essential that this specific task appeared at app launch. Whenever possible, input screens for frequent tasks like this appeared immediately on top of the main screen to reduce navigational steps and maintain context for the older patients. Additionally, to minimize tedium, only 3 tasks would show up on the main screen at one time, chosen by importance and at random.</p>
-        </div>
-        <div class="hide-for-small medium-3 columns"><img src="img/dnd/homescreen.png" class="border" alt="Simple mobile home screen for the diabetic patient"/></div>
-      </div>
-      <br>
-      <h3>Results</h3>
-      <p>We won several iHealth devices from Validic. The API makes it simple to extract data from various wearable devices on the market, including blood glucose readers to weight and sleep monitors. The latter can provide clues to potential mood problems.</p>
-      <hr>
-      <p>This was my first hackathon. I elaborated on the experience some more in a <a href="https://medium.com/@aqt/my-experience-as-a-first-time-hackathon-designer-911035ec2aa9" title="My experience as a first-time hackathon designer" target="_blank">Medium post</a>.</p>
+  </a>
+        <a href="bdb.html" class="next">
+            <h5>Next Project</h5>
+            <i class="fa fa-chevron-right fa-large"></i></a>
     </div>
-  </div>
-</article>
-<div class="contain-to-grid text-center hide-for-small" id="footer">
-  <div class="row" id="social">
-    <ul class="small-block-grid-4 medium-block-grid-4">
-      <li class="fa-stack fa-lg"><a href="mailto:andrew[at]andrewqtran.com"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-envelope fa-stack-1x fa-inverse"></i></a></li>
-      <li class="fa-stack fa-lg"><a href="https://twitter.com/LastMiracle" target="_blank"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></a></li>
-      <li class="fa-stack fa-lg"><a href="http://www.linkedin.com/in/andrewqtran/" target="_blank"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-linkedin fa-stack-1x fa-inverse"></i></a></li>
-      <li class="fa-stack fa-lg"><a href="../Andrew_Q_Tran_Resume.pdf" target="_blank"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-file-pdf-o fa-stack-1x fa-inverse"></i></a></li>
-    </ul>
-  </div>
-  <div class="copyright"><br>
-    Copyright &copy; 2016 Andrew Q Tran. All Rights Reserved.<br>
-  </div>
-</div>
-<script type="text/javascript">
+    <div class="contain-to-grid fixed" id="header">
+        <nav data-topbar role="navigation">
+            <h1 id="logo"><a href="index.html">A<span class="aqt">ndrew</span><span id="q">Q</span>T<span class="aqt">ran</span> </a></h1>
+            <div id="nav"> <a href="index.html"><i class="fa fa-th-large"></i></a><a class="drawer" href="#"><span class="link">Portfolio</span></a>                </div>
+            <ul id="portfolio-menu" class="small-block-grid-6 hidden">
+                <li>
+                    <a href="rebl.html" title="REBL - Revenue Expense Balance Ledger"><img src="img/rebl/thumb.jpg" alt="" /></a>
+                </li>
+                <li>
+                    <a href="akeso.html" title="Akeso - Prevent and Manage. Together."><img src="img/akeso/thumb.png" alt="" /></a>
+                </li>
+                <li>
+                    <a href="dnd.html" title="D&D - Diabetes & Depression"><img src="img/dnd/thumb.jpg" alt="" class="active" /></a>
+                </li>
+                <li>
+                    <a href="bdb.html" title="Beyond the Diffraction Barrier"><img src="img/bdb/thumb.jpg" alt="" /></a>
+                </li>
+                <li>
+                    <a href="ui.html" title="Visual User Interface Design"><img src="img/ui/thumb.jpg" alt="" /></a>
+                </li>
+                <li>
+                    <a href="web.html" title="Web Design and Development"><img src="img/web/thumb.jpg" alt="" /></a>
+                </li>
+                <li>
+                    <a href="illustrations.html" title="Medical and Scientific Illustrations"><img src="img/illustrations/thumb.jpg" alt="" /></a>
+                </li>
+            </ul>
+        </nav>
+        <div class="contain-to-grid project-title text-center show-for-large-up">
+            <h3>D&amp;D - Diabetes and Depression</h3>
+        </div>
+    </div>
+    <article>
+        <div id="dnd" class="row white-background"> <img class="hero" src="img/dnd/hero.jpg" alt="Diabetes and depression mobile application" />
+            <br>
+            <br>
+            <div class="small-12 large-10 large-centered columns">
+                <h3>Summary</h3>
+                <p>D&amp;D is a mobile application with some gamification elements, designed to help diabetic patients with
+                    comorbid depression manage their conditions better. The project was a winner of the Validic/iHealth track
+                    at Health 2.0 SF Code-a-thon 2014.</p>
+                <div class="row">
+                    <div class="small-12 medium-6 columns">
+                        <p> I was the design lead for the team. My responsibilities included user research and personas, wireframing,
+                            UX design, and final UI mockups. Another designer worked on choosing a color palette and some
+                            iconography. Other team members worked on market research, API implementation, back-end programming,
+                            and product pitching. </p>
+                        <br>
+                    </div>
+                    <div class="small-12 medium-6 columns text-center end"> <img src="img/dnd/team.jpg" alt="Edge Interns team at Health 2.0 SF Code-a-thon 2014" /> </div>
+                </div>
+                <h3>The problem</h3>
+                <p>Depression frequently occurs with diabetes, yet it usually remains unrecognized and untreated in patients
+                    with both these conditions. It is important to detect early signs of comorbid depression, so that caregivers
+                    and care providers can provide treatments early. Patients also need to stay motivated and compliant.
+                    </p>
+                <br>
+                <h3>General concept</h3>
+                <p>Our app rewards XP points for each health data point recorded, whether manually by the user via task (or
+                    quest) completion, or by automatic input from wearables. Besides data tracking, D&D also motivates the
+                    user to improve his mood as needed through certain social tasks. </p>
+                <p>D&D can pull in medication and doctor’s appointment data (via Allscript API), vitals such as blood glucose
+                    or weight (via Validic API and iHealth devices), or, when the threshold for depression is triggered,
+                    offer to look for a doctor with appropriate rankings (via BetterDoctor API).</p>
+                <br>
+                <h3>User Research &amp; Personas</h3>
+                <p>We started with identifying our consumer users. From our research, we found that low income minorities made
+                    up the most of diabetic patients who also had depression. To stay focused, we specified income range,
+                    age range, and ethnicity to create 3 user personas.</p>
+                <p><img src="img/dnd/personas.png" alt="User personas for diabetic patients" /></p>
+                <p>It was very helpful to put a face on each persona, along with detailed stories pertaining to their medical,
+                    social conditions and familiarity with technology. By the end of the day, we all knew exactly who “Marqus”
+                    was, and he would always be there as we designed our user experience.</p>
+                <br>
+                <h3>Wireframes</h3>
+                <div class="row">
+                    <div class="small-12 medium-7 columns">
+                        <p>For the first 12 hours, using moqups.com, I was able to generate many wireframe prototypes rapidly.
+                            This low-fidelity wireframe allowed me to move things around rapidly for pure layout purpose.
+                            </p>
+                        <p>After that, I went through several iterations, presented to the team, and revised some more. Due
+                            to time constraint, we had to put a stop at one point to move onto the next step.</p>
+                    </div>
+                    <div class="small-12 medium-5 columns">
+                        <a href="javascript:void()" data-reveal-id="wireframe"><img class="modal_th" src="img/dnd/wireframes.png" alt="Wireframes for the mobile app design" /></a>
+                        <div
+                        id="wireframe" class="reveal-modal text-center" data-reveal aria-labelledby="modalTitle" aria-hidden="true"
+                        role="dialog">
+                            <img src="img/dnd/wireframes.png" alt="Wireframes for the mobile app design" width="100%">
+                            <a class="close-reveal-modal" aria-label="Close">&#215;</a>
 
-/***********************************************
+                    </div>
+                </div>
+            </div>
+            <h3>Color mockups and iterations</h3>
+            <p>We didn’t have time to come up with a proper style guide, so we just went straight to recreating the wireframes
+                in Adobe Illustrator to fine tune elements and utilize color swatches. We also replaced all <em>lorem ipsum</em>                text and place holder images with meaningful content.</p>
+            <p><img src="img/dnd/colormockup0.png" alt="Color design mockup" /> </p>
+            <p> The bulk of the work was split among the team as the end drew near. I focused on the master Illustrator file,
+                while others worked on creating art assets (logo, colored icons, avatars, etc.) or exporting completed art
+                boards to hand off to our front-end developers and the pitch team. Thanks to this work flow, we were able
+                to put together a presentation and squeezed in a small demo in time for our pitch session.</p>
+            <p><img src="img/dnd/colormockup1.png" alt="Color design mockup" /> </p>
+            <br>
+            <h3>User experience for the diabetic patient</h3>
+            <div class="row">
+                <div class="small-12 medium-9 columns">
+                    <p>Not a single element of the user interface was designed without careful consideration of the experience.
+                        Most notably was the decision to bring tasks to the home screen, instead of leaving them accessible
+                        on a task list residing on the 2nd or 3rd screen. </p>
+                    <p> Diabetic patients need to take their blood sugar multiple times a day before each meal, so it was essential
+                        that this specific task appeared at app launch. Whenever possible, input screens for frequent tasks
+                        like this appeared immediately on top of the main screen to reduce navigational steps and maintain
+                        context for the older patients. Additionally, to minimize tedium, only 3 tasks would show up on the
+                        main screen at one time, chosen by importance and at random.</p>
+                </div>
+                <div class="hide-for-small medium-3 columns"><img src="img/dnd/homescreen.png" class="border" alt="Simple mobile home screen for the diabetic patient"
+                    /></div>
+            </div>
+            <br>
+            <h3>Results</h3>
+            <p>We won several iHealth devices from Validic. The API makes it simple to extract data from various wearable devices
+                on the market, including blood glucose readers to weight and sleep monitors. The latter can provide clues
+                to potential mood problems.</p>
+            <hr>
+            <p>This was my first hackathon. I elaborated on the experience some more in a <a href="https://medium.com/@aqt/my-experience-as-a-first-time-hackathon-designer-911035ec2aa9"
+                title="My experience as a first-time hackathon designer" target="_blank">Medium post</a>.</p>
+        </div>
+        </div>
+    </article>
+    <div class="contain-to-grid text-center hide-for-small" id="footer">
+        <div class="row" id="social">
+            <ul class="small-block-grid-4 medium-block-grid-4">
+                <li class="fa-stack fa-lg"><a href="mailto:andrew[at]andrewqtran.com"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-envelope fa-stack-1x fa-inverse"></i></a></li>
+                <li class="fa-stack fa-lg"><a href="https://twitter.com/LastMiracle" target="_blank"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></a></li>
+                <li class="fa-stack fa-lg"><a href="http://www.linkedin.com/in/andrewqtran/" target="_blank"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-linkedin fa-stack-1x fa-inverse"></i></a></li>
+                <li class="fa-stack fa-lg"><a href="../Andrew_Q_Tran_Resume.pdf" target="_blank"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-file-pdf-o fa-stack-1x fa-inverse"></i></a></li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <br> Copyright &copy; 2016 Andrew Q Tran. All Rights Reserved.
+            <br>
+        </div>
+    </div>
+    <script type="text/javascript">
+        /***********************************************
 * Easy Email Scrambler script- © Dynamic Drive (www.dynamicdrive.com)
 * This notice MUST stay intact for legal use
 * Visit http://www.dynamicdrive.com/ for full source code
@@ -129,9 +189,9 @@ for (i=0; i<=(document.links.length-1); i++){
 if (document.links[i].href.indexOf(maildivider)!=-1)
 document.links[i].href=document.links[i].href.split(maildivider)[0]+"@"+document.links[i].href.split(maildivider)[1]
 }
-
- </script><script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    </script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
@@ -139,9 +199,11 @@ document.links[i].href=document.links[i].href.split(maildivider)[0]+"@"+document
   ga('create', 'UA-26548637-2', 'auto');
   ga('send', 'pageview');
 
-</script><script src="js/foundation.min.js"></script> <script src="js/vendor/jquery.smooth-scroll.min.js"></script> 
-<script>
-      $(document).foundation();
+    </script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/vendor/jquery.smooth-scroll.min.js"></script>
+    <script>
+        $(document).foundation();
       $('a').smoothScroll();
 	  $(".drawer").click(function() {
 		  $("#portfolio-menu").slideToggle(300);
@@ -149,6 +211,7 @@ document.links[i].href=document.links[i].href.split(maildivider)[0]+"@"+document
 		  $(".project-title h3").fadeToggle("medium","linear");
 		  $(this).text($(this).text() == 'Portfolio' ? 'Close' : 'Portfolio');
 		  });
-	    </script>
+    </script>
 </body>
+
 </html>
