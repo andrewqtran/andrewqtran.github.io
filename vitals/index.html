@@ -4,7 +4,8 @@
 <head>
     <style type="text/css">
     body 
-    {background-color:#000000 !important;}
+    {background-color:#000000 !important;
+    overflow:hidden;}
     ul.vital {
         list-style: none;
         color: white;
@@ -61,6 +62,7 @@
         position: absolute;
         animation-delay: 0s;
         margin-top: 1.5em;
+        
     }
     #spo2 .graph-container {
                 animation: scroll 450s linear infinite;
@@ -88,7 +90,13 @@
 </head>
 
 <body>
-    <div id="ecg" class="expanded large-collapse row" style="border-bottom: white solid thin">
+    <div class="row" style="z-index:10;background: white; height: 50px; color: black; text-align: right; padding: 0 1em; position:fixed; margin-top:0; width:100vw;font-size: 18px;font-family: 'Helvetica Neue', Roboto, 'Segoe UI', sans-serif;
+line-height:50px;">
+        <a href="#surprise" style="color: black; text-decoration: none;">Vave Telestream Dashboard</a></div>
+    <div style="height: 100vh; display:block"></div>
+        <div id="surprise" class="row" style="height: 50px;"></div>
+
+    <div id="ecg" class="expanded large-collapse row" style="border-bottom: white solid thin;  height:30%">
         <div class="large-10 medium-8 columns">
             <div class="graph-container">
                 <svg style="width:20000%">
@@ -121,7 +129,7 @@
         <div class="large-2 medium-4 columns">
             <div>
                 <ul class="vital">
-                    <li>Pulse Rate<sub>2</sub></li>
+                    <li>Pulse Rate</li>
                     <li class="number">78</li>
                     <li>bpm</li>
                 </ul>
@@ -129,7 +137,7 @@
         </div>
     </div>
     
-    <div id="etco2" class="expanded large-collapse row" style="border-bottom: white solid thin">
+    <div id="etco2" class="expanded large-collapse row" style="border-bottom: white solid thin; height:30%">
         <div class="large-10 medium-8 columns">
             <div class="graph-container">
                 <svg style="width:20000%">
@@ -221,7 +229,7 @@
     </div>
     
     
-    <div id="spo2" class="expanded large-collapse row" style="border-bottom: white solid thin">
+    <div id="spo2" class="expanded large-collapse row" style="border-bottom: none solid thin;  height:30%">
         <div class="large-10 medium-8 columns">
             <div class="graph-container">
                 <svg style="width:20000%">
@@ -274,10 +282,8 @@
             </div>
         </div>
     </div>
-   
-
-
-
+<div style="display:block; width: 100vw; height: 48px; background: white; z-index:10; margin-bottom: 0; bottom: 0; display:fixed">
+</div>
 
 
 
