@@ -187,7 +187,7 @@ img.hero {
 .project:hover {
 	margin-top: -5px;
 	transition: all ease 0.1s;
-	box-shadow: #999 0 5px 5px;
+	box-shadow: #999 0 5px 15px;
 	border-bottom: solid #ff5050 5px;
 }
 
