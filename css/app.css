@@ -303,6 +303,11 @@ a:hover i.fa-file-pdf-o.fa-inverse::after {
 	font-size: small;
 }
 
+video::-webkit-media-controls-start-playback-button {
+    display: none!important;
+    -webkit-appearance: none;
+}
+
 h1 {
 	padding: 0;
 	font-family: 'Slabo 27px', serif;
