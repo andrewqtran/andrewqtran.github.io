@@ -563,9 +563,9 @@ article {
 	}
 	#header.fixed #nav {
 		top: 0.8em;
-	}
-	#header.fixed #nav a {
+		left:0;
 		margin: 0 auto;
+		width:100%;
 	}
 	#header.fixed h1 {
 		display: none;
