@@ -17,9 +17,11 @@ body {
 
 .white-background {
 	background: #fff;
-	box-shadow: #ccc 0px 0px 5px;
+	/*box-shadow: #ccc 0px 0px 5px;*/
 	margin-bottom: -2em;
 	padding-bottom: 1em;
+	border-left: #E7E7E7 1px solid;
+	border-right: #E7E7E7 1px solid; 
 }
 
 #header {
@@ -102,7 +104,7 @@ body {
 	display: block;
 }
 
-img.hero {
+.hero {
 	border-bottom: #E7E7E7 solid thin
 }
 
