@@ -136,14 +136,14 @@ ul.pub-list li {
 h4 {
 	text-transform: uppercase;
 	color: #ff5050;
-	font-family: 'Roboto Slab', serif;
+	font-family: 'Zilla Slab', serif;
 	border-bottom: 1px solid;
 	padding-top: 0.3em;
 }
 h1 {
 	padding: 0;
 	margin-bottom: -0.3em;
-	font-family: 'Roboto Slab', serif;
+	font-family: 'Zilla Slab', serif;
 	color: #ff5050;
 }
 .toggle {
