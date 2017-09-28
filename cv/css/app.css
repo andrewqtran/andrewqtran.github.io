@@ -1,8 +1,18 @@
 @charset "utf-8";
 /* CSS Document */
 
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed|Slabo+27px|Zilla+Slab');
+
+@font-face {
+	font-family: 'ClearSans';
+	src: url('../../fonts/ClearSans-Regular.eot');
+	src: url('../../fonts/ClearSans-Regular.eot') format('embedded-opentype'), url('../../fonts/ClearSans-Regular.woff') format('woff'), url('../../fonts/ClearSans-Regular.ttf') format('truetype'), url('../../fonts/ClearSans-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 body {
-	font-family: 'Lato', sans-serif;
+	font-family: 'ClearSans', sans-serif;
 }
 i.fa-circle {
 	color: #ccc
@@ -40,7 +50,7 @@ a:hover i.fa-linkedin.fa-inverse::after {
 a:hover i.fa-behance.fa-inverse::after {
 	content:"Portfolio"
 }
-a:hover i.fa-print.fa-inverse::after {
+a:hover i.fa-file-pdf-o.fa-inverse::after {
 	content:"Print PDF"
 }
 
@@ -103,17 +113,32 @@ a:hover i.fa-print.fa-inverse::after {
 	transition: ease-in-out 0.2s;
 }
 #header.fixed {
-	padding: 0em 0em 1em 0em;
+	padding: 0em 0em 0em 0em;
+	box-shadow: 0px 5px 5px rgba(0,0,0,.2);
 	}
 	
 #header.fixed .toggle {
 	margin-top:0;
+	display:none;
+}
+
+#header.fixed #tagline {
+	opacity:0;
+	transition: ease-in-out 0.5s;
+}
+
+#header.fixed h1 {
+	margin-top: 0.3em;
 }
 
 #footer {
 	margin-top:2em;
 	background: #333333;
 	padding: 1em 0em;
+}
+
+#footer a {
+	padding: 0em 40%;
 }
 	
 ul.list, ul.list2 {
@@ -143,7 +168,7 @@ h4 {
 h1 {
 	padding: 0;
 	margin-bottom: -0.3em;
-	font-family: 'Zilla Slab', serif;
+	font-family: 'Slabo 27px', serif;
 	color: #ff5050;
 }
 .toggle {
@@ -222,7 +247,8 @@ ul.list2, ul.pub-list
 
 #print-header {
 	padding: 0;
-	margin: 0;
+	margin: 0 !important;
+	top:0 !important;
 }
 @page {
 	margin: 1.5cm 1cm
