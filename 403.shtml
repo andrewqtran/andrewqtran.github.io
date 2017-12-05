@@ -6,42 +6,42 @@
 <meta name="description" content="I translate complex problems in health care and science into effective visual solutions and human-centered products." />
 <meta name="keywords" content="product designer, design thinking, human-centered design, health care, heath tech, mhealth, scientific illustration, UI designer, graphic designer, 3D Animation, biological animation, biological art, biological artist, biological graphic, biological illustrator, medical illustration, medical artist, biomedical communication, biomedical visualization"/>
 <title>Andrew Q. Tran - Product Designer + Biomedical Communicator</title>
-<link rel="stylesheet" href="http://andrewqtran.com/css/foundation.css" />
-<link href="http://andrewqtran.com/css/font-awesome.min.css" rel="stylesheet">
-<link href="http://andrewqtran.com/css/app.css" rel="stylesheet">
+<link rel="stylesheet" href="//andrewqtran.com/css/foundation.css" />
+<link href="//andrewqtran.com/css/font-awesome.min.css" rel="stylesheet">
+<link href="//andrewqtran.com/css/app.css" rel="stylesheet">
 
 
-<script src="http://andrewqtran.com/js/vendor/modernizr.js"></script>
-<script src="http://andrewqtran.com/js/vendor/jquery.js"></script>
+<script src="//andrewqtran.com/js/vendor/modernizr.js"></script>
+<script src="//andrewqtran.com/js/vendor/jquery.js"></script>
 </head>
 <body>
 <div class="contain-to-grid sticky" id="header">
   <nav data-topbar role="navigation">
-    <h1 id="logo"><a href="http://andrewqtran.com/index.html">A<span class="aqt">ndrew</span><span id="q">Q</span>T<span class="aqt">ran</span> </a></h1>
-    <div class="text-center" id="nav"> <a href="http://andrewqtran.com/index.html" class="active"><i class="fa fa-th-large"></i><span class="link">Portfolio</span></a> <a href="http://andrewqtran.com/about.html"><i class="fa fa-user"></i><span class="link">About</span></a> <a href="http://andrewqtran.com/contact.html"><i class="fa fa-paper-plane"></i><span class="link">Contact</span></a> </div>
+    <h1 id="logo"><a href="//andrewqtran.com/index.html">A<span class="aqt">ndrew</span><span id="q">Q</span>T<span class="aqt">ran</span> </a></h1>
+    <div class="text-center" id="nav"> <a href="//andrewqtran.com/index.html" class="active"><i class="fa fa-th-large"></i><span class="link">Portfolio</span></a> <a href="//andrewqtran.com/about.html"><i class="fa fa-user"></i><span class="link">About</span></a> <a href="//andrewqtran.com/contact.html"><i class="fa fa-paper-plane"></i><span class="link">Contact</span></a> </div>
   </nav>
 </div>
 <div class="row" id="portfolio">
   <div class="small-12 columns" id="hello">
     <h2>Oops! Error 403 – Forbidden.</h2>
-    <p>You are not authorized to view this page. Go back to the <a href="http://andrewqtran.com/index.html">home page</a>.<br/>
+    <p>You are not authorized to view this page. Go back to the <a href="//andrewqtran.com/index.html">home page</a>.<br/>
     </p>
   </div>
 </div>
 <div class="contain-to-grid text-center" id="footer">
   <div class="row" id="social">
     <ul class="small-block-grid-4 medium-block-grid-4">
-      <li class="fa-stack fa-lg"><a href="http://andrewqtran.com/mailto:hello[at]andrewqtran.com"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-envelope fa-stack-1x fa-inverse"></i></a></li>
-      <li class="fa-stack fa-lg"><a href="http://andrewqtran.com/https://twitter.com/aqtaqt" target="_blank"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></a></li>
-      <li class="fa-stack fa-lg"><a href="http://www.linkedin.com/in/andrewqtran/" target="_blank"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-linkedin fa-stack-1x fa-inverse"></i></a></li>
-      <li class="fa-stack fa-lg"><a href="http://andrewqtran.com/../Andrew_Q_Tran_Resume.pdf" target="_blank"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-file-pdf-o fa-stack-1x fa-inverse"></i></a></li>
+      <li class="fa-stack fa-lg"><a href="//andrewqtran.com/mailto:hello[at]andrewqtran.com"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-envelope fa-stack-1x fa-inverse"></i></a></li>
+      <li class="fa-stack fa-lg"><a href="//andrewqtran.com/https://twitter.com/aqtaqt" target="_blank"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></a></li>
+      <li class="fa-stack fa-lg"><a href="//www.linkedin.com/in/andrewqtran/" target="_blank"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-linkedin fa-stack-1x fa-inverse"></i></a></li>
+      <li class="fa-stack fa-lg"><a href="//andrewqtran.com/../Andrew_Q_Tran_Resume.pdf" target="_blank"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-file-pdf-o fa-stack-1x fa-inverse"></i></a></li>
     </ul>
   </div>
   <div class="copyright"><br>
     Copyright &copy; 2017 Andrew Q Tran. All Rights Reserved.<br>
   </div>
 </div>
-<script src="http://andrewqtran.com/js/foundation.min.js"></script> 
+<script src="//andrewqtran.com/js/foundation.min.js"></script> 
 <script src="js/app.js"></script>
 </body>
 </html>
