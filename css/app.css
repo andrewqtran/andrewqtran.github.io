@@ -23,8 +23,6 @@ body {
 	/*box-shadow: #ccc 0px 0px 5px;*/
 	margin-bottom: -2em;
 	padding-bottom: 1em;
-	border-left: #E7E7E7 1px solid;
-	border-right: #E7E7E7 1px solid; 
 }
 
 #header {
@@ -487,6 +485,10 @@ article {
 	.fade:hover {
 		opacity: 1;
 	}
+	.white-background {
+	border-left: #E7E7E7 1px solid;
+	border-right: #E7E7E7 1px solid; 
+	}
 }
 
 
@@ -614,7 +616,7 @@ article {
 	}
 	.previous {
 		float: left;
-		left: 20%;
+		left: 20%;	
 	}
 	.next {
 		float: right;
