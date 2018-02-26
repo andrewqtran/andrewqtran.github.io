@@ -1,4 +1,0 @@
-AuthType Basic
-AuthName "restricted area"
-AuthUserFile /home/aqt/public_html/vh/.htpasswd
-require valid-user
