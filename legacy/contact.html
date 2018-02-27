@@ -1,0 +1,47 @@
+<div class="container_12 section" id="contact">
+  <div class="grid_12">
+    <h1>contact</h1>
+  </div>
+  <div class="grid_6">
+    <h2>let's talk</h2>
+    <p>If you'd like to chat about a project, or just simply want to say hello, please feel free to drop me a line here. </p>
+    <p>Or, you can always email <a href="mailto:andrew[at]andrewqtran.com">andrew<span>@</span>andrewqtran<span>.</span>com</a>.</p>
+  </div>
+  <div class="grid_6">
+    <?php
+if (isset($_REQUEST['email']))
+  {
+  $email = $_REQUEST['email'] ;
+  $name = $_REQUEST['name'] ;
+  $message = $_REQUEST['message'] ;
+  $redirect = '<script language="javascript"> 
+document.location.href="http://andrewqtran.com/#contact" 
+</script>'; 
+  mail("andrew@andrewqtran.com", $name,
+  $message, "From:" . $email);
+  echo "<div style='text-align: center'><h2>Thanks! We'll be in touch.</h2><p>(Forgot something? <a href='javascript:null()' onClick='history.go(-1);return true;'>Go back to the form</a>).</p><p></p><img src='images/airplane_sent.png' /></p></div>";
+  }
+else
+  {
+  echo "<form method='post' action='index.php'>
+  <p><span id='sprytextfield1'>
+  <input name='name' type='text' class='textField' id='name' />
+  <span class='textfieldRequiredMsg'>Please tell me your name.</span>
+  <span class='textfieldMinCharsMsg'>Minimum number of characters not met.</span>
+  <span class='textfieldMaxCharsMsg'>Exceeded maximum number of characters.</span> </span>
+  <p><span id='sprytextfield2'>
+  <input name='email' type='text' class='textField' id='email' />
+  <span class='textfieldRequiredMsg'>Please give me a valid email address.</span>
+  <span class='textfieldMinCharsMsg'>Minimum number of characters not met.</span>
+  <span class='textfieldMaxCharsMsg'>Exceeded maximum number of characters.</span> </span>
+  <p><span id='sprytextarea1'>
+  <textarea name='message' class='textField message' id='message' rows='6'></textarea>
+  <span id='countsprytextarea1' style='float:right; margin:5px -15px 5px auto; z-index:1; display:block'></span><span class='textareaRequiredMsg'>Did you forget to write a message?</span><span class='textareaMinCharsMsg'>Minimum number of characters not met.</span><span class='textareaMaxCharsMsg'>Exceeded maximum number of characters.</span></span><br />
+  <input type='submit' class='button' value='Send' name='submit' style='width:50%; margin:10px 0px'>
+  <div class='draggable'><img src='images/airplane.png' width='155' height='93' style='margin-left: 170px; margin-top: -90px' /></div>
+  </form>";
+  }
+  print $redirect; 
+?>
+  </div>
+</div>
