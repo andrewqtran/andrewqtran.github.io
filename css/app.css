@@ -157,6 +157,10 @@ body {
 
 }
 
+#portfolio-menu li a::after {
+	display: none;
+}
+
 #portfolio-nav a {
 	color: #333;
 	transition: all ease 0.2s;
@@ -417,6 +421,7 @@ li a::after {
 	transform: scaleX(0);
 	transition: all .2s ease-in-out 0s;
 }
+
 
 p a:hover,
 li a:hover {
