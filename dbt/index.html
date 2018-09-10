@@ -13,17 +13,22 @@
         crossorigin="anonymous">
     <title>DBT Diary</title>
     <style>
-     html,   body {
+        html,   body {
         background-color: #EFEFF4;
         overflow-x: hidden;
+        font-size:15px;
     }
     h1 {
         font-size: 24px;
         font-weight: 600;
         margin-top: 24px;
     }
-    #date i {
-        padding: 0 15px;
+    #date-nav {
+        float:right;
+        text-align: right;
+    }
+    #date-nav i {
+        padding-left: 20px;
     }
     h3 {
         color: #8e8e93;
@@ -49,7 +54,12 @@
     }
     tr td {
         border: 1px solid #EFEFF4;
-        padding: 8px 15px;
+        padding: 0 15px;
+        text-align: center;
+        height: 40px;
+    }
+    tr td:first-child {
+        text-align: left;
     }
     tr.header-row {
         background: none;
@@ -57,11 +67,35 @@
     tr.header-row > th {
         padding-left: 15px
     }
+    tr.header-row th {
+        /* text-align:center; */
+    }
+    tr.header-row th:first-child {
+        text-align: left;
+    }
+
+    #actions tr {
+        border: 1px solid #EFeFF4;
+    }
+
+    #actions td {
+        border:none;
+    }
+    input[type=radio] {
+        opacity: 0;
+    }
+
+    input[type=radio]:checked {
+        opacity: 1;
+    }
+
     .switch {
     position: relative;
     display: inline-block;
-    width: 60px;
-    height: 34px;
+    width: 56px;
+    height: 30px;
+    float:right;
+    top: 4px;
     }
 
     .switch input {display:none;}
@@ -74,8 +108,8 @@
     right: 0;
     bottom: 0;
     background-color: #ccc;
-    -webkit-transition: .4s;
-    transition: .4s;
+    -webkit-transition: .2s;
+    transition: .2s;
     }
 
     .slider:before {
@@ -83,19 +117,19 @@
     content: "";
     height: 26px;
     width: 26px;
-    left: 4px;
-    bottom: 4px;
+    left: 2px;
+    bottom: 2px;
     background-color: white;
-    -webkit-transition: .4s;
-    transition: .4s;
+    -webkit-transition: .3s;
+    transition: .3s;
     }
 
     input:checked + .slider {
-    background-color: #2196F3;
+    background-color: #E6AE52;
     }
 
     input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
+    box-shadow: 0 0 1px #E6AE52;
     }
 
     input:checked + .slider:before {
@@ -121,7 +155,8 @@
         <div class="row">
             <div class="col col-sm-12 col-md-8 col-lg-6">
                 <div id="date">
-                    <h1>Monday, Sept 10 <i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><i class="fa fa-calendar"></i></h1>
+                    <h1>Monday, Sept 10 <span id="date-nav"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><i
+                                class="fa fa-calendar"></i></span></h1>
                 </div>
                 <div id="life-worth-living-goal">
                     <h3>Life worth living goal <i class="fa fa-unlock"></i></h1>
@@ -171,7 +206,7 @@
                             <td><input type="radio" id="die5" name="suicide"></td>
                         </tr>
                         <tr>
-                            <td>Self-harm</td>
+                            <td>S. Harm</td>
                             <td><input type="radio" id="die0" name="self-harm"></td>
                             <td><input type="radio" id="die1" name="self-harm"></td>
                             <td><input type="radio" id="die2" name="self-harm"></td>
@@ -189,14 +224,112 @@
                             <td><input type="radio" id="die5" name="usedrink"></td>
                         </tr>
                     </table>
-                    <h3>Actions</h3>
                 </div>
+                <div id="actions">
+                    <table>
+                        <tr class="header-row">
+                            <th>
+                                <h3>Did you...</h3>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>Attempt suicide</td>
+                            <td> <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                </label></td>
+                        </tr>
+                        <tr>
+                            <td>Harm yourself</td>
+                            <td> <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                </label></td>
+                        </tr>
+                        <tr>
+                            <td>Drink or use drugs</td>
+                            <td> <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                </label></td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="emotions">
+                        <table>
+                            <tr class="header-row">
+                                <th>
+                                    <h3>Emotions</h3>
+                                </th>
+                                <th>
+                                    <h3>0</h3>
+                                </th>
+                                <th>
+                                    <h3>1</h3>
+                                </th>
+                                <th>
+                                    <h3>2</h3>
+                                </th>
+                                <th>
+                                    <h3>3</h3>
+                                </th>
+                                <th>
+                                    <h3>4</h3>
+                                </th>
+                                <th>
+                                    <h3>5</h3>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td>Sad</td>
+                                <td><input type="radio" id="emotion0" name="sad"></td>
+                                <td><input type="radio" id="emotion1" name="sad"></td>
+                                <td><input type="radio" id="emotion2" name="sad"></td>
+                                <td><input type="radio" id="emotion3" name="sad"></td>
+                                <td><input type="radio" id="emotion4" name="sad"></td>
+                                <td><input type="radio" id="emotion5" name="sad"></td>
+                            </tr>
+                            <tr>
+                                <td>Shame</td>
+                                <td><input type="radio" id="emotion0" name="shame"></td>
+                                <td><input type="radio" id="emotion1" name="shame"></td>
+                                <td><input type="radio" id="emotion2" name="shame"></td>
+                                <td><input type="radio" id="emotion3" name="shame"></td>
+                                <td><input type="radio" id="emotion4" name="shame"></td>
+                                <td><input type="radio" id="emotion5" name="shame"></td>
+                            </tr>
+                            <tr>
+                                <td>Anger</td>
+                                <td><input type="radio" id="emotion0" name="anger"></td>
+                                <td><input type="radio" id="emotion1" name="anger"></td>
+                                <td><input type="radio" id="emotion2" name="anger"></td>
+                                <td><input type="radio" id="emotion3" name="anger"></td>
+                                <td><input type="radio" id="emotion4" name="anger"></td>
+                                <td><input type="radio" id="emotion5" name="anger"></td>
+                            </tr>
+                            <tr>
+                                <td>Fear/Worry</td>
+                                <td><input type="radio" id="emotion0" name="fearworry"></td>
+                                <td><input type="radio" id="emotion1" name="fearworry"></td>
+                                <td><input type="radio" id="emotion2" name="fearworry"></td>
+                                <td><input type="radio" id="emotion3" name="fearworry"></td>
+                                <td><input type="radio" id="emotion4" name="fearworry"></td>
+                                <td><input type="radio" id="emotion5" name="fearworry"></td>
+                            </tr>
+                            <tr>
+                                    <td>Joy</td>
+                                    <td><input type="radio" id="emotion0" name="joy"></td>
+                                    <td><input type="radio" id="emotion1" name="joy"></td>
+                                    <td><input type="radio" id="emotion2" name="joy"></td>
+                                    <td><input type="radio" id="emotion3" name="joy"></td>
+                                    <td><input type="radio" id="emotion4" name="joy"></td>
+                                    <td><input type="radio" id="emotion5" name="joy"></td>
+                                </tr>
+                        </table>
+                    </div>
             </div>
         </div>
-        <label class="switch">
-            <input type="checkbox">
-            <span class="slider round"></span>
-        </label>
+
     </div>
 
 
