@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+    <link rel="shortcut icon" type="image/png" href="favicon.png" />
     <link rel="apple-touch-icon" href="favicon.png">
 
 
@@ -83,6 +83,7 @@
         padding: 0 15px;
         text-align: center;
         height: 40px;
+        min-width:40px
     }
     tr td:first-child {
         text-align: left;
@@ -173,24 +174,62 @@
     border-radius: 50%;
     }
 
+    .entry-container {
+        background:white;
+        margin-left:-15px;
+        width: calc(100vw);
+        padding-left:15px;
+        height: 35px;
+    }
+
+    .entry {
+        background: #e6ae52;
+        color: white;
+        border-radius: 15px;
+        font-size: 12px;
+        display:inline-block;
+        padding: 4px 8px;
+        margin-right: 12px;
+        height: 26px;
+        border: thin solid #e6ae52;
+    }
+
+    a.entry-add {
+        background: none;
+        color: rgba(0,0,0,.3) !important;
+        border: thin solid rgba(0,0,0,.3);
+               
+    }
+    .entry .badge {
+        background: #D31C5B;
+        color: white;
+        font-size: 10px;
+        float:right;
+        margin-right: -18px;
+        margin-top: -10px;
+        height: 18px;
+        width: 18px;
+        border-radius:18px;
+    }
     </style>
 </head>
 
-<body><div id="navbar">
+<body>
+    <div id="navbar">
         DBT Diary Card
     </div>
-        
+
     <div class="container-fluid">
-        
+
         <div class="row">
             <div class="col col-sm-12 col-md-8 col-lg-6">
-                
+
                 <div id="date">
                     <h1>Monday, Sept 10 <span id="date-nav"><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i><i
                                 class="fa fa-calendar"></i></span></h1>
                 </div>
                 <div id="life-worth-living-goal">
-                    <h3>Life worth living goal <i class="fa fa-unlock"></i></h1>
+                    <h3>Life worth living goal <i class="fa fa-unlock"></i></h3>
                         <textarea name="life-worth-living-goal" id="" cols="30" rows="2">Be able to watch after grandchildren when they move back to town</textarea>
                 </div>
                 <div id="urges">
@@ -287,80 +326,112 @@
                     </table>
                 </div>
                 <div id="emotions">
-                        <table>
-                            <tr class="header-row">
-                                <th>
-                                    <h3>Emotions</h3>
-                                </th>
-                                <th>
-                                    <h3>0</h3>
-                                </th>
-                                <th>
-                                    <h3>1</h3>
-                                </th>
-                                <th>
-                                    <h3>2</h3>
-                                </th>
-                                <th>
-                                    <h3>3</h3>
-                                </th>
-                                <th>
-                                    <h3>4</h3>
-                                </th>
-                                <th>
-                                    <h3>5</h3>
-                                </th>
-                            </tr>
-                            <tr>
-                                <td>Sad</td>
-                                <td><input type="radio" id="emotion0" name="sad"></td>
-                                <td><input type="radio" id="emotion1" name="sad"></td>
-                                <td><input type="radio" id="emotion2" name="sad"></td>
-                                <td><input type="radio" id="emotion3" name="sad"></td>
-                                <td><input type="radio" id="emotion4" name="sad"></td>
-                                <td><input type="radio" id="emotion5" name="sad"></td>
-                            </tr>
-                            <tr>
-                                <td>Shame</td>
-                                <td><input type="radio" id="emotion0" name="shame"></td>
-                                <td><input type="radio" id="emotion1" name="shame"></td>
-                                <td><input type="radio" id="emotion2" name="shame"></td>
-                                <td><input type="radio" id="emotion3" name="shame"></td>
-                                <td><input type="radio" id="emotion4" name="shame"></td>
-                                <td><input type="radio" id="emotion5" name="shame"></td>
-                            </tr>
-                            <tr>
-                                <td>Anger</td>
-                                <td><input type="radio" id="emotion0" name="anger"></td>
-                                <td><input type="radio" id="emotion1" name="anger"></td>
-                                <td><input type="radio" id="emotion2" name="anger"></td>
-                                <td><input type="radio" id="emotion3" name="anger"></td>
-                                <td><input type="radio" id="emotion4" name="anger"></td>
-                                <td><input type="radio" id="emotion5" name="anger"></td>
-                            </tr>
-                            <tr>
-                                <td>Fear/Worry</td>
-                                <td><input type="radio" id="emotion0" name="fearworry"></td>
-                                <td><input type="radio" id="emotion1" name="fearworry"></td>
-                                <td><input type="radio" id="emotion2" name="fearworry"></td>
-                                <td><input type="radio" id="emotion3" name="fearworry"></td>
-                                <td><input type="radio" id="emotion4" name="fearworry"></td>
-                                <td><input type="radio" id="emotion5" name="fearworry"></td>
-                            </tr>
-                            <tr>
-                                    <td>Joy</td>
-                                    <td><input type="radio" id="emotion0" name="joy"></td>
-                                    <td><input type="radio" id="emotion1" name="joy"></td>
-                                    <td><input type="radio" id="emotion2" name="joy"></td>
-                                    <td><input type="radio" id="emotion3" name="joy"></td>
-                                    <td><input type="radio" id="emotion4" name="joy"></td>
-                                    <td><input type="radio" id="emotion5" name="joy"></td>
-                                </tr>
-                        </table>
+                    <table>
+                        <tr class="header-row">
+                            <th>
+                                <h3>Emotions</h3>
+                            </th>
+                            <th>
+                                <h3>0</h3>
+                            </th>
+                            <th>
+                                <h3>1</h3>
+                            </th>
+                            <th>
+                                <h3>2</h3>
+                            </th>
+                            <th>
+                                <h3>3</h3>
+                            </th>
+                            <th>
+                                <h3>4</h3>
+                            </th>
+                            <th>
+                                <h3>5</h3>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>Sad</td>
+                            <td><input type="radio" id="emotion0" name="sad"></td>
+                            <td><input type="radio" id="emotion1" name="sad"></td>
+                            <td><input type="radio" id="emotion2" name="sad"></td>
+                            <td><input type="radio" id="emotion3" name="sad"></td>
+                            <td><input type="radio" id="emotion4" name="sad"></td>
+                            <td><input type="radio" id="emotion5" name="sad"></td>
+                        </tr>
+                        <tr>
+                            <td>Shame</td>
+                            <td><input type="radio" id="emotion0" name="shame"></td>
+                            <td><input type="radio" id="emotion1" name="shame"></td>
+                            <td><input type="radio" id="emotion2" name="shame"></td>
+                            <td><input type="radio" id="emotion3" name="shame"></td>
+                            <td><input type="radio" id="emotion4" name="shame"></td>
+                            <td><input type="radio" id="emotion5" name="shame"></td>
+                        </tr>
+                        <tr>
+                            <td>Anger</td>
+                            <td><input type="radio" id="emotion0" name="anger"></td>
+                            <td><input type="radio" id="emotion1" name="anger"></td>
+                            <td><input type="radio" id="emotion2" name="anger"></td>
+                            <td><input type="radio" id="emotion3" name="anger"></td>
+                            <td><input type="radio" id="emotion4" name="anger"></td>
+                            <td><input type="radio" id="emotion5" name="anger"></td>
+                        </tr>
+                        <tr>
+                            <td>Fear/worry</td>
+                            <td><input type="radio" id="emotion0" name="fearworry"></td>
+                            <td><input type="radio" id="emotion1" name="fearworry"></td>
+                            <td><input type="radio" id="emotion2" name="fearworry"></td>
+                            <td><input type="radio" id="emotion3" name="fearworry"></td>
+                            <td><input type="radio" id="emotion4" name="fearworry"></td>
+                            <td><input type="radio" id="emotion5" name="fearworry"></td>
+                        </tr>
+                        <tr>
+                            <td>Joy</td>
+                            <td><input type="radio" id="emotion0" name="joy"></td>
+                            <td><input type="radio" id="emotion1" name="joy"></td>
+                            <td><input type="radio" id="emotion2" name="joy"></td>
+                            <td><input type="radio" id="emotion3" name="joy"></td>
+                            <td><input type="radio" id="emotion4" name="joy"></td>
+                            <td><input type="radio" id="emotion5" name="joy"></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="targetbx">
+                    <h3>1 — Interpersonal <i class="fa fa-arrow-up"></i></h3>
+                        <textarea name="" id="" cols="30" rows="2">Improve/increase small neutral social interactions</textarea>
+
+                        <div class="entry-container">
+                            <span class="entry">group session</span>
+                            <a class="entry entry-add">add</a></div>
+                </div>
+                <div class="targetbx">
+                        <h3>2 — Behavioral <i class="fa fa-arrow-down"></i></h3>
+                            <textarea name="" id="" cols="30" rows="2">Decrease raised voice & intimidation techniques when overwhelmed</textarea>
+    
+                            <div class="entry-container">
+                                <a class="entry entry-add">add</a></div>
                     </div>
+                    <div class="targetbx">
+                            <h3>3 — Self <i class="fa fa-arrow-up"></i></h3>
+                                <textarea name="" id="" cols="30" rows="2">Increase self-care and focus on self opportunities</textarea>
+        
+                                <div class="entry-container">
+                                    <span class="entry">art<span class="badge">2</span></span>
+                                    <span class="entry">dancing</span>
+                                    <a class="entry entry-add">add</a></div>
+                        </div>
+                        <div class="targetbx">
+                                <h3>4 — Affective <i class="fa fa-arrow-up"></i></h3>
+                                    <textarea name="" id="" cols="30" rows="2">Increase awareness of range of emotions, not just anger and sadness</textarea>
+            
+                                    <div class="entry-container">
+                                        
+                                        <a class="entry entry-add">add</a></div>
+                            </div>
             </div>
         </div>
-
+        <br><br><br>
     </div>
 
 
