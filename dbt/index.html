@@ -252,6 +252,16 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+        <script>/* prevent links from opening in a new browser on iPad full screen mode */
+                var a=document.getElementsByTagName("a");
+                for(var i=0;i<a.length;i++) {
+                    if(!a[i].onclick && a[i].getAttribute("target") != "_blank") {
+                        a[i].onclick=function() {
+                                window.location=this.getAttribute("href");
+                                return false; 
+                        }
+                    }
+                }</script>
 </body>
 
 </html>
