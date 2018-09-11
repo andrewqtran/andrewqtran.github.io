@@ -1,0 +1,213 @@
+
+        html, body {
+        background-color:#3F395A ;
+        overflow-x: hidden;
+        font-size:15px;
+    }
+
+    #navbar {
+        display:block;
+        color: white;
+        font-weight:400;
+        text-align: center;
+        height: 44px;
+        line-height: 44px;
+        width: 100vw;
+        background-color: #3F395a;
+        position: fixed;
+        z-index: 1000;
+    }
+
+    
+
+    .container-fluid {
+        background: #EFEFF4;
+        margin-top: 44px;
+    }
+
+    h1 {
+        font-size: 24px;
+        font-weight: 600;
+        margin-top: 24px;
+        vertical-align: middle;
+    }
+
+    #date-nav {
+        float:right;
+        text-align: right;
+    }
+    #date-nav i {
+        padding-left: 20px;
+    }
+    h3 {
+        color: #8e8e93;
+        text-transform: uppercase;
+        font-size:12px;
+        margin-top: 24px;
+    }
+    textarea {
+        margin-left: -15px;
+        display:block;
+        width: calc(100vw);
+        padding: 8px 15px;
+        border:none;
+        -webkit-appearance: none;
+    }
+    table {
+        margin-left: -15px;
+        padding-left: 15px;
+        width: calc(100vw);
+    }
+    tr {
+        background: white;
+    }
+    tr td {
+        border: 1px solid #EFEFF4;
+        padding: 0 15px;
+        text-align: center;
+        height: 40px;
+        min-width:40px
+    }
+    tr td:first-child {
+        text-align: left;
+    }
+    tr.header-row {
+        background: none;
+    }
+    tr.header-row > th {
+        padding-left: 15px
+    }
+    tr.header-row th {
+        /* text-align:center; */
+    }
+    tr.header-row th:first-child {
+        text-align: left;
+    }
+
+    #actions tr {
+        border: 1px solid #EFeFF4;
+    }
+
+    #actions td {
+        border:none;
+    }
+    input[type=radio] {
+        opacity: 0;
+    }
+
+    input[type=radio]:checked {
+        opacity: 1;
+    }
+
+    .switch {
+    position: relative;
+    display: inline-block;
+    width: 56px;
+    height: 30px;
+    float:right;
+    top: 4px;
+    }
+
+    .switch input {display:none;}
+
+    .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .2s;
+    transition: .2s;
+    }
+
+    .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .3s;
+    transition: .3s;
+    }
+
+    input:checked + .slider {
+    background-color: #E6AE52;
+    }
+
+    input:focus + .slider {
+    box-shadow: 0 0 1px #E6AE52;
+    }
+
+    input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+    }
+
+    /* Rounded sliders */
+    .slider.round {
+    border-radius: 34px;
+    }
+
+    .slider.round:before {
+    border-radius: 50%;
+    }
+
+    .entry-container {
+        background:white;
+        margin-left:-15px;
+        width: calc(100vw);
+        padding-left:15px;
+        margin-top: 1px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
+    .entry {
+        background: #e6ae52;
+        color: white;
+        border-radius: 15px;
+        font-size: 12px;
+        display:inline-block;
+        padding: 4px 8px;
+        margin-right: 12px;
+        height: 25px;
+        border: thin solid #e6ae52;
+    }
+
+    a.entry-add {
+        background: none;
+        color: rgba(0,0,0,.3) !important;
+        border: thin solid rgba(0,0,0,.3);
+               
+    }
+    .entry .badge {
+        background: #D31C5B;
+        color: white;
+        font-size: 10px;
+        float:right;
+        margin-right: -18px;
+        margin-top: -10px;
+        height: 18px;
+        width: 18px;
+        border-radius:18px;
+    }
+
+    .fa-arrow-up {
+        color:green;
+
+    }
+
+    .fa-arrow-down {
+        color:red;
+    }
+
+    .fa-check-circle {
+        color: #D31C5B;
+        font-size: 14px;
+        vertical-align: middle;        
+    }
