@@ -44,18 +44,21 @@ h1 {
     margin-top: 24px;
     vertical-align: middle;
     text-align: center;
-
+    width: 100%;
 
 }
 
 .fa-chevron-right{
     float: right;
     margin-top:2px;
+    color: #3F395A;
+    text-align: right;
 }
 
 .fa-chevron-left {
     float:left;
     margin-top:2px;
+    color: #3F395a
 }
 
 h3 {
@@ -227,6 +230,14 @@ a.entry-add {
     height: 18px;
     width: 18px;
     border-radius: 18px;
+}
+
+a.question-link {
+    color: #D31C5B;
+    padding-top: 5px;
+    display: block;
+    text-decoration: none;
+    font-size:14px;
 }
 
 .fa-arrow-up {
