@@ -123,6 +123,8 @@ tr.header-row th:first-child {
     border: none;
 }
 
+
+/* Toggle Switch */
 input[type=radio] {
     opacity: 0;
 }
@@ -191,6 +193,82 @@ input:checked+.slider:before {
     border-radius: 50%;
 }
 
+
+/* Checkbox checkmark */
+
+.checkbox input[type="checkbox"] {
+    opacity: 0;
+}
+
+.checkbox label {
+    position: relative;
+    display: block;
+    background:#fff;
+    /*16px width of fake checkbox + 6px distance between fake checkbox and text*/
+    height:40px;
+    margin-left: -15px;
+    padding-left:15px;
+    line-height: 40px;
+    border-bottom: 1px solid #EFEFF4;
+    width:100vw;
+    margin-top: -20px;
+    margin-bottom: -2px;
+
+}
+
+
+.checkbox label::before,
+.checkbox label::after {
+    position: absolute;
+    content: "";
+    /*Needed for the line-height to take effect*/
+    display: inline-block;
+}
+
+/*Outer box of the fake checkbox*/
+.checkbox label::before{
+    height: 16px;
+    width: 16px;
+    border: 1px solid;
+    right: 0px;
+    
+    /*(24px line-height - 16px height of fake checkbox) / 2 - 1px for the border
+     *to vertically center it.
+     */
+    top: 3px;
+    opacity: 0;
+}
+
+
+/*Checkmark of the fake checkbox*/
+.checkbox label::after {
+    height: 10px;
+    width: 20px;
+    border-left: 2px solid;
+    border-bottom: 2px solid;
+    
+    transform: rotate(-45deg);
+    right: 15px;
+    top: 10px;
+    border-color:#e6ae52
+}
+
+/*Hide the checkmark by default*/
+.checkbox input[type="checkbox"] + label::after {
+    content: none;
+}
+
+/*Unhide on the checked state*/
+.checkbox input[type="checkbox"]:checked + label::after {
+    content: "";
+}
+
+/*Adding focus styles on the outer-box of the fake checkbox*/
+.checkbox input[type="checkbox"]:focus + label::before {
+    outline: rgb(59, 153, 252) auto 5px;
+}
+
+
 .entry-container {
     background: white;
     margin-left: -15px;
@@ -234,7 +312,7 @@ a.entry-add {
 
 a.question-link {
     color: #D31C5B;
-    padding-top: 5px;
+    padding: 5px 0px;
     display: block;
     text-decoration: none;
     font-size:14px;
