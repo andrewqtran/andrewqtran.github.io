@@ -310,7 +310,7 @@ a.entry-add {
     border-radius: 18px;
 }
 
-a.question-link {
+div.question-link {
     color: #D31C5B;
     padding: 5px 0px;
     display: block;
@@ -331,4 +331,9 @@ a.question-link {
     color: #D31C5B;
     font-size: 14px;
     vertical-align: middle;
+}
+
+#skills-no-survey, #skills-yes-survey {
+    display: none;
+
 }

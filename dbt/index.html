@@ -247,33 +247,49 @@
                         </tr>
                         <tr>
                             <td>Skills used</td>
-                            <td> <label class="switch skills-used">
-                                    <input type="checkbox">
-                                    <span class="slider round"></span>
-                                </label></td>
-                                
-                        </tr>                        
-                        
+                            <td>
+                                <label class="switch skills-used" id="skills">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                    </label>
+                                    
+                            </td>
+
+                        </tr>
+
                     </table>
-                    <a href="#" class="question-link">What stopped you from using the skills?</a>
+                    <div class="question-link" id="skills-no-question">What stopped you from using the skills?</div>
                     <div id="skills-no-survey" class="checkbox">
                         <input type="checkbox" id="checkbox1"><label for="checkbox1">Didn't think about it</label>
-                        <input type="checkbox" id="checkbox2"><label for="checkbox2">Thought about it but didn’t want to use them</label>
-                        <input type="checkbox" id="checkbox3"><label for="checkbox3">Tried to use them but couldn't do it</label>
-                        <input type="checkbox" id="checkbox4"><label for="checkbox4">Got block from using them</label></div>
+                        <input type="checkbox" id="checkbox2"><label for="checkbox2">Thought about it but didn’t want
+                            to use them</label>
+                        <input type="checkbox" id="checkbox3"><label for="checkbox3">Tried to use them but couldn't do
+                            it</label>
+                        <input type="checkbox" id="checkbox4"><label for="checkbox4">Got block from using them</label>
                         <textarea name="" id="" cols="30" rows="2" placeholder="Other reasons..."></textarea>
+                    </div>
+                    <div class="question-link" id="skills-yes-question">Did the skills help?</div>
 
-                    </div>  
+                    <div id="skills-yes-survey" class="checkbox">
+                        <input type="checkbox" id="checkbox5"><label for="checkbox1">Skills worked</label>
+                        <input type="checkbox" id="checkbox6"><label for="checkbox2">Skills didn't work</label>
+                        <input type="checkbox" id="checkbox7"><label for="checkbox3">Some skills worked, some didn't </label>
+                        <textarea name="" id="" cols="30" rows="2" placeholder="Other reasons..."></textarea>
+                    </div>
+
                 </div>
             </div>
         </div>
-        <br><br><br>
+    </div>
+    <br><br><br>
     </div>
 
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
@@ -290,6 +306,22 @@
                 }
             }
         }
+        /* jQuery actions */
+        $("#skills").click(function () {
+            $("#skills-no-question").toggle(function())
+        });
+        $(" ").click(function () {
+            $(this).addClass("skills-used-no");
+            $(this).removeClass("skills-used-yes");
+            $("#skills-yes-question").replaceWith(
+                "<div class='question-link' id='skills-no-question'>What stopped you from using the skills?</div>")
+        });
+        $("#skills-no-question").click(function () {
+            $("#skills-no-survey").toggle("slide", function () {});
+        });
+        $("#skills-yes-question").click(function () {
+            $("#skills-yes-survey").toggle("slide", function () {});
+        });
     </script>
 </body>
 
