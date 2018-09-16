@@ -23,7 +23,8 @@
 
 <body>
     <div id="navbar">
-        DBT Diary Card
+        <strong>DBT Diary</strong>
+        <span id="session-button">Start Session</span>
     </div>
 
     <div class="container-fluid">
@@ -246,11 +247,11 @@
                             <th></th>
                         </tr>
                         <tr>
-                            <td>Skills used</td>
-                            <td>
+                            <td style="border:0">Skills used</td>
+                            <td style="border:0">
                                 <label class="switch skills-used" id="skills">
                                         <input type="checkbox">
-                                        <span class="slider round"></span>
+                                        <span class="slider round" id="skills-slider"></span>
                                     </label>
                                     
                             </td>
@@ -268,15 +269,58 @@
                         <input type="checkbox" id="checkbox4"><label for="checkbox4">Got block from using them</label>
                         <textarea name="" id="" cols="30" rows="2" placeholder="Other reasons..."></textarea>
                     </div>
-                    <div class="question-link" id="skills-yes-question">Did the skills help?</div>
+                    <div class="question-link" id="skills-yes-question" style="display:none">Did the skills help?</div>
 
                     <div id="skills-yes-survey" class="checkbox">
-                        <input type="checkbox" id="checkbox5"><label for="checkbox1">Skills worked</label>
-                        <input type="checkbox" id="checkbox6"><label for="checkbox2">Skills didn't work</label>
-                        <input type="checkbox" id="checkbox7"><label for="checkbox3">Some skills worked, some didn't </label>
+                            
+                        <input type="checkbox" id="checkbox5"><label for="checkbox5">Skills worked</label>
+                        <input type="checkbox" id="checkbox6"><label for="checkbox6">Skills didn't work</label>
+                        <input type="checkbox" id="checkbox7"><label for="checkbox7">Some skills worked, some didn't </label>
                         <textarea name="" id="" cols="30" rows="2" placeholder="Other reasons..."></textarea>
+                        <table>
+                                <tr class="header-row">
+                                    <th>
+                                        <h3></h3>
+                                    </th>
+                                    <th>
+                                        <h3>0</h3>
+                                    </th>
+                                    <th>
+                                        <h3>1</h3>
+                                    </th>
+                                    <th>
+                                        <h3>2</h3>
+                                    </th>
+                                    <th>
+                                        <h3>3</h3>
+                                    </th>
+                                    <th>
+                                        <h3>4</h3>
+                                    </th>
+                                    <th>
+                                        <h3>5</h3>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td>Efforts</td>
+                                    <td><input type="radio" id="effort0" name="efforts"></td>
+                                    <td><input type="radio" id="effort1" name="efforts"></td>
+                                    <td><input type="radio" id="effort2" name="efforts"></td>
+                                    <td><input type="radio" id="effort3" name="efforts"></td>
+                                    <td><input type="radio" id="effort4" name="efforts"></td>
+                                    <td><input type="radio" id="effort5" name="efforts"></td>
+                                </tr>
+                                </table>
                     </div>
-
+                    <div id="skills-list" class="checkbox">
+                        <h3>Please select the skills you used today <span><i class="fa fa-search" style="float:right"></i></span></h3>
+                            <input type="checkbox" id="skills1"><label for="skills1">Mindfulness</label>
+                            <input type="checkbox" id="skills2"><label for="skills2">Interpersonal Effectiveness</label>
+                            <input type="checkbox" id="skills3"><label for="skills3">Emotion Regulation</label>
+                            <input type="checkbox" id="skills4"><label for="skills4">Distress Tolerance</label>
+                            <input type="checkbox" id="skills5"><label for="skills5">Middle Path: Dialectics</label>
+                    </div>
+                    <div id="footer">All done! Great job filling out the diary today.</div>
                 </div>
             </div>
         </div>
@@ -307,14 +351,11 @@
             }
         }
         /* jQuery actions */
-        $("#skills").click(function () {
-            $("#skills-no-question").toggle(function())
-        });
-        $(" ").click(function () {
-            $(this).addClass("skills-used-no");
-            $(this).removeClass("skills-used-yes");
-            $("#skills-yes-question").replaceWith(
-                "<div class='question-link' id='skills-no-question'>What stopped you from using the skills?</div>")
+        $("#skills-slider").click(function () {
+            $("#skills-no-question").toggle("slide", function() {});
+            $("#skills-yes-question").toggle("slide", function() {});
+            $("#skills-no-survey").hide("", function() {});
+            $("#skills-yes-survey").hide("", function() {});
         });
         $("#skills-no-question").click(function () {
             $("#skills-no-survey").toggle("slide", function () {});

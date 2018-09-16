@@ -1,6 +1,6 @@
 html,
 body {
-    background-color: #3F395A;
+    background-color: #EFEFF4;
     overflow-x: hidden;
     font-size: 15px;
 }
@@ -16,6 +16,14 @@ body {
     background-color: #3F395a;
     position: fixed;
     z-index: 1000;
+}
+
+#session-button {
+    text-align: right;
+    float: right;
+    position: fixed;
+    z-index: 1001;
+    right:15px;
 }
 
 #reviewed {
@@ -335,5 +343,13 @@ div.question-link {
 
 #skills-no-survey, #skills-yes-survey {
     display: none;
+
+}
+
+#footer {
+    display: block;
+    padding-top: 50px;
+    text-align: center;
+    color: #8e8e93;
 
 }
