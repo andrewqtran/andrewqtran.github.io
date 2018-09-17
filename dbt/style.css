@@ -373,6 +373,7 @@ div.question-link {
     width: calc(100vw - 20px);
     margin: auto;
     border-radius: 100px;
+    
 }
 
 #add-entry-modal-container {
@@ -402,7 +403,6 @@ div.question-link {
     padding-top: 10px;
     padding-bottom:10px;
     border-bottom: solid 1px #EFeFF4;
-    margin-bottom: 10px;
 }
 
 #add-entry-modal textarea {
@@ -412,11 +412,17 @@ div.question-link {
     width: calc(100vw - 50px);
     margin: auto;
     border-radius: 5px;
+    margin-top: 10px;
 }
 
 #add-entry-modal button {
     color: #3F395a;
     padding: 10px;
     width: 45%;
-    display:inline-block
+    display:inline-block;
+    -webkit-appearance: none;
+border-radius: 0;
+height:48px;
+background:none;
+border:none;
 }

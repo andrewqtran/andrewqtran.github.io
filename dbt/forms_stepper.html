@@ -23,15 +23,72 @@
 </head>
 <body>
 
+<div mbsc-page class="demo-stepper">
     <div mbsc-form>
         <div class="mbsc-form-group">
             <div class="mbsc-form-group-title">Passengers</div>
             <div>
+                <label for="md-adults">Adults</label>
+                <span class="mbsc-desc">From 14 years</span>
                 <input id="md-adults" type="number" data-role="stepper" min="1" value="1" max="15" />
             </div>
-            
+            <div>
+                <label for="md-children">Children</label>
+                <span class="mbsc-desc">2-14 years</span>
+                <input id="md-children" type="number" data-role="stepper" max="15" data-val="left" />
+            </div>
+            <div>
+                <label for="md-infant">Infant</label>
+                <span class="mbsc-desc">0-2 years</span>
+                <input id="md-infant" type="number" data-role="stepper" data-val="left" max="10" />
+            </div>
+        </div>
+        <div class="mbsc-form-group">
+            <div class="mbsc-form-group-title">Luggage</div>
+            <label>
+                Allow overweight luggage
+                <input class="md-allow" type="checkbox" />
+            </label>
+            <div>
+                <label for="md-luggage">Weight</label>
+                <span class="mbsc-desc">(kg)</span>
+                <input id="md-luggage" type="number" class="md-luggage" data-role="stepper" data-val="left" min="30" max="80" step="5" value="30" disabled />
+            </div>
+        </div>
+        <div class="mbsc-form-group">
+            <div class="mbsc-form-group-title">Stepper colors</div>
+            <label class=" mbsc-stepper-primary">
+                Primary
+                <input type="number" data-role="stepper" value="100" min="-500" max="500" step="100">
+            </label>
+    
+            <label class=" mbsc-stepper-secondary">
+                Secondary
+                <input type="number" data-role="stepper" value="100" min="-500" max="500" step="100">
+            </label>
+    
+            <label class=" mbsc-stepper-success">
+                Success
+                <input type="number" data-role="stepper" value="100" min="-500" max="500" step="100">
+            </label>
+    
+            <label class=" mbsc-stepper-danger">
+                Danger
+                <input type="number" data-role="stepper" value="100" min="-500" max="500" step="100">
+            </label>
+    
+            <label class=" mbsc-stepper-warning">
+                Warning
+                <input type="number" data-role="stepper" value="100" min="-500" max="500" step="100">
+            </label>
+    
+            <label class=" mbsc-stepper-info">
+                Info
+                <input type="number" data-role="stepper" value="100" min="-500" max="500" step="100">
+            </label>
         </div>
     </div>
+</div>
 
 <script>
 
