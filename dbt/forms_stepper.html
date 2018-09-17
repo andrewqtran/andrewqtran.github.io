@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+
+    <title>Stepper</title>
+
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+
+    <!-- Mobiscroll JS and CSS Includes -->
+    <link rel="stylesheet" href="css/mobiscroll.jquery.lite.min.css">
+    <script src="js/mobiscroll.jquery.lite.min.js"></script>
+
+    <style type="text/css">
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    </style>
+
+</head>
+<body>
+
+    <div mbsc-form>
+        <div class="mbsc-form-group">
+            <div class="mbsc-form-group-title">Passengers</div>
+            <div>
+                <input id="md-adults" type="number" data-role="stepper" min="1" value="1" max="15" />
+            </div>
+            
+        </div>
+    </div>
+
+<script>
+
+    mobiscroll.settings = {
+        lang: 'en',   // Specify language like: lang: 'pl' or omit setting to use default
+        theme: 'ios'  // Specify theme like: theme: 'ios' or omit setting to use default
+    };
+    
+    $(function () {
+    
+        var cbAllow = $('.md-allow'),
+            stepperLuggage = $('.md-luggage');
+    
+        cbAllow.change(function () {
+            stepperLuggage.prop('disabled', !this.checked);
+        });
+    
+    });
+</script>
+
+</body>
+</html>

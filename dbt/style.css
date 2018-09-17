@@ -301,7 +301,7 @@ input:checked+.slider:before {
     border: thin solid #e6ae52;
 }
 
-a.entry-add {
+span.entry-add {
     background: none;
     color: rgba(0, 0, 0, .3) !important;
     border: thin solid rgba(0, 0, 0, .3);
@@ -397,13 +397,16 @@ div.question-link {
     width: calc(100vw - 30px)
 }
 
-#add-entry-modal p {
+.modal-title {
     font-weight: 600;
     padding-top: 10px;
+    padding-bottom:10px;
+    border-bottom: solid 1px #EFeFF4;
+    margin-bottom: 10px;
 }
 
 #add-entry-modal textarea {
-    height: 36px;
+    height: 40px;
     background-color: #EFeFF4;
     display: block;
     width: calc(100vw - 50px);

@@ -18,7 +18,13 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
     <title>Mindstrong DBT</title>
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+
+    <link rel="stylesheet" href="css/mobiscroll.jquery.lite.min.css">
+    <script src="js/mobiscroll.jquery.lite.min.js"></script>
     <link rel="stylesheet" href="style.css">
+    <!-- Mobiscroll JS and CSS Includes -->
+
 </head>
 
 <body>
@@ -34,8 +40,8 @@
 
                 <div id="date">
                     <a href="prev.html"><i class="fa fa-chevron-left"></i></a>
-                        Monday, Sep 10
-                        <i class="fa fa-chevron-right"></i>
+                    Monday, Sep 10
+                    <i class="fa fa-chevron-right"></i>
                 </div>
                 <div id="life-worth-living-goal">
                     <h3>Life worth living goal <i class="fa fa-unlock"></i></h3>
@@ -212,14 +218,14 @@
 
                     <div class="entry-container">
                         <span class="entry">group session</span>
-                        <a class="entry entry-add">add</a></div>
+                        <span class="entry entry-add">add</span></div>
                 </div>
                 <div class="targetbx">
                     <h3><i class="fa fa-arrow-down"></i> Target #2 — Behavioral </h3>
                     <textarea name="" id="" cols="30" rows="2">Decrease raised voice & intimidation techniques when overwhelmed</textarea>
 
                     <div class="entry-container">
-                        <a class="entry entry-add">add</a></div>
+                        <span class="entry entry-add">add</span></div>
                 </div>
                 <div class="targetbx">
                     <h3><i class="fa fa-arrow-up"></i> Target #3 — Self </h3>
@@ -228,7 +234,7 @@
                     <div class="entry-container">
                         <span class="entry">art<span class="badge">2</span></span>
                         <span class="entry">dancing</span>
-                        <a class="entry entry-add">add</a></div>
+                        <span class="entry entry-add">add</span></div>
                 </div>
                 <div class="targetbx">
                     <h3><i class="fa fa-arrow-up"></i> Target #4 — Affective </h3>
@@ -236,7 +242,7 @@
 
                     <div class="entry-container">
 
-                        <a class="entry entry-add">add</a></div>
+                        <span class="entry entry-add">add</span></div>
                 </div>
                 <div id="skills-used">
                     <table>
@@ -250,10 +256,10 @@
                             <td style="border:0">Skills used</td>
                             <td style="border:0">
                                 <label class="switch skills-used" id="skills">
-                                        <input type="checkbox">
-                                        <span class="slider round" id="skills-slider"></span>
-                                    </label>
-                                    
+                                    <input type="checkbox">
+                                    <span class="slider round" id="skills-slider"></span>
+                                </label>
+
                             </td>
 
                         </tr>
@@ -272,56 +278,59 @@
                     <div class="question-link" id="skills-yes-question" style="display:none">Did the skills help?</div>
 
                     <div id="skills-yes-survey" class="checkbox">
-                            
+
                         <input type="checkbox" id="checkbox5"><label for="checkbox5">Skills worked</label>
                         <input type="checkbox" id="checkbox6"><label for="checkbox6">Skills didn't work</label>
-                        <input type="checkbox" id="checkbox7"><label for="checkbox7">Some skills worked, some didn't </label>
+                        <input type="checkbox" id="checkbox7"><label for="checkbox7">Some skills worked, some didn't
+                        </label>
                         <textarea name="" id="" cols="30" rows="2" placeholder="Other reasons..."></textarea>
                         <table>
-                                <tr class="header-row">
-                                    <th>
-                                        <h3></h3>
-                                    </th>
-                                    <th>
-                                        <h3>0</h3>
-                                    </th>
-                                    <th>
-                                        <h3>1</h3>
-                                    </th>
-                                    <th>
-                                        <h3>2</h3>
-                                    </th>
-                                    <th>
-                                        <h3>3</h3>
-                                    </th>
-                                    <th>
-                                        <h3>4</h3>
-                                    </th>
-                                    <th>
-                                        <h3>5</h3>
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <td>Efforts</td>
-                                    <td><input type="radio" id="effort0" name="efforts"></td>
-                                    <td><input type="radio" id="effort1" name="efforts"></td>
-                                    <td><input type="radio" id="effort2" name="efforts"></td>
-                                    <td><input type="radio" id="effort3" name="efforts"></td>
-                                    <td><input type="radio" id="effort4" name="efforts"></td>
-                                    <td><input type="radio" id="effort5" name="efforts"></td>
-                                </tr>
-                                </table>
+                            <tr class="header-row">
+                                <th>
+                                    <h3></h3>
+                                </th>
+                                <th>
+                                    <h3>0</h3>
+                                </th>
+                                <th>
+                                    <h3>1</h3>
+                                </th>
+                                <th>
+                                    <h3>2</h3>
+                                </th>
+                                <th>
+                                    <h3>3</h3>
+                                </th>
+                                <th>
+                                    <h3>4</h3>
+                                </th>
+                                <th>
+                                    <h3>5</h3>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td>Efforts</td>
+                                <td><input type="radio" id="effort0" name="efforts"></td>
+                                <td><input type="radio" id="effort1" name="efforts"></td>
+                                <td><input type="radio" id="effort2" name="efforts"></td>
+                                <td><input type="radio" id="effort3" name="efforts"></td>
+                                <td><input type="radio" id="effort4" name="efforts"></td>
+                                <td><input type="radio" id="effort5" name="efforts"></td>
+                            </tr>
+                        </table>
                     </div>
                     <div id="skills-list" class="checkbox">
-                        <h3>Please select the skills you used today <span id="search-button"><i class="fa fa-search" style="float:right"></i></span></h3>
-                        <div class="search" id="search"><textarea name="search" id="" cols="30" rows="1" placeholder="Search for a skill..."></textarea></div>  
+                        <h3>Please select the skills you used today <span id="search-button"><i class="fa fa-search"
+                                    style="float:right"></i></span></h3>
+                        <div class="search" id="search"><textarea name="search" id="" cols="30" rows="1" placeholder="Search for a skill..."></textarea></div>
                         <input type="checkbox" id="skills1"><label for="skills1">Mindfulness</label>
-                            <input type="checkbox" id="skills2"><label for="skills2">Interpersonal Effectiveness</label>
-                            <input type="checkbox" id="skills3"><label for="skills3">Emotion Regulation</label>
-                            <input type="checkbox" id="skills4"><label for="skills4">Distress Tolerance</label>
-                            <input type="checkbox" id="skills5"><label for="skills5">Middle Path: Dialectics</label>
+                        <input type="checkbox" id="skills2"><label for="skills2">Interpersonal Effectiveness</label>
+                        <input type="checkbox" id="skills3"><label for="skills3">Emotion Regulation</label>
+                        <input type="checkbox" id="skills4"><label for="skills4">Distress Tolerance</label>
+                        <input type="checkbox" id="skills5"><label for="skills5">Middle Path: Dialectics</label>
                     </div>
-                    <div id="footer"><span style="display: block; text-align: center; font-size:60px; opacity: .3;">🎉</span> All done! Great job filling out the diary today.</div>
+                    <div id="footer"><span style="display: block; text-align: center; font-size:60px; opacity: .3;">🎉</span>
+                        All done! Great job filling out the diary today.</div>
                 </div>
             </div>
         </div>
@@ -331,9 +340,16 @@
 
     <div id="add-entry-modal-container">
         <div id="add-entry-modal">
-            <p>Add an entry</p>
-            <textarea name="" id="" cols="30" rows="1" placeholder="Type in an activity..."></textarea>
-           <button id="#add-entry-cancel-button">Cancel</button> <button id="#add-entry-confirm-button"><strong>Add</strong></button>
+            <div class="modal-title">Add an entry</div>
+            <textarea name="" id="" cols="30" rows="2" placeholder="Type in an activity..."></textarea>
+            <div mbsc-form>
+                        <div>
+                            Specify quantity
+                            <input id="md-adults" type="number" data-role="stepper" min="1" value="1" max="15" />
+                        </div>
+                        
+                </div>
+            <button id="add-entry-cancel-button">Cancel</button> <button id="add-entry-confirm-button"><strong>Add</strong></button>
         </div>
     </div>
 
@@ -360,10 +376,10 @@
         }
         /* jQuery actions */
         $("#skills-slider").click(function () {
-            $("#skills-no-question").toggle("slide", function() {});
-            $("#skills-yes-question").toggle("slide", function() {});
-            $("#skills-no-survey").hide("", function() {});
-            $("#skills-yes-survey").hide("", function() {});
+            $("#skills-no-question").toggle("slide", function () {});
+            $("#skills-yes-question").toggle("slide", function () {});
+            $("#skills-no-survey").hide("", function () {});
+            $("#skills-yes-survey").hide("", function () {});
         });
         $("#skills-no-question").click(function () {
             $("#skills-no-survey").toggle("slide", function () {});
@@ -374,8 +390,27 @@
         $("#search-button").click(function () {
             $("#search").toggle("slow", function () {});
         });
-        $("entry-add").click(function () {
-            $("#add-entry-modal-container").toggle("", function ( {});
+        $(".entry-add").click(function () {
+            $("#add-entry-modal-container").toggle("slow", function () {});
+        });
+        $("#add-entry-cancel-button").click(function () {
+            $("#add-entry-modal-container").toggle("slow", function () {});
+        });
+
+        mobiscroll.settings = {
+            lang: 'en', // Specify language like: lang: 'pl' or omit setting to use default
+            theme: 'ios' // Specify theme like: theme: 'ios' or omit setting to use default
+        };
+
+        $(function () {
+
+            var cbAllow = $('.md-allow'),
+                stepperLuggage = $('.md-luggage');
+
+            cbAllow.change(function () {
+                stepperLuggage.prop('disabled', !this.checked);
+            });
+
         });
     </script>
 </body>
