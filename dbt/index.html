@@ -338,20 +338,111 @@
     <br><br><br>
     </div>
 
-    <div id="add-entry-modal-container">
+    <div class="modal-container" id="add-entry">
         <div id="add-entry-modal">
             <div class="modal-title">Add an entry</div>
             <textarea name="" id="" cols="30" rows="2" placeholder="Type in an activity..."></textarea>
             <div mbsc-form>
-                        <div>
-                            Specify quantity
-                            <input id="md-adults" type="number" data-role="stepper" min="1" value="1" max="15" />
-                        </div>
-                        
+                <div>
+                    Specify quantity
+                    <input id="md-adults" type="number" data-role="stepper" min="1" value="1" max="15" />
                 </div>
-            <button id="add-entry-cancel-button">Cancel</button> <button id="add-entry-confirm-button"><strong>Add</strong></button>
+
+            </div>
+            <div class="modal-footer">
+                <button id="cancel-button" class="modal-button">Cancel</button> <button id="add-entry-confirm-button"
+                    class="modal-button"><strong>Add</strong></button></div>
         </div>
     </div>
+
+    <div class="modal-container" id="start-session">
+        <div id="start-session-modal">
+            <div class="modal-title">You're about to start a session</div>
+            <div class="modal-text">
+                <br>
+                What are your urges <em>before</em> the session?
+                <div id="urges" style="width:100%">
+                    <table>
+                        <tr class="header-row">
+                            <th>
+                                <h3>Urge to...</h3>
+                            </th>
+                            <th>
+                                <h3>0</h3>
+                            </th>
+                            <th>
+                                <h3>1</h3>
+                            </th>
+                            <th>
+                                <h3>2</h3>
+                            </th>
+                            <th>
+                                <h3>3</h3>
+                            </th>
+                            <th>
+                                <h3>4</h3>
+                            </th>
+                            <th>
+                                <h3>5</h3>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>Die</td>
+                            <td><input type="radio" id="die0" name="die"></td>
+                            <td><input type="radio" id="die1" name="die"></td>
+                            <td><input type="radio" id="die2" name="die"></td>
+                            <td><input type="radio" id="die3" name="die"></td>
+                            <td><input type="radio" id="die4" name="die"></td>
+                            <td><input type="radio" id="die5" name="die"></td>
+                        </tr>
+                        <tr>
+                            <td>Suicide</td>
+                            <td><input type="radio" id="die0" name="suicide"></td>
+                            <td><input type="radio" id="die1" name="suicide"></td>
+                            <td><input type="radio" id="die2" name="suicide"></td>
+                            <td><input type="radio" id="die3" name="suicide"></td>
+                            <td><input type="radio" id="die4" name="suicide"></td>
+                            <td><input type="radio" id="die5" name="suicide"></td>
+                        </tr>
+                        <tr>
+                            <td>Self-harm</td>
+                            <td><input type="radio" id="die0" name="self-harm"></td>
+                            <td><input type="radio" id="die1" name="self-harm"></td>
+                            <td><input type="radio" id="die2" name="self-harm"></td>
+                            <td><input type="radio" id="die3" name="self-harm"></td>
+                            <td><input type="radio" id="die4" name="self-harm"></td>
+                            <td><input type="radio" id="die5" name="self-harm"></td>
+                        </tr>
+                        <tr>
+                            <td>Use/Drink</td>
+                            <td><input type="radio" id="die0" name="usedrink"></td>
+                            <td><input type="radio" id="die1" name="usedrink"></td>
+                            <td><input type="radio" id="die2" name="usedrink"></td>
+                            <td><input type="radio" id="die3" name="usedrink"></td>
+                            <td><input type="radio" id="die4" name="usedrink"></td>
+                            <td><input type="radio" id="die5" name="usedrink"></td>
+                        </tr>
+                        <tr>
+                            <td>Quit Therapy</td>
+                            <td><input type="radio" id="die0" name="usedrink"></td>
+                            <td><input type="radio" id="die1" name="usedrink"></td>
+                            <td><input type="radio" id="die2" name="usedrink"></td>
+                            <td><input type="radio" id="die3" name="usedrink"></td>
+                            <td><input type="radio" id="die4" name="usedrink"></td>
+                            <td><input type="radio" id="die5" name="usedrink"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <br>
+            <button class="primary">Tap to Start Session</button>
+            <br>
+            <button class="secondary" id="cancel-session">Cancel</button>
+        </div>
+
+    </div>
+
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -391,11 +482,21 @@
             $("#search").toggle("slow", function () {});
         });
         $(".entry-add").click(function () {
-            $("#add-entry-modal-container").toggle("fade", function () {});
+            $("#add-entry").toggle("fade", function () {});
         });
-        $("#add-entry-cancel-button").click(function () {
-            $("#add-entry-modal-container").toggle("fade", function () {});
+        $("#cancel-button").click(function () {
+            $(".modal-container").hide("", function () {});
         });
+        $("#add-entry-confirm-button").click(function () {
+            $(".modal-container").hide("", function () {});
+        });
+        $("#session-button").click(function () {
+            $("#start-session").toggle("fade", function () {});
+        });
+        $("#cancel-session").click(function () {
+            $(".modal-container").hide("", function () {});
+        });
+        
 
         mobiscroll.settings = {
             lang: 'en', // Specify language like: lang: 'pl' or omit setting to use default

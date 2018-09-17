@@ -23,28 +23,28 @@ body {
     float: right;
     position: fixed;
     z-index: 1001;
-    right:15px;
+    right: 15px;
 }
 
 
 
 #reviewed {
-    background:#D31C5B;
-    color:rgba(255,255,255,.9);
-    font-size:10px;
+    background: #D31C5B;
+    color: rgba(255, 255, 255, .9);
+    font-size: 10px;
     text-align: center;
     display: block;
     width: 100vw;
     margin-left: -15px;
-    padding-left:7px;
-    height:20px;
+    padding-left: 7px;
+    height: 20px;
     line-height: 20px;
     text-transform: uppercase;
-    margin-bottom:-20px;
+    margin-bottom: -20px;
 }
 
 #date {
-    display:block;
+    display: block;
     font-size: 24px;
     font-weight: 600;
     margin-top: 24px;
@@ -58,16 +58,16 @@ body {
     margin-top: 44px;
 }
 
-.fa-chevron-right{
+.fa-chevron-right {
     float: right;
-    margin-top:2px;
+    margin-top: 2px;
     color: #3F395A;
     text-align: right;
 }
 
 .fa-chevron-left {
-    float:left;
-    margin-top:2px;
+    float: left;
+    margin-top: 2px;
     color: #3F395a
 }
 
@@ -102,7 +102,8 @@ tr td {
     padding: 0 15px;
     text-align: center;
     height: 40px;
-    min-width: 40px
+    min-width: 40px;
+    font-size:13px;
 }
 
 tr td:first-child {
@@ -213,14 +214,14 @@ input:checked+.slider:before {
 .checkbox label {
     position: relative;
     display: block;
-    background:#fff;
+    background: #fff;
     /*16px width of fake checkbox + 6px distance between fake checkbox and text*/
-    height:40px;
+    height: 40px;
     margin-left: -15px;
-    padding-left:15px;
+    padding-left: 15px;
     line-height: 40px;
     border-bottom: 1px solid #EFEFF4;
-    width:100vw;
+    width: 100vw;
     margin-top: -20px;
     margin-bottom: -2px;
 
@@ -236,12 +237,12 @@ input:checked+.slider:before {
 }
 
 /*Outer box of the fake checkbox*/
-.checkbox label::before{
+.checkbox label::before {
     height: 16px;
     width: 16px;
     border: 1px solid;
     right: 0px;
-    
+
     /*(24px line-height - 16px height of fake checkbox) / 2 - 1px for the border
      *to vertically center it.
      */
@@ -256,25 +257,25 @@ input:checked+.slider:before {
     width: 20px;
     border-left: 2px solid;
     border-bottom: 2px solid;
-    
+
     transform: rotate(-45deg);
     right: 15px;
     top: 10px;
-    border-color:#e6ae52
+    border-color: #e6ae52
 }
 
 /*Hide the checkmark by default*/
-.checkbox input[type="checkbox"] + label::after {
+.checkbox input[type="checkbox"]+label::after {
     content: none;
 }
 
 /*Unhide on the checked state*/
-.checkbox input[type="checkbox"]:checked + label::after {
+.checkbox input[type="checkbox"]:checked+label::after {
     content: "";
 }
 
 /*Adding focus styles on the outer-box of the fake checkbox*/
-.checkbox input[type="checkbox"]:focus + label::before {
+.checkbox input[type="checkbox"]:focus+label::before {
     outline: rgb(59, 153, 252) auto 5px;
 }
 
@@ -325,7 +326,7 @@ div.question-link {
     padding: 5px 0px;
     display: block;
     text-decoration: none;
-    font-size:14px;
+    font-size: 14px;
 }
 
 .fa-arrow-up {
@@ -343,7 +344,8 @@ div.question-link {
     vertical-align: middle;
 }
 
-#skills-no-survey, #skills-yes-survey {
+#skills-no-survey,
+#skills-yes-survey {
     display: none;
 
 }
@@ -357,12 +359,12 @@ div.question-link {
 }
 
 .search {
-    height:50px;
+    height: 50px;
     background: #ffffff;
-    margin-left:-15px;
-    width:100vw;
-    padding-top:7px;
-    margin-bottom:-1px;
+    margin-left: -15px;
+    width: 100vw;
+    padding-top: 7px;
+    margin-bottom: -1px;
     display: none;
 }
 
@@ -373,35 +375,41 @@ div.question-link {
     width: calc(100vw - 20px);
     margin: auto;
     border-radius: 100px;
-    
+
 }
 
-#add-entry-modal-container {
+.modal-container {
     height: 100vh;
     width: 100vw;
     background: rgba(0, 0, 0, .8);
     display: block;
     position: fixed;
-    top:0;
+    top: 0;
     z-index: 20000;
     overflow: hidden;
-    display:none;
+    display: none;
 }
 
+.modal-footer {
+    padding: 0;
+}
+
+
 #add-entry-modal {
-    background:#ffffff;
+    background: #ffffff;
     border-radius: 10px;
     text-align: center;
     vertical-align: middle;
-    margin:auto;
-    margin-top:calc(50vh - 100px);
+    margin: auto;
+    margin-top: calc(50vh - 100px);
     width: calc(100vw - 30px)
 }
+
 
 .modal-title {
     font-weight: 600;
     padding-top: 10px;
-    padding-bottom:10px;
+    padding-bottom: 10px;
     border-bottom: solid 1px #EFeFF4;
 }
 
@@ -415,14 +423,55 @@ div.question-link {
     margin-top: 10px;
 }
 
-#add-entry-modal button {
+button.modal-button {
     color: #3F395a;
     padding: 10px;
     width: 45%;
-    display:inline-block;
+    display: inline-block;
     -webkit-appearance: none;
-border-radius: 0;
-height:48px;
-background:none;
-border:none;
+    border-radius: 0;
+    height: 48px;
+    background: none;
+    border: none;
+}
+
+#start-session-modal {
+    background: #ffffff;
+    border-radius: 10px;
+    text-align: center;
+    vertical-align: middle;
+    margin: auto;
+    /* margin-top: calc(50vh - 200px); */
+    /* width: calc(100vw - 0px); */
+    padding-left:15px;
+    height: 100vh;
+    margin-top: 0px;
+}
+
+#start-session-modal .modal-title,
+#start-session-modal .modal-footer {
+    margin-left: -15px;
+    padding-left: 15px;
+    width: 100vw;
+}
+
+button.primary {
+    background: #3F395A;
+    color:white;
+    font-size: 16px;
+    padding: 8px;
+    width: calc(100vw - 30px);
+    border-radius:5px;
+    display:block !important;
+}
+
+button.secondary {
+    background: #fff;
+    color: #3F395A;
+    font-size: 16px;
+    padding: 2px;
+    width: calc(100vw - 30px);
+    border-radius:5px;
+    display:block !important;
+    border: none;
 }
