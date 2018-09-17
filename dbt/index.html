@@ -24,7 +24,7 @@
 <body>
     <div id="navbar">
         <strong>DBT Diary</strong>
-        <span id="session-button">Start Session</span>
+        <span id="session-button">Session</span>
     </div>
 
     <div class="container-fluid">
@@ -33,9 +33,9 @@
             <div class="col col-sm-12 col-md-8 col-lg-6">
 
                 <div id="date">
-                    <h1><a href="prev.html"><i class="fa fa-chevron-left"></i></a>
+                    <a href="prev.html"><i class="fa fa-chevron-left"></i></a>
                         Monday, Sep 10
-                        <i class="fa fa-chevron-right"></i></h1>
+                        <i class="fa fa-chevron-right"></i>
                 </div>
                 <div id="life-worth-living-goal">
                     <h3>Life worth living goal <i class="fa fa-unlock"></i></h3>
@@ -313,14 +313,15 @@
                                 </table>
                     </div>
                     <div id="skills-list" class="checkbox">
-                        <h3>Please select the skills you used today <span><i class="fa fa-search" style="float:right"></i></span></h3>
-                            <input type="checkbox" id="skills1"><label for="skills1">Mindfulness</label>
+                        <h3>Please select the skills you used today <span id="search-button"><i class="fa fa-search" style="float:right"></i></span></h3>
+                        <div class="search" id="search"><textarea name="search" id="" cols="30" rows="1" placeholder="Search for a skill..."></textarea></div>  
+                        <input type="checkbox" id="skills1"><label for="skills1">Mindfulness</label>
                             <input type="checkbox" id="skills2"><label for="skills2">Interpersonal Effectiveness</label>
                             <input type="checkbox" id="skills3"><label for="skills3">Emotion Regulation</label>
                             <input type="checkbox" id="skills4"><label for="skills4">Distress Tolerance</label>
                             <input type="checkbox" id="skills5"><label for="skills5">Middle Path: Dialectics</label>
                     </div>
-                    <div id="footer">All done! Great job filling out the diary today.</div>
+                    <div id="footer"><span style="display: block; text-align: center; font-size:60px; opacity: .3;">🎉</span> All done! Great job filling out the diary today.</div>
                 </div>
             </div>
         </div>
@@ -328,6 +329,13 @@
     <br><br><br>
     </div>
 
+    <div id="add-entry-modal-container">
+        <div id="add-entry-modal">
+            <p>Add an entry</p>
+            <textarea name="" id="" cols="30" rows="1" placeholder="Type in an activity..."></textarea>
+           <button id="#add-entry-cancel-button">Cancel</button> <button id="#add-entry-confirm-button"><strong>Add</strong></button>
+        </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -362,6 +370,12 @@
         });
         $("#skills-yes-question").click(function () {
             $("#skills-yes-survey").toggle("slide", function () {});
+        });
+        $("#search-button").click(function () {
+            $("#search").toggle("slow", function () {});
+        });
+        $("entry-add").click(function () {
+            $("#add-entry-modal-container").toggle("", function ( {});
         });
     </script>
 </body>

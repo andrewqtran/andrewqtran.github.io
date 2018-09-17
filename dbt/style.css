@@ -26,6 +26,8 @@ body {
     right:15px;
 }
 
+
+
 #reviewed {
     background:#D31C5B;
     color:rgba(255,255,255,.9);
@@ -41,19 +43,19 @@ body {
     margin-bottom:-20px;
 }
 
-.container-fluid {
-    background: #EFEFF4;
-    margin-top: 44px;
-}
-
-h1 {
+#date {
+    display:block;
     font-size: 24px;
     font-weight: 600;
     margin-top: 24px;
     vertical-align: middle;
     text-align: center;
-    width: 100%;
+    line-height: 24px;
+}
 
+.container-fluid {
+    background: #EFEFF4;
+    margin-top: 44px;
 }
 
 .fa-chevron-right{
@@ -352,4 +354,66 @@ div.question-link {
     text-align: center;
     color: #8e8e93;
 
+}
+
+.search {
+    height:50px;
+    background: #ffffff;
+    margin-left:-15px;
+    width:100vw;
+    padding-top:7px;
+    margin-bottom:-1px;
+    display: none;
+}
+
+.search textarea {
+    height: 36px;
+    background-color: #EFeFF4;
+    display: block;
+    width: calc(100vw - 20px);
+    margin: auto;
+    border-radius: 100px;
+}
+
+#add-entry-modal-container {
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, .8);
+    display: block;
+    position: fixed;
+    top:0;
+    z-index: 20000;
+    overflow: hidden;
+    display:none;
+}
+
+#add-entry-modal {
+    background:#ffffff;
+    border-radius: 10px;
+    text-align: center;
+    vertical-align: middle;
+    margin:auto;
+    margin-top:calc(50vh - 100px);
+    width: calc(100vw - 30px)
+}
+
+#add-entry-modal p {
+    font-weight: 600;
+    padding-top: 10px;
+}
+
+#add-entry-modal textarea {
+    height: 36px;
+    background-color: #EFeFF4;
+    display: block;
+    width: calc(100vw - 50px);
+    margin: auto;
+    border-radius: 5px;
+}
+
+#add-entry-modal button {
+    color: #3F395a;
+    padding: 10px;
+    width: 45%;
+    display:inline-block
 }
