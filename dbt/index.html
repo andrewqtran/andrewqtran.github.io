@@ -32,8 +32,13 @@
         <strong>DBT Diary</strong>
         <span id="session-button">Session</span>
     </div>
+    <div id="navbar-session">
+            <strong>Session in progress</strong>
+            <span id="end-session-button">End</span>
+        </div>
 
     <div class="container-fluid">
+            <div id="reviewed" style="display:none">Reviewed in therapy</div>
 
         <div class="row">
             <div class="col col-sm-12 col-md-8 col-lg-6">
@@ -435,12 +440,98 @@
                 </div>
             </div>
             <br>
-            <button class="primary">Tap to Start Session</button>
+            <button class="primary" id="start-session-button">Tap to Start Session</button>
             <br>
-            <button class="secondary" id="cancel-session">Cancel</button>
+            <button class="secondary cancel">Cancel</button>
         </div>
 
     </div>
+
+    <div class="modal-container" id="end-session">
+            <div id="end-session-modal">
+                <div class="modal-title">You're about to end a session</div>
+                <div class="modal-text">
+                    <br>
+                    What are your urges <em>after</em> the session?
+                    <div id="urges" style="width:100%">
+                        <table>
+                            <tr class="header-row">
+                                <th>
+                                    <h3>Urge to...</h3>
+                                </th>
+                                <th>
+                                    <h3>0</h3>
+                                </th>
+                                <th>
+                                    <h3>1</h3>
+                                </th>
+                                <th>
+                                    <h3>2</h3>
+                                </th>
+                                <th>
+                                    <h3>3</h3>
+                                </th>
+                                <th>
+                                    <h3>4</h3>
+                                </th>
+                                <th>
+                                    <h3>5</h3>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td>Die</td>
+                                <td><input type="radio" id="die0" name="die"></td>
+                                <td><input type="radio" id="die1" name="die"></td>
+                                <td><input type="radio" id="die2" name="die"></td>
+                                <td><input type="radio" id="die3" name="die"></td>
+                                <td><input type="radio" id="die4" name="die"></td>
+                                <td><input type="radio" id="die5" name="die"></td>
+                            </tr>
+                            <tr>
+                                <td>Suicide</td>
+                                <td><input type="radio" id="die0" name="suicide"></td>
+                                <td><input type="radio" id="die1" name="suicide"></td>
+                                <td><input type="radio" id="die2" name="suicide"></td>
+                                <td><input type="radio" id="die3" name="suicide"></td>
+                                <td><input type="radio" id="die4" name="suicide"></td>
+                                <td><input type="radio" id="die5" name="suicide"></td>
+                            </tr>
+                            <tr>
+                                <td>Self-harm</td>
+                                <td><input type="radio" id="die0" name="self-harm"></td>
+                                <td><input type="radio" id="die1" name="self-harm"></td>
+                                <td><input type="radio" id="die2" name="self-harm"></td>
+                                <td><input type="radio" id="die3" name="self-harm"></td>
+                                <td><input type="radio" id="die4" name="self-harm"></td>
+                                <td><input type="radio" id="die5" name="self-harm"></td>
+                            </tr>
+                            <tr>
+                                <td>Use/Drink</td>
+                                <td><input type="radio" id="die0" name="usedrink"></td>
+                                <td><input type="radio" id="die1" name="usedrink"></td>
+                                <td><input type="radio" id="die2" name="usedrink"></td>
+                                <td><input type="radio" id="die3" name="usedrink"></td>
+                                <td><input type="radio" id="die4" name="usedrink"></td>
+                                <td><input type="radio" id="die5" name="usedrink"></td>
+                            </tr>
+                            <tr>
+                                <td>Quit Therapy</td>
+                                <td><input type="radio" id="die0" name="quit"></td>
+                                <td><input type="radio" id="die1" name="quit"></td>
+                                <td><input type="radio" id="die2" name="quit"></td>
+                                <td><input type="radio" id="die3" name="quit"></td>
+                                <td><input type="radio" id="die4" name="quit"></td>
+                                <td><input type="radio" id="die5" name="quit"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <br>
+                <button class="primary" id="end-session-button-in-modal">Tap to End Session</button>
+                <br>
+                <button class="secondary cancel">Cancel</button>            </div>
+    
+        </div>
 
 
 

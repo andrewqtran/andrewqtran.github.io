@@ -5,7 +5,7 @@ body {
     font-size: 15px;
 }
 
-#navbar {
+#navbar, #navbar-session {
     display: block;
     color: white;
     font-weight: 400;
@@ -18,15 +18,19 @@ body {
     z-index: 1000;
 }
 
-#session-button {
+#navbar-session {
+    background-color: #D31C5B;
+    display: none;
+
+}
+
+#session-button, #end-session-button {
     text-align: right;
     float: right;
     position: fixed;
     z-index: 1001;
     right: 15px;
 }
-
-
 
 #reviewed {
     background: #D31C5B;
@@ -435,7 +439,8 @@ button.modal-button {
     border: none;
 }
 
-#start-session-modal {
+#start-session-modal,
+#end-session-modal {
     background: #ffffff;
     border-radius:0;
     text-align: center;
@@ -449,7 +454,9 @@ button.modal-button {
 }
 
 #start-session-modal .modal-title,
-#start-session-modal .modal-footer {
+#start-session-modal .modal-footer,
+#end-session-modal .modal-title,
+#end-session-modal .modal-footer {
     margin-left: -15px;
     padding-left: 15px;
     width: 100vw;

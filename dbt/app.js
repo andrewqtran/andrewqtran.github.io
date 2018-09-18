@@ -36,9 +36,27 @@
         $("#session-button").click(function () {
             $("#start-session").toggle("fade", function () {});
         });
-        $("#cancel-session").click(function () {
+        $(".cancel").click(function () {
             $(".modal-container").hide("", function () {});
         });
+        $("#start-session-button").click(function () {
+            $(".modal-container").hide("", function () {});
+            $("#navbar").hide("", function () {});
+            $("#navbar-session").show("", function () {});
+        });
+        $("#end-session-button").click(function () {
+            $("#end-session").toggle("fade", function () {});
+        });
+        $("#end-session-button-in-modal").click(function () {
+            $(".modal-container").hide("fade", function () {});
+            $("#navbar").show("", function () {});
+            $("#navbar-session").hide("", function () {});
+            $("#reviewed").show("", function () {});
+
+        });
+        
+    
+
         
 
         mobiscroll.settings = {
