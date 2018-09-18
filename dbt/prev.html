@@ -4,7 +4,7 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=no'>
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <link rel="shortcut icon" type="image/png" href="favicon.png" />
@@ -18,29 +18,39 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
     <title>Mindstrong DBT</title>
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+
+    <link rel="stylesheet" href="css/mobiscroll.jquery.lite.min.css">
+    <script src="js/mobiscroll.jquery.lite.min.js"></script>
     <link rel="stylesheet" href="style.css">
+    <!-- Mobiscroll JS and CSS Includes -->
+
 </head>
 
 <body>
     <div id="navbar">
-        DBT Diary Card
+        <strong>DBT Diary</strong>
+        <span id="session-button">Session</span>
     </div>
-    
+    <div id="navbar-session">
+            <strong>Session in progress</strong>
+            <span id="end-session-button">End</span>
+        </div>
 
     <div class="container-fluid">
             <div id="reviewed">Reviewed in therapy</div>
-    
+
         <div class="row">
             <div class="col col-sm-12 col-md-8 col-lg-6">
 
-                    <div id="date">
-                            <h1><a href="prev.html"><i class="fa fa-chevron-left"></i></a>Sunday, Sep 9
-        
-                                    <a href="index.html"><i class="fa fa-chevron-right"></i></a></h1>
-                        </div>
+                <div id="date">
+                    <a href="prev.html"><i class="fa fa-chevron-left"></i></a>
+                    Sunday, Sep 9
+                    <i class="fa fa-chevron-right"></i>
+                </div>
                 <div id="life-worth-living-goal">
                     <h3>Life worth living goal <i class="fa fa-unlock"></i></h3>
-                        <textarea name="life-worth-living-goal" id="" cols="30" rows="2">Be around grandchildren when they grow up.</textarea>
+                    <textarea name="life-worth-living-goal" id="" cols="30" rows="2">Be able to watch after grandchildren when they move back to town</textarea>
                 </div>
                 <div id="urges">
                     <table>
@@ -81,25 +91,25 @@
                             <td><input type="radio" id="die0" name="suicide"></td>
                             <td><input type="radio" id="die1" name="suicide"></td>
                             <td><input type="radio" id="die2" name="suicide"></td>
-                            <td><input type="radio" id="die3" name="suicide" checked></td>
+                            <td><input type="radio" id="die3" name="suicide"checked></td>
                             <td><input type="radio" id="die4" name="suicide"></td>
                             <td><input type="radio" id="die5" name="suicide"></td>
                         </tr>
                         <tr>
                             <td>Self-harm</td>
                             <td><input type="radio" id="die0" name="self-harm"></td>
-                            <td><input type="radio" id="die1" name="self-harm"></td>
+                            <td><input type="radio" id="die1" name="self-harm"checked></td>
                             <td><input type="radio" id="die2" name="self-harm"></td>
                             <td><input type="radio" id="die3" name="self-harm"></td>
-                            <td><input type="radio" id="die4" name="self-harm" checked></td>
+                            <td><input type="radio" id="die4" name="self-harm"></td>
                             <td><input type="radio" id="die5" name="self-harm"></td>
                         </tr>
                         <tr>
                             <td>Use/Drink</td>
                             <td><input type="radio" id="die0" name="usedrink"></td>
-                            <td><input type="radio" id="die1" name="usedrink" checked></td>
+                            <td><input type="radio" id="die1" name="usedrink"></td>
                             <td><input type="radio" id="die2" name="usedrink"></td>
-                            <td><input type="radio" id="die3" name="usedrink"></td>
+                            <td><input type="radio" id="die3" name="usedrink"checked></td>
                             <td><input type="radio" id="die4" name="usedrink"></td>
                             <td><input type="radio" id="die5" name="usedrink"></td>
                         </tr>
@@ -162,19 +172,19 @@
                         </tr>
                         <tr>
                             <td>Sadness</td>
-                            <td><input type="radio" id="emotion0" name="sad" checked></td>
+                            <td><input type="radio" id="emotion0" name="sad"></td>
                             <td><input type="radio" id="emotion1" name="sad"></td>
                             <td><input type="radio" id="emotion2" name="sad"></td>
                             <td><input type="radio" id="emotion3" name="sad"></td>
-                            <td><input type="radio" id="emotion4" name="sad"></td>
+                            <td><input type="radio" id="emotion4" name="sad" checked></td>
                             <td><input type="radio" id="emotion5" name="sad"></td>
                         </tr>
                         <tr>
                             <td>Shame</td>
                             <td><input type="radio" id="emotion0" name="shame"></td>
                             <td><input type="radio" id="emotion1" name="shame"></td>
-                            <td><input type="radio" id="emotion2" name="shame"></td>
-                            <td><input type="radio" id="emotion3" name="shame" checked></td>
+                            <td><input type="radio" id="emotion2" name="shame" checked></td>
+                            <td><input type="radio" id="emotion3" name="shame"></td>
                             <td><input type="radio" id="emotion4" name="shame"></td>
                             <td><input type="radio" id="emotion5" name="shame"></td>
                         </tr>
@@ -183,17 +193,17 @@
                             <td><input type="radio" id="emotion0" name="anger"></td>
                             <td><input type="radio" id="emotion1" name="anger"></td>
                             <td><input type="radio" id="emotion2" name="anger"></td>
-                            <td><input type="radio" id="emotion3" name="anger" checked></td>
+                            <td><input type="radio" id="emotion3" name="anger"></td>
                             <td><input type="radio" id="emotion4" name="anger"></td>
-                            <td><input type="radio" id="emotion5" name="anger"></td>
+                            <td><input type="radio" id="emotion5" name="anger" checked></td>
                         </tr>
                         <tr>
                             <td>Fear/worry</td>
                             <td><input type="radio" id="emotion0" name="fearworry"></td>
-                            <td><input type="radio" id="emotion1" name="fearworry"></td>
+                            <td><input type="radio" id="emotion1" name="fearworry" checked></td>
                             <td><input type="radio" id="emotion2" name="fearworry"></td>
                             <td><input type="radio" id="emotion3" name="fearworry"></td>
-                            <td><input type="radio" id="emotion4" name="fearworry" checked></td>
+                            <td><input type="radio" id="emotion4" name="fearworry"></td>
                             <td><input type="radio" id="emotion5" name="fearworry"></td>
                         </tr>
                         <tr>
@@ -202,67 +212,342 @@
                             <td><input type="radio" id="emotion1" name="joy"></td>
                             <td><input type="radio" id="emotion2" name="joy"></td>
                             <td><input type="radio" id="emotion3" name="joy"></td>
-                            <td><input type="radio" id="emotion4" name="joy" checked></td>
-                            <td><input type="radio" id="emotion5" name="joy"></td>
+                            <td><input type="radio" id="emotion4" name="joy"></td>
+                            <td><input type="radio" id="emotion5" name="joy" checked></td>
                         </tr>
                     </table>
                 </div>
                 <div class="targetbx">
-                        <h3>Target #1 — <i class="fa fa-arrow-up"></i> Interpersonal </h3>
-                        <textarea name="" id="" cols="30" rows="2">Improve/increase small neutral social interactions</textarea>
-    
-                        <div class="entry-container">
-                            <span class="entry">group session</span>
-                            <a class="entry entry-add">add</a></div>
+                    <h3><i class="fa fa-arrow-up"></i> Target #1 — Interpersonal </h3>
+                    <textarea name="" id="" cols="30" rows="2">Improve/increase small neutral social interactions</textarea>
+
+                    <div class="entry-container">
+                        <span class="entry">group session</span>
+                        <span class="entry entry-add">add</span></div>
+                </div>
+                <div class="targetbx">
+                    <h3><i class="fa fa-arrow-down"></i> Target #2 — Behavioral </h3>
+                    <textarea name="" id="" cols="30" rows="2">Decrease raised voice & intimidation techniques when overwhelmed</textarea>
+
+                    <div class="entry-container">
+                        <span class="entry entry-add">add</span></div>
+                </div>
+                <div class="targetbx">
+                    <h3><i class="fa fa-arrow-up"></i> Target #3 — Self </h3>
+                    <textarea name="" id="" cols="30" rows="2">Increase self-care and focus on self opportunities</textarea>
+
+                    <div class="entry-container">
+                        <span class="entry">art<span class="badge">2</span></span>
+                        <span class="entry">dancing</span>
+                        <span class="entry entry-add">add</span></div>
+                </div>
+                <div class="targetbx">
+                    <h3><i class="fa fa-arrow-up"></i> Target #4 — Affective </h3>
+                    <textarea name="" id="" cols="30" rows="2">Increase awareness of range of I felt..., not just anger and sadness</textarea>
+
+                    <div class="entry-container">
+
+                        <span class="entry entry-add">add</span></div>
+                </div>
+                <div id="skills-used">
+                    <table>
+                        <tr class="header-row">
+                            <th>
+                                <h3>Did you use skills?</h3>
+                            </th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <td style="border:0">Skills used</td>
+                            <td style="border:0">
+                                <label class="switch skills-used" id="skills">
+                                    <input type="checkbox">
+                                    <span class="slider round" id="skills-slider"></span>
+                                </label>
+
+                            </td>
+
+                        </tr>
+
+                    </table>
+                    <div class="question-link" id="skills-no-question">What stopped you from using the skills?</div>
+                    <div id="skills-no-survey" class="checkbox">
+                        <input type="checkbox" id="checkbox1"><label for="checkbox1">Didn't think about it</label>
+                        <input type="checkbox" id="checkbox2"><label for="checkbox2">Thought about it but didn’t want
+                            to use them</label>
+                        <input type="checkbox" id="checkbox3"><label for="checkbox3">Tried to use them but couldn't do
+                            it</label>
+                        <input type="checkbox" id="checkbox4"><label for="checkbox4">Got block from using them</label>
+                        <textarea name="" id="" cols="30" rows="2" placeholder="Other reasons..."></textarea>
                     </div>
-                    <div class="targetbx">
-                        <h3>Target #2 — <i class="fa fa-arrow-down"></i> Behavioral </h3>
-                        <textarea name="" id="" cols="30" rows="2">Decrease raised voice & intimidation techniques when overwhelmed</textarea>
-    
-                        <div class="entry-container">
-                            <a class="entry entry-add">add</a></div>
+                    <div class="question-link" id="skills-yes-question" style="display:none">Did the skills help?</div>
+
+                    <div id="skills-yes-survey" class="checkbox">
+
+                        <input type="checkbox" id="checkbox5"><label for="checkbox5">Skills worked</label>
+                        <input type="checkbox" id="checkbox6"><label for="checkbox6">Skills didn't work</label>
+                        <input type="checkbox" id="checkbox7"><label for="checkbox7">Some skills worked, some didn't
+                        </label>
+                        <textarea name="" id="" cols="30" rows="2" placeholder="Other reasons..."></textarea>
+                        <table>
+                            <tr class="header-row">
+                                <th>
+                                    <h3></h3>
+                                </th>
+                                <th>
+                                    <h3>0</h3>
+                                </th>
+                                <th>
+                                    <h3>1</h3>
+                                </th>
+                                <th>
+                                    <h3>2</h3>
+                                </th>
+                                <th>
+                                    <h3>3</h3>
+                                </th>
+                                <th>
+                                    <h3>4</h3>
+                                </th>
+                                <th>
+                                    <h3>5</h3>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td>Efforts</td>
+                                <td><input type="radio" id="effort0" name="efforts"></td>
+                                <td><input type="radio" id="effort1" name="efforts"></td>
+                                <td><input type="radio" id="effort2" name="efforts"></td>
+                                <td><input type="radio" id="effort3" name="efforts"></td>
+                                <td><input type="radio" id="effort4" name="efforts"></td>
+                                <td><input type="radio" id="effort5" name="efforts"></td>
+                            </tr>
+                        </table>
                     </div>
-                    <div class="targetbx">
-                        <h3>Target #3 — <i class="fa fa-arrow-up"></i> Self </h3>
-                        <textarea name="" id="" cols="30" rows="2">Increase self-care and focus on self opportunities</textarea>
-    
-                        <div class="entry-container">
-                            <span class="entry">art<span class="badge">2</span></span>
-                            <span class="entry">dancing</span>
-                            <a class="entry entry-add">add</a></div>
+                    <div id="skills-list" class="checkbox">
+                        <h3>Please select the skills you used today <span id="search-button"><i class="fa fa-search"
+                                    style="float:right"></i></span></h3>
+                        <div class="search" id="search"><textarea name="search" id="" cols="30" rows="1" placeholder="Search for a skill..."></textarea></div>
+                        <input type="checkbox" id="skills1"><label for="skills1">Mindfulness</label>
+                        <input type="checkbox" id="skills2"><label for="skills2">Interpersonal Effectiveness</label>
+                        <input type="checkbox" id="skills3"><label for="skills3">Emotion Regulation</label>
+                        <input type="checkbox" id="skills4"><label for="skills4">Distress Tolerance</label>
+                        <input type="checkbox" id="skills5"><label for="skills5">Middle Path: Dialectics</label>
                     </div>
-                    <div class="targetbx">
-                        <h3>Target #4 — <i class="fa fa-arrow-up"></i> Affective </h3>
-                        <textarea name="" id="" cols="30" rows="2">Increase awareness of range of I felt..., not just anger and sadness</textarea>
-    
-                        <div class="entry-container">
-    
-                            <a class="entry entry-add">add</a></div>
-                    </div>
+                    <div id="footer"><span style="display: block; text-align: center; font-size:60px; opacity: .3;">🎉</span>
+                        All done! Great job filling out the diary today.</div>
+                </div>
             </div>
         </div>
-        <br><br><br>
     </div>
+    <br><br><br>
+    </div>
+
+    <div class="modal-container" id="add-entry">
+        <div id="add-entry-modal">
+            <div class="modal-title">Add an entry</div>
+            <textarea name="" id="" cols="30" rows="2" placeholder="Type in an activity..."></textarea>
+            <div mbsc-form>
+                <div>
+                    Specify quantity
+                    <input id="md-adults" type="number" data-role="stepper" min="1" value="1" max="15" />
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button id="cancel-button" class="modal-button">Cancel</button> <button id="add-entry-confirm-button"
+                    class="modal-button"><strong>Add</strong></button></div>
+        </div>
+    </div>
+
+    <div class="modal-container" id="start-session">
+        <div id="start-session-modal">
+            <div class="modal-title">You're about to start a session</div>
+            <div class="modal-text">
+                <br>
+                What are your urges <em>before</em> the session?
+                <div id="urges" style="width:100%">
+                    <table>
+                        <tr class="header-row">
+                            <th>
+                                <h3>Urge to...</h3>
+                            </th>
+                            <th>
+                                <h3>0</h3>
+                            </th>
+                            <th>
+                                <h3>1</h3>
+                            </th>
+                            <th>
+                                <h3>2</h3>
+                            </th>
+                            <th>
+                                <h3>3</h3>
+                            </th>
+                            <th>
+                                <h3>4</h3>
+                            </th>
+                            <th>
+                                <h3>5</h3>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>Die</td>
+                            <td><input type="radio" id="die0" name="die"></td>
+                            <td><input type="radio" id="die1" name="die"></td>
+                            <td><input type="radio" id="die2" name="die"></td>
+                            <td><input type="radio" id="die3" name="die"></td>
+                            <td><input type="radio" id="die4" name="die"></td>
+                            <td><input type="radio" id="die5" name="die"></td>
+                        </tr>
+                        <tr>
+                            <td>Suicide</td>
+                            <td><input type="radio" id="die0" name="suicide"></td>
+                            <td><input type="radio" id="die1" name="suicide"></td>
+                            <td><input type="radio" id="die2" name="suicide"></td>
+                            <td><input type="radio" id="die3" name="suicide"></td>
+                            <td><input type="radio" id="die4" name="suicide"></td>
+                            <td><input type="radio" id="die5" name="suicide"></td>
+                        </tr>
+                        <tr>
+                            <td>Self-harm</td>
+                            <td><input type="radio" id="die0" name="self-harm"></td>
+                            <td><input type="radio" id="die1" name="self-harm"></td>
+                            <td><input type="radio" id="die2" name="self-harm"></td>
+                            <td><input type="radio" id="die3" name="self-harm"></td>
+                            <td><input type="radio" id="die4" name="self-harm"></td>
+                            <td><input type="radio" id="die5" name="self-harm"></td>
+                        </tr>
+                        <tr>
+                            <td>Use/Drink</td>
+                            <td><input type="radio" id="die0" name="usedrink"></td>
+                            <td><input type="radio" id="die1" name="usedrink"></td>
+                            <td><input type="radio" id="die2" name="usedrink"></td>
+                            <td><input type="radio" id="die3" name="usedrink"></td>
+                            <td><input type="radio" id="die4" name="usedrink"></td>
+                            <td><input type="radio" id="die5" name="usedrink"></td>
+                        </tr>
+                        <tr>
+                            <td>Quit Therapy</td>
+                            <td><input type="radio" id="die0" name="usedrink"></td>
+                            <td><input type="radio" id="die1" name="usedrink"></td>
+                            <td><input type="radio" id="die2" name="usedrink"></td>
+                            <td><input type="radio" id="die3" name="usedrink"></td>
+                            <td><input type="radio" id="die4" name="usedrink"></td>
+                            <td><input type="radio" id="die5" name="usedrink"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <br>
+            <button class="primary" id="start-session-button">Tap to Start Session</button>
+            <br>
+            <button class="secondary cancel">Cancel</button>
+        </div>
+
+    </div>
+
+    <div class="modal-container" id="end-session">
+            <div id="end-session-modal">
+                <div class="modal-title">You're about to end a session</div>
+                <div class="modal-text">
+                    <br>
+                    What are your urges <em>after</em> the session?
+                    <div id="urges" style="width:100%">
+                        <table>
+                            <tr class="header-row">
+                                <th>
+                                    <h3>Urge to...</h3>
+                                </th>
+                                <th>
+                                    <h3>0</h3>
+                                </th>
+                                <th>
+                                    <h3>1</h3>
+                                </th>
+                                <th>
+                                    <h3>2</h3>
+                                </th>
+                                <th>
+                                    <h3>3</h3>
+                                </th>
+                                <th>
+                                    <h3>4</h3>
+                                </th>
+                                <th>
+                                    <h3>5</h3>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td>Die</td>
+                                <td><input type="radio" id="die0" name="die"></td>
+                                <td><input type="radio" id="die1" name="die"></td>
+                                <td><input type="radio" id="die2" name="die"></td>
+                                <td><input type="radio" id="die3" name="die"></td>
+                                <td><input type="radio" id="die4" name="die"></td>
+                                <td><input type="radio" id="die5" name="die"></td>
+                            </tr>
+                            <tr>
+                                <td>Suicide</td>
+                                <td><input type="radio" id="die0" name="suicide"></td>
+                                <td><input type="radio" id="die1" name="suicide"></td>
+                                <td><input type="radio" id="die2" name="suicide"></td>
+                                <td><input type="radio" id="die3" name="suicide"></td>
+                                <td><input type="radio" id="die4" name="suicide"></td>
+                                <td><input type="radio" id="die5" name="suicide"></td>
+                            </tr>
+                            <tr>
+                                <td>Self-harm</td>
+                                <td><input type="radio" id="die0" name="self-harm"></td>
+                                <td><input type="radio" id="die1" name="self-harm"></td>
+                                <td><input type="radio" id="die2" name="self-harm"></td>
+                                <td><input type="radio" id="die3" name="self-harm"></td>
+                                <td><input type="radio" id="die4" name="self-harm"></td>
+                                <td><input type="radio" id="die5" name="self-harm"></td>
+                            </tr>
+                            <tr>
+                                <td>Use/Drink</td>
+                                <td><input type="radio" id="die0" name="usedrink"></td>
+                                <td><input type="radio" id="die1" name="usedrink"></td>
+                                <td><input type="radio" id="die2" name="usedrink"></td>
+                                <td><input type="radio" id="die3" name="usedrink"></td>
+                                <td><input type="radio" id="die4" name="usedrink"></td>
+                                <td><input type="radio" id="die5" name="usedrink"></td>
+                            </tr>
+                            <tr>
+                                <td>Quit Therapy</td>
+                                <td><input type="radio" id="die0" name="quit"></td>
+                                <td><input type="radio" id="die1" name="quit"></td>
+                                <td><input type="radio" id="die2" name="quit"></td>
+                                <td><input type="radio" id="die3" name="quit"></td>
+                                <td><input type="radio" id="die4" name="quit"></td>
+                                <td><input type="radio" id="die5" name="quit"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <br>
+                <button class="primary" id="end-session-button-in-modal">Tap to End Session</button>
+                <br>
+                <button class="secondary cancel">Cancel</button>            </div>
+    
+        </div>
+
 
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+        crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
-    <script>/* prevent links from opening in a new browser on iPad full screen mode */
-            var a=document.getElementsByTagName("a");
-            for(var i=0;i<a.length;i++) {
-                if(!a[i].onclick && a[i].getAttribute("target") != "_blank") {
-                    a[i].onclick=function() {
-                            window.location=this.getAttribute("href");
-                            return false; 
-                    }
-                }
-            }</script>
+    <script src="app.js">
+        
+    </script>
 </body>
 
 </html>
