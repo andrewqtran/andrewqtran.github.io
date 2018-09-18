@@ -437,7 +437,7 @@ button.modal-button {
 
 #start-session-modal {
     background: #ffffff;
-    border-radius: 10px;
+    border-radius:0;
     text-align: center;
     vertical-align: middle;
     margin: auto;
