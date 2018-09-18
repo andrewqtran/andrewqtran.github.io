@@ -460,6 +460,8 @@ button.modal-button {
     margin-left: -15px;
     padding-left: 15px;
     width: 100vw;
+    background:#D31C5B;
+    color:white;
 }
 
 button.primary {
