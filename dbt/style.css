@@ -75,6 +75,13 @@ body {
     color: #3F395a
 }
 
+h2 {
+    font-size: 24px;
+    margin-top: 20px;
+    text-align: center;
+    margin-top: 30px;
+
+}
 h3 {
     color: #8e8e93;
     text-transform: uppercase;
@@ -349,7 +356,8 @@ div.question-link {
 }
 
 #skills-no-survey,
-#skills-yes-survey {
+#skills-yes-survey,
+#skills-list {
     display: none;
 
 }

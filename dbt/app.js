@@ -12,6 +12,7 @@
         $("#skills-slider").click(function () {
             $("#skills-no-question").toggle("slide", function () {});
             $("#skills-yes-question").toggle("slide", function () {});
+            $("#skills-list").toggle("slide", function () {});
             $("#skills-no-survey").hide("", function () {});
             $("#skills-yes-survey").hide("", function () {});
         });
