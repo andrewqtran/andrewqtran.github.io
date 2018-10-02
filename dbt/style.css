@@ -219,6 +219,104 @@ input:checked+.slider:before {
 }
 
 
+/* Accordion */
+
+.tab {
+    position: relative;
+    width: calc(100vw);
+    color: #212529;
+    overflow: hidden;
+    background: #fff;
+    margin-left: -15px;
+}
+
+.tab input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.tab label {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    font-size: 15px;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+    border-bottom: solid 1px #EFeFF4;
+    margin-bottom: 0;
+    
+}
+
+#mindfulness+label {
+    border-left: #7B8EBB 5px solid;
+}
+
+#interpersonal+label {
+    border-left: #8C6DAA 5px solid;
+}
+
+#emotionreg+label {
+    border-left: #E6AE52 5px solid;
+}
+
+#distress+label {
+    border-left: #2B3150 5px solid;
+}
+
+.tab-content {
+    max-height: 0;
+    overflow: hidden;
+    -webkit-transition: max-height .35s;
+    -o-transition: max-height .35s;
+    transition: max-height .35s;
+}
+
+/* :checked */
+.tab input:checked~.tab-content {
+    max-height: 100vh;
+}
+
+/* Icon */
+.tab label::after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    width: 3em;
+    height: 3em;
+    line-height: 3;
+    text-align: center;
+    -webkit-transition: all .35s;
+    -o-transition: all .35s;
+    transition: all .35s;
+}
+
+.tab input[type=radio]+label::after,
+.tab input[type=checkbox]+label::after 
+    {
+    content: "\2303";
+    color: #8e8e93;
+}
+
+.tab input[type=checkbox]:checked+label::after,
+.tab input[type=radio]:checked+label::after {
+    transform: rotateX(180deg);
+}
+
+.tab .tab-content label {
+    position: relative;
+    display: block;
+        /*16px width of fake checkbox + 6px distance between fake checkbox and text*/
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #EFEFF4;
+    width: 100vw;
+    padding-left: 25px;
+
+}
+
 /* Checkbox checkmark */
 
 .checkbox input[type="checkbox"] {
@@ -242,8 +340,11 @@ input:checked+.slider:before {
 }
 
 
+
 .checkbox label::before,
-.checkbox label::after {
+.checkbox label::after,
+.tab .tab-content label::before,
+.tab .tab-content label::after {
     position: absolute;
     content: "";
     /*Needed for the line-height to take effect*/
@@ -251,7 +352,8 @@ input:checked+.slider:before {
 }
 
 /*Outer box of the fake checkbox*/
-.checkbox label::before {
+.checkbox label::before,
+.tab .tab-content label::before {
     height: 16px;
     width: 16px;
     border: 1px solid;
@@ -266,7 +368,8 @@ input:checked+.slider:before {
 
 
 /*Checkmark of the fake checkbox*/
-.checkbox label::after {
+.checkbox label::after,
+.tab .tab-content label::after {
     height: 10px;
     width: 20px;
     border-left: 2px solid;
@@ -279,17 +382,20 @@ input:checked+.slider:before {
 }
 
 /*Hide the checkmark by default*/
-.checkbox input[type="checkbox"]+label::after {
+.checkbox input[type="checkbox"]+label::after,
+.tab .tab-content input[type="checkbox"]+label::after {
     content: none;
 }
 
 /*Unhide on the checked state*/
-.checkbox input[type="checkbox"]:checked+label::after {
+.checkbox input[type="checkbox"]:checked+label::after,
+.tab .tab-content input[type="checkbox"]:checked+label::after {
     content: "";
 }
 
 /*Adding focus styles on the outer-box of the fake checkbox*/
-.checkbox input[type="checkbox"]:focus+label::before {
+.checkbox input[type="checkbox"]:focus+label::before,
+.tab .tab-content input[type="checkbox"]:focus+label::before {
     outline: rgb(59, 153, 252) auto 5px;
 }
 
