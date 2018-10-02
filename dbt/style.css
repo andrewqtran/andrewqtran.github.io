@@ -236,6 +236,10 @@ input:checked+.slider:before {
     z-index: -1;
 }
 
+.tab > label {
+    font-weight: 600
+}
+
 .tab label {
     position: relative;
     display: block;
@@ -246,7 +250,7 @@ input:checked+.slider:before {
     padding-left: 10px;
     border-bottom: solid 1px #EFeFF4;
     margin-bottom: 0;
-    
+
 }
 
 #mindfulness+label {
@@ -294,8 +298,7 @@ input:checked+.slider:before {
 }
 
 .tab input[type=radio]+label::after,
-.tab input[type=checkbox]+label::after 
-    {
+.tab input[type=checkbox]+label::after {
     content: "\2303";
     color: #8e8e93;
 }
@@ -308,13 +311,12 @@ input:checked+.slider:before {
 .tab .tab-content label {
     position: relative;
     display: block;
-        /*16px width of fake checkbox + 6px distance between fake checkbox and text*/
+    /*16px width of fake checkbox + 6px distance between fake checkbox and text*/
     height: 40px;
     line-height: 40px;
     border-bottom: 1px solid #EFEFF4;
     width: 100vw;
     padding-left: 25px;
-
 }
 
 /* Checkbox checkmark */
@@ -375,7 +377,7 @@ input:checked+.slider:before {
     border-left: 2px solid;
     border-bottom: 2px solid;
 
-    transform: rotate(-45deg);
+    transform: rotate(-45deg) !important;
     right: 15px;
     top: 10px;
     border-color: #e6ae52
