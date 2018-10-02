@@ -5,7 +5,8 @@ body {
     font-size: 15px;
 }
 
-#navbar, #navbar-session {
+#navbar,
+#navbar-session {
     display: block;
     color: white;
     font-weight: 400;
@@ -24,7 +25,8 @@ body {
 
 }
 
-#session-button, #end-session-button {
+#session-button,
+#end-session-button {
     text-align: right;
     float: right;
     position: fixed;
@@ -82,6 +84,7 @@ h2 {
     margin-top: 30px;
 
 }
+
 h3 {
     color: #8e8e93;
     text-transform: uppercase;
@@ -114,7 +117,7 @@ tr td {
     text-align: center;
     height: 40px;
     min-width: 40px;
-    font-size:13px;
+    font-size: 13px;
 }
 
 tr td:first-child {
@@ -450,13 +453,13 @@ button.modal-button {
 #start-session-modal,
 #end-session-modal {
     background: #ffffff;
-    border-radius:0;
+    border-radius: 0;
     text-align: center;
     vertical-align: middle;
     margin: auto;
     /* margin-top: calc(50vh - 200px); */
     /* width: calc(100vw - 0px); */
-    padding-left:15px;
+    padding-left: 15px;
     height: 100vh;
     margin-top: 0px;
 }
@@ -468,18 +471,18 @@ button.modal-button {
     margin-left: -15px;
     padding-left: 15px;
     width: 100vw;
-    background:#D31C5B;
-    color:white;
+    background: #D31C5B;
+    color: white;
 }
 
 button.primary {
     background: #3F395A;
-    color:white;
+    color: white;
     font-size: 16px;
     padding: 8px;
     width: calc(100vw - 30px);
-    border-radius:5px;
-    display:block !important;
+    border-radius: 5px;
+    display: block !important;
 }
 
 button.secondary {
@@ -488,7 +491,7 @@ button.secondary {
     font-size: 16px;
     padding: 2px;
     width: calc(100vw - 30px);
-    border-radius:5px;
-    display:block !important;
+    border-radius: 5px;
+    display: block !important;
     border: none;
 }
