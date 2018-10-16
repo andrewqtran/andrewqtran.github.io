@@ -179,8 +179,8 @@ input[type=radio]:checked {
     right: 0;
     bottom: 0;
     background-color: #ccc;
-    -webkit-transition: .1s;
-    transition: .1s;
+    -webkit-transition: .2s;
+    transition: .2s;
 }
 
 .slider:before {
@@ -191,8 +191,8 @@ input[type=radio]:checked {
     left: 2px;
     bottom: 2px;
     background-color: white;
-    -webkit-transition: .1s;
-    transition: .1s;
+    -webkit-transition: .3s;
+    transition: .3s;
 }
 
 input:checked+.slider {
