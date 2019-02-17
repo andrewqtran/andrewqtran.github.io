@@ -50,7 +50,7 @@ a:hover i.fa-linkedin.fa-inverse::after {
 a:hover i.fa-behance.fa-inverse::after {
 	content:"Portfolio"
 }
-a:hover i.fa-file-pdf-o.fa-inverse::after {
+a:hover i.fa-file-alt.fa-inverse::after {
 	content:"Print PDF"
 }
 

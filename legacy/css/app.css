@@ -213,7 +213,7 @@ a:hover i.fa-twitter.fa-inverse::after {
 a:hover i.fa-linkedin.fa-inverse::after {
 	content: "LinkedIn"
 }
-a:hover i.fa-file-pdf-o.fa-inverse::after {
+a:hover i.fa-file-alt.fa-inverse::after {
 	content: "Resume PDF"
 }
 .copyright {

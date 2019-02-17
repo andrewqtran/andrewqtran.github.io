@@ -18,7 +18,7 @@
 <div class="contain-to-grid sticky" id="header">
   <nav data-topbar role="navigation">
     <h1 id="logo"><a href="//andrewqtran.com/index.html">A<span class="aqt">ndrew</span><span id="q">Q</span>T<span class="aqt">ran</span> </a></h1>
-    <div class="text-center" id="nav"> <a href="//andrewqtran.com/index.html" class="active"><i class="fa fa-th-large"></i><span class="link">Portfolio</span></a> <a href="//andrewqtran.com/about.html"><i class="fa fa-user"></i><span class="link">About</span></a> <a href="//andrewqtran.com/contact.html"><i class="fa fa-paper-plane"></i><span class="link">Contact</span></a> </div>
+    <div class="text-center" id="nav"> <a href="//andrewqtran.com/index.html" class="active"><i class="fas fa-th-large"></i><span class="link">Portfolio</span></a> <a href="//andrewqtran.com/about.html"><i class="far fa-user"></i><span class="link">About</span></a> <a href="//andrewqtran.com/contact.html"><i class="far fa-paper-plane"></i><span class="link">Contact</span></a> </div>
   </nav>
 </div>
 <div class="row" id="portfolio">
@@ -32,13 +32,13 @@
   <div class="row" id="social">
     <ul class="small-block-grid-4 medium-block-grid-4">
       <li class="fa-stack fa-lg"><a href="//andrewqtran.com/mailto:hello[at]andrewqtran.com"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-envelope fa-stack-1x fa-inverse"></i></a></li>
-      <li class="fa-stack fa-lg"><a href="//andrewqtran.com/https://twitter.com/aqtaqt" target="_blank"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></a></li>
-      <li class="fa-stack fa-lg"><a href="//www.linkedin.com/in/andrewqtran/" target="_blank"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-linkedin fa-stack-1x fa-inverse"></i></a></li>
-      <li class="fa-stack fa-lg"><a href="//andrewqtran.com/../Andrew_Q_Tran_Resume.pdf" target="_blank"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-file-pdf-o fa-stack-1x fa-inverse"></i></a></li>
+      <li class="fa-stack fa-lg"><a href="//andrewqtran.com/https://twitter.com/aqtaqt" target="_blank"><i class="fa fa-circle fa-stack-2x"></i><i class="fab fa-twitter fa-stack-1x fa-inverse"></i></a></li>
+      <li class="fa-stack fa-lg"><a href="//www.linkedin.com/in/andrewqtran/" target="_blank"><i class="fa fa-circle fa-stack-2x"></i><i class="fab fa-linkedin fa-stack-1x fa-inverse"></i></a></li>
+      <li class="fa-stack fa-lg"><a href="//andrewqtran.com/../Andrew_Q_Tran_Resume.pdf" target="_blank"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-file-alt fa-stack-1x fa-inverse"></i></a></li>
     </ul>
   </div>
   <div class="copyright"><br>
-    Copyright &copy; 2005-2018 Andrew Q Tran. All Rights Reserved.<br>
+    Copyright &copy; 2005-2019 Andrew Q Tran. All Rights Reserved.<br>
   </div>
 </div>
 <script src="//andrewqtran.com/js/foundation.min.js"></script> 
