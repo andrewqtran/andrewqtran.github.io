@@ -210,9 +210,9 @@ body {
 
 .project {
 	background: #fff;
-	border-bottom: solid 0.1em #ff5050;
-	padding: 1em 1em 0.8em 1em;
-	border-radius: 5px;
+	/* border-bottom: solid 0.1em #ff5050; */
+	padding: 1em 1em 0.6em 1em;
+	border-radius: 8px;
 	box-shadow: #ccc 0 0 3px;
 	transition: all ease 0.1s;
 }
@@ -611,12 +611,11 @@ article {
 	}
 	#header.fixed {
 		margin: 0em;
+		height: 3em;
 	}
+	
 	#header {
 		padding: 1em 0em;
-	}
-	#header.fixed {
-		height: 3em;
 	}
 	#logo .aqt {
 		display: none;
@@ -630,6 +629,9 @@ article {
 		left:0;
 		margin: 0 auto;
 		width:100%;
+	}
+	.fixed #nav a {
+		margin: 0 2em !important;
 	}
 	#header.fixed h1 {
 		display: none;
