@@ -606,6 +606,7 @@ article {
 @media only screen and (max-width: 40.063em) {
 	body {
 		overflow-x: hidden;
+		background: #ffffff;
 	}
 	.summary,
 	#portfolio .inline-list {
@@ -682,5 +683,10 @@ article {
 	.next {
 		float: right;
 		right: 20%;
+	}
+	.hero {
+		border-radius: 16px 16px 0 0;
+		width: calc(100vw - 1.875em);
+		margin-left: 0.9375em;
 	}
 }
