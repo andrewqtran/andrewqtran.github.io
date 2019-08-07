@@ -130,7 +130,7 @@ body {
 }
 
 .hero {
-	border-bottom: #E7E7E7 solid thin;
+	/* border-bottom: #E7E7E7 solid thin; */
 	border-radius: 16px 16px 0 0;
 }
 
@@ -215,7 +215,7 @@ body {
 	background: #fff;
 	padding: 1em 1em 0.6em 1em;
 	border-radius: 16px;
-	box-shadow: #ccc 0 0 3px;
+	box-shadow: #ccc 0 0 5px;
 	transition: all ease 0.1s;
 }
 
