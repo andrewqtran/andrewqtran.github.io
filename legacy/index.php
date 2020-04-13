@@ -94,7 +94,7 @@ function spamcheck($field) {
       <li><img src="images/profile.jpg" width="220px" height="220px" /></li>
       <li><a href="/cv" class="button" target="_blank">View Curriculum Vitae</a></li>
     
-		<li><a href="https://www.linkedin.com/in/andrewqtran" class="button" id="linkedin" target="_blank" style="display:none">Connect on LinkedIn</a></li>
+		<li><a href="https://www.linkedin.com/in/aqt" class="button" id="linkedin" target="_blank" style="display:none">Connect on LinkedIn</a></li>
       <div class="compact" id="bio1">
         <li><img src="images/scientist.jpg" width="220px" height="220px"  style="opacity:0.3"/></li>
         <li><img src="images/artist.jpg" width="220px" height="220px"  style="opacity:0.3"/></li>
@@ -228,7 +228,7 @@ if (!isset($_POST["submit"])) {
           <p><a href="#about" class="smoothScroll">Andrew Q. Tran</a> is a biomedical communicator and designer, with a <a href="http://bmc.med.utoronto.ca/bmc/" target="_blank">MScBMC degree</a> from the University of Toronto. His full name "Tran, Andrew" spelled backwards reads "We R DNA N Art". </p>
         </div>
         <div class="grid_1"><a href="https://twitter.com/LastMiracle" target="_blank"><i class="icon-twitter"></i></a> </div>
-        <div class="grid_1"><a href="https://www.linkedin.com/in/andrewqtran" target="_blank"><i class="icon-linkedin"></i></a></div>
+        <div class="grid_1"><a href="https://www.linkedin.com/in/aqt" target="_blank"><i class="icon-linkedin"></i></a></div>
         <div class="grid_1"><a href="https://www.facebook.com/andrewqtran/" target="_blank"><i class="icon-facebookalt"></i></a></div>
         <div class="grid_1"><a href="//www.behance.net/andrewqtran" target="_blank"><i class="icon-behance"></i></a></div>
       </div>
